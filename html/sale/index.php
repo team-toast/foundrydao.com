@@ -10,7 +10,8 @@
         // ini_set('display_errors', 1);
         // ini_set('display_startup_errors', 1);
         // error_reporting(E_ALL);
-        include($_SERVER['DOCUMENT_ROOT'] . "/common-assets/html/header.html");
+        include($_SERVER['DOCUMENT_ROOT'] . "/common-assets/html/header.php");
+        makeHeader("sale");
     ?>
     <div align=center class="body">
         <div align=left style="max-width: 1000px;">

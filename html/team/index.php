@@ -16,13 +16,12 @@
         <div align=left style="max-width: 1000px;">
             <h1>Team Toast</h1>
             <div class="text-block container-fluid">
-                <p>Team Toast is a small team centered around the development of DAIHard and Foundry.</p>
                 <div class="row">
                     <div class="col-sm-3">
                         <img class="img-fluid" style="width: 100%;" src="/common-assets/img/oglog.jpg">
                     </div>
                     <div class="col-sm-9">
-                        <h2 style="font-weight:700">OG Log</h2>
+                        <h2 style="font-weight:700">Logan Brutsche</h2>
                         <p>Co-founder and CEO of Team Toast. Lead developer for DAIHard and Foundry.
                             Developed the Burnable Payment and DAIHard smart contracts.
                         </p>
@@ -31,7 +30,7 @@
                 <div class="row">
                     <div class="col-sm-3">PIC</div>
                     <div class="col-sm-9">
-                        <h2 style="font-weight:700">The Schalkinator</h2>
+                        <h2 style="font-weight:700">Schalk Dormehl</h2>
                         <p>Co-founder and Sugar Daddy of Team Toast. Developed the Bucket Sale smart contract and tests.
                         </p>
                     </div>

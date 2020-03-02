@@ -15,20 +15,12 @@
     <div align=center class="body">
         <div align=left style="max-width: 1000px;">
             <h1>FAQ</h1>
-            <p>Don't ask questions!
-            </p>
-            <h1>Why Participate?</h1>
-            <p>Because u loco
-            </p>
-            <h1>Token Sale Numbers</h1>
-            <p>Lots of em
-            </p>
-            <h1>Who Is Eligible?</h1>
-            <p>Everyone Except The Damn Yankees
-            </p>
-            <h1>Coming Soon</h1>
-            <p>(tm)
-            </p>
+            <div class="text-block">
+                <h2>What is Foundry?</h2>
+                <h2>How will Foundry Capture Profit?</h2>
+                <h2>Who Controls Foundry?</h2>
+                <h2>How Can I Contribute?</h2>
+            </div>
         </div>
     </div>
 </body>

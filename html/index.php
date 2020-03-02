@@ -1,13 +1,17 @@
-<head>
-    <link rel="stylesheet" href="/common-assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/common-assets/css/style.css">
-    <script src="/common-assets/bootstrap/js/bootstrap.min.js"></script>
-</head>
 <html>
-    <div class="jumbotron text-center" style="background-color:#071B5C">
-        <h1 style="color:#FF006E; font-weight:900">Foundry</h1>
-        <p style="color:#FFFFFF">A DAO for Financial Freedom</p>
-    </div>
+<head>
+    <link rel="stylesheet" href="/common-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/common-assets/css/style.css">
+    <script src="/common-assets/js/jquery-3.4.1.min.js"></script>
+    <script src="/common-assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <?php
+        // ini_set('display_errors', 1);
+        // ini_set('display_startup_errors', 1);
+        // error_reporting(E_ALL);
+        include($_SERVER['DOCUMENT_ROOT'] . "/common-assets/html/header.html");
+    ?>
     <div align=center class="body">
         <div align=left style="max-width: 1000px;">
             <h1>Team Toast</h1>
@@ -83,4 +87,5 @@
             </div>
         </div>
     </div>
+</body>
 </html>

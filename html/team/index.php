@@ -17,7 +17,7 @@
         <div align=left style="max-width: 1000px;">
             <h1>Team Toast</h1>
             <div class="text-block container-fluid">
-                <div class="row">
+                <div class="row" style="padding:1em">
                     <div class="col-sm-3">
                         <img class="img-fluid" style="width: 100%;" src="/common-assets/img/oglog.jpg">
                     </div>
@@ -28,8 +28,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-3">PIC</div>
+                <div class="row" style="padding:1em">
+                    <div class="col-sm-3">
+                        <img class="img-fluid" style="width:100%;" src="/common-assets/img/schalk.png">
+                    </div>
                     <div class="col-sm-9">
                         <h2 style="font-weight:700">Schalk Dormehl</h2>
                         <p>Co-founder and Sugar Daddy of Team Toast. Developed the Bucket Sale smart contract and tests.

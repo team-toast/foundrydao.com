@@ -10,7 +10,7 @@ function maybeActive($activePageName, $linkName) {
 
 function makeHeader($activePageName) {
     ?>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="margin-bottom:0">
     <div class="container-fluid">
         <ul class="nav navbar-nav">
             <li class="nav-item <?php echo maybeActive($activePageName, "home") ?>">

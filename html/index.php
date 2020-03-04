@@ -105,6 +105,17 @@
                         </p>
                     </div>
                 </div>
+                <div class="row" style="padding:1em">
+                    <div class="col-sm-3">
+                        <img class="img-fluid" style="width:100%;" src="/common-assets/img/mysterious-k.jpg">
+                    </div>
+                    <div class="col-sm-9">
+                        <h2 style="font-weight:700">The Entity Known as K</h2>
+                        <p>Visual Designer for DAIHard and Foundry. Shrouded in secrecy.
+                            Those who speak its true name invite disaster and misfortune.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -1,5 +1,6 @@
 <html>
 <head>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . "/common-assets/php/random_v_pic.php");?>
     <link rel="stylesheet" href="/common-assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/common-assets/css/style.css">
     <script src="/common-assets/js/jquery-3.4.1.min.js"></script>
@@ -107,7 +108,7 @@
                 </div>
                 <div class="row" style="padding:1em">
                     <div class="col-sm-3">
-                        <img class="img-fluid" style="width:100%;" src="/common-assets/img/mysterious-k.jpg">
+                        <img class="img-fluid" style="width:100%;" src="<?php echo getRandomVPicPubSrc();?>">
                     </div>
                     <div class="col-sm-9">
                         <h2 style="font-weight:700">V for Visuals</h2>

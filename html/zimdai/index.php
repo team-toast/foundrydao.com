@@ -18,17 +18,21 @@
             <div class="text-block">
             <h1>ZimDai: A Blueprint for an Economic Jailbreak</h1>
                 <p>
-                    Zimbabwean citizens suffer under extreme inflation and a broken banking system.
-                    Political action within the country has consistently failed address this.
-                    DAI adoption in Zimbabwe would liberate Zimbabweans from this economic stranglehold,
-                    granting massive opportunity and relief while permanently removing the Zimbabwean government's
-                    ability to financially abuse the poor souls trapped within its borders.
+                    ZimDai is a thorough investigation into the viability of boostrapping Dai adoption in Zimbabwe,
+                    given the significant challenges any such endeavor faces today.
+                    It is the result of two months of on-the-ground research by Logan, funded by Team Toast,
+                    to analyze the market fit between DAIHard and the Zimbabwean market.
                 </p><p>
-                    <a href="https://github.com/coinop-logan/ZimDai/raw/master/whitepaper.pdf">The ZimDai Paper: A Blueprint for an Economic Jailbreak</a>
-                    is the result of two months of on-the-ground research by Logan of Team Toast,
-                    and provides a compelling answer to the question:
-                    how could an entity or organization bootstrap DAI adoption,
-                    given the significant challenges any such bold adoption drive would encounter?
+                    This research has been decoupled from reliance on DAIHard and distilled into
+                    <a href="https://github.com/coinop-logan/ZimDai/raw/master/whitepaper.pdf">The ZimDai Paper: A Blueprint for an Economic Jailbreak</a>.
+                    Please take a look with a critical eye, and join the Telegram (link in paper) with any thoughts or questions.
+                </p><p>
+                    Given a marketing drive, we may have on our hands a strikingly realistic,
+                    immediately applicable plan to liberate the Zimbabwean citizenry from systemic financial abuse.
+                    This has been a dream within crypto for years.
+                    Perhaps today crypto can begin making these kinds of significant moves on the global stage.
+                </p><p>
+                    If the Foundry sale accumulates significant funding, it could decide to fund and lead such a marketing campaign.
                 </p>
             </div>
         </div>

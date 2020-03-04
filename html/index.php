@@ -15,17 +15,9 @@
     ?>
     <div align=center class="body">
         <div align=left style="max-width: 1000px;">
-            <h1>Team Toast</h1>
+            <h1 id="foundry">Foundry</h1>
             <div class="text-block">
-                <p>Team Toast is a small team centered around the development of DAIHard and Foundry.
-                    More info on us coming soon! In the mean time feel free to follow our
-                    <a href="https://medium.com/daihard-buidlers">Medium publication</a>.
-                </p>
-            </div>
-
-            <h1>Foundry</h1>
-            <div class="text-block">
-                <p>Team Toast is building a DAO called Foundry.
+                <p><a href="#teamtoast">Team Toast</a> is building a DAO called Foundry.
                     Foundry's initial purpose is to take over DAIHard stewardship,
                     as this would extend DAIHard's unkillable nature to its very development and maintenance.
                     Foundry will likely build similar products in the future:
@@ -43,7 +35,7 @@
                 </p>
             </div>
 
-            <h1>DAIHard</h1>
+            <h1 id="daihard">DAIHard</h1>
             <div class="text-block">
                 <p>DAIHard is Team Toast's flagship product.
                     It is an unkillable, global gateway from any currency (fiat or crypto) to and from Dai.
@@ -65,7 +57,7 @@
                 </p>
             </div>
 
-            <h1>ZimDai</h1>
+            <h1 id="zimdai">ZimDai</h1>
             <div class="text-block">
                 <p>ZimDai is a thorough investigation into the viability of boostrapping Dai adoption in Zimbabwe,
                     given the significant challenges any such endeavor faces today.
@@ -85,6 +77,34 @@
                     We will share more thoughts on this soon, again via our
                     <a href="https://medium.com/daihard-buidlers">Medium publication</a>.
                 </p>
+            </div>
+
+            <h1 id="teamtoast">Team Toast</h1>
+            <div class="text-block container-fluid">
+                <div class="row" style="padding:1em">
+                    <div class="col-sm-3">
+                        <img class="img-fluid" style="width: 100%;" src="/common-assets/img/oglog.jpg">
+                    </div>
+                    <div class="col-sm-9">
+                        <h2 style="font-weight:700">Logan Brutsche</h2>
+                        <p>Co-founder and CEO of Team Toast, and doting mother of Foundry.
+                            Lead developer for DAIHard and Foundry.
+                            Developed the Burnable Payment and DAIHard smart contracts.
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="padding:1em">
+                    <div class="col-sm-3">
+                        <img class="img-fluid" style="width:100%;" src="/common-assets/img/schalk.png">
+                    </div>
+                    <div class="col-sm-9">
+                        <h2 style="font-weight:700">Schalk Dormehl</h2>
+                        <p>Co-founder of Team Toast and Sugar Daddy for Foundry.
+                            Pays Foundry's bills while it grows up to be a big strong DAO.
+                            Developed the Bucket Sale smart contract and tests.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

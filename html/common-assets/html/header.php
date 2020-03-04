@@ -16,14 +16,14 @@ function makeHeader($activePageName) {
             <li class="nav-item <?php echo maybeActive($activePageName, "home") ?>">
                 <a class="nav-link" href="/">Home</a>
             </li>
-            <li class="nav-item <?php echo maybeActive($activePageName, "team") ?>">
-                <a class="nav-link" href="/team/">Team</a>
-            </li>
             <li class="nav-item <?php echo maybeActive($activePageName, "faq") ?>">
                 <a class="nav-link" href="/faq/">FAQ</a>
             </li>
             <li class="nav-item <?php echo maybeActive($activePageName, "sale") ?>">
                 <a class="nav-link" href="/sale/">Sale</a>
+            </li>
+            <li class="nav-item <?php echo maybeActive($activePageName, "team") ?>">
+                <a class="nav-link" href="/#teamtoast">Team Toast</a>
             </li>
         </ul>
     </div>

@@ -15,21 +15,27 @@
     ?>
     <div align=center class="body">
         <div align=left style="max-width: 1000px;">
-            <h1>FAQ</h1>
-                
-                <h2>What is the Treasury?</h2>
+            <h1>The Numbers</h1>
+                <p>- 1200 buckets</p>
+                <p>- 7-hour buckets</p>
+                <p>- 50k FRY in each bucket</p>
+                <p>- 60m FRY disbursed over ~1 year</p>
+                <p>- Team Toast holds 30m</p>
+                <p>- Foundation holds 10m</p>
             <h1>Why Participate?</h1>
-            <p>Because u loco
-            </p>
-            <h1>Token Sale Numbers</h1>
-            <p>Lots of em
-            </p>
+                <p>- Profit potential</p>
+                <p>- Unstoppable Finance</p>
+                <p>- ZimDai</p>
             <h1>Who Is Eligible?</h1>
-            <p>Everyone Except The Damn Yankees
-            </p>
-            <h1>Coming Soon</h1>
-            <p>(tm)
-            </p>
+                <p>- Must not be a US citizen (for now)</p>
+                    <p>- SEC has incredible reach. We have decided to strictly enforce this,
+                    so as to allow marketing honesty as to the profit potential of the token.</p>
+                    <p>- If this gets your red-white-and-blue knickers in a bunch, <a href="#">defend your constitution against enemies domestic LINKNEEDED</a>.</p>
+                <p>- Must not be violating laws in your jurisdiction.</p>
+            <h1>(if sale not yet started)Coming Soon</h1>
+                <p>[timer element]</p>
+            <h1>(if sale started)Participate</h1>
+                <p>[participate button]</p>
         </div>
     </div>
 </body>

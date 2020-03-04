@@ -26,11 +26,8 @@
                 </p><p>Here's a speculative, non-final schematic of how Foundry might be put together.
                 </p>
                 <img src="/common-assets/img/foundry-schematic.png" style="width:100%">
-                <p>We will be publishing more details soon,
-                    both on Foundry's structure and on the sale's mechanics. 
-                    We are also excited to share the "piecewise" strategy of DAO development,
-                    analagous to the lean methodology for start-ups.
-                </p><p>To hear about these updates, subscribe to our
+                <p>See our <a href="/foundry/">Foundry FAQ</a> for more details.
+                    To hear about any updates, subscribe to our
                     <a href="https://medium.com/daihard-buidlers">Medium publication</a>.
                 </p>
             </div>
@@ -90,6 +87,7 @@
                         <p>Co-founder and CEO of Team Toast, and doting mother of Foundry.
                             Lead developer for DAIHard and Foundry.
                             Developed the Burnable Payment and DAIHard smart contracts.
+                            Uses the Cu Chi Tunnels extensively to evade The Man.
                         </p>
                     </div>
                 </div>
@@ -103,6 +101,7 @@
                             Pays Foundry's bills while it grows up to be a big strong DAO.
                             Developed the Bucket Sale contract and associated tests.
                             Leads research and development for DAO governance.
+                            Exists in a permanent state of bewildered confusion.
                         </p>
                     </div>
                 </div>
@@ -114,6 +113,7 @@
                         <h2 style="font-weight:700">V for Visuals</h2>
                         <p>Visual Designer for DAIHard and Foundry. Shrouded in secrecy.
                             Those who speak its true name invite disaster and misfortune.
+                            Coaxed into manifestation by offers of cheap liquor and forbidden dark margicks.
                         </p>
                     </div>
                 </div>

@@ -25,7 +25,7 @@
                     essentially asking their government for permission on the users behalf.
                     In short, traditional exchanges allow people to enter the new economy--but
                     on the old economy's terms.
-                <p></p>
+                </p><p>
                     DAIHard is a gateway into and out of crypto that allows this entry and exit
                     on the new economy's terms: it rejects KYC, ignores jurisdiction,
                     and can be used without permission.

@@ -101,7 +101,8 @@
                         <h2 style="font-weight:700">Schalk Dormehl</h2>
                         <p>Co-founder of Team Toast and Sugar Daddy for Foundry.
                             Pays Foundry's bills while it grows up to be a big strong DAO.
-                            Developed the Bucket Sale smart contract and tests.
+                            Developed the Bucket Sale contract and associated tests.
+                            Leads research and development for DAO governance.
                         </p>
                     </div>
                 </div>
@@ -110,7 +111,7 @@
                         <img class="img-fluid" style="width:100%;" src="/common-assets/img/mysterious-k.jpg">
                     </div>
                     <div class="col-sm-9">
-                        <h2 style="font-weight:700">The Entity Known as K</h2>
+                        <h2 style="font-weight:700">V for Visuals</h2>
                         <p>Visual Designer for DAIHard and Foundry. Shrouded in secrecy.
                             Those who speak its true name invite disaster and misfortune.
                         </p>

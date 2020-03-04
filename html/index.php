@@ -70,10 +70,8 @@
                     immediately applicable plan to liberate the Zimbabwean citizenry from systemic financial abuse.
                     This has been a dream within crypto for years.
                     Perhaps today crypto can begin making these kinds of significant moves on the global stage.
-                </p><p>If the Foundry sale accumulates significant funding, it could decide to step into this gap,
-                    funding and leading the ZimDai movement.
-                    We will share more thoughts on this soon, again via our
-                    <a href="https://medium.com/daihard-buidlers">Medium publication</a>.
+                </p><p>If Foundry accumulates significant funding, Foundry could decide to step into this gap,
+                    funding and leading the ZimDai movement. Read more <a href="/zimdai/">here</a>.
                 </p>
             </div>
 
@@ -114,7 +112,7 @@
                         <h2 style="font-weight:700">V for Visuals</h2>
                         <p>Visual Designer for DAIHard and Foundry. Shrouded in secrecy.
                             Those who speak its true name invite disaster and misfortune.
-                            Coaxed into manifestation by offers of cheap liquor and forbidden dark margicks.
+                            Coaxed into manifestation by offers of cheap liquor and forbidden dark magicks.
                         </p>
                     </div>
                 </div>

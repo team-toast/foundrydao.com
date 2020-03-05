@@ -104,18 +104,56 @@
                         don't quit your day job, don't mortgate your house, and <b>don't invest more than you can afford to lose.</b>
                     </p>
                 <h2>What Differentiates Foundry from <a href="https://en.wikipedia.org/wiki/The_DAO_(organization)">The DAOsaster</a>?</h2>
-                    <p>(outline)</p>
-                    <p>Similarities</p>
-                        <p>- DAO</p>
-                        <p>- For-profit</p>
-                        <p>- Flagship product</p>
-                        <p>- VC functionality</p>
-                    <p>Differences</p>
-                        <p>- Piecewise and modest</p>
-                        <p>- Better Security Landscape</p>
-                        <p>- Real Control by FRY holders (no curators)</p>
-                        <p>- No Explicit Forking</p>
-                        <p>- Built Poduct</p>
+                    <h3>For-Profit DAOs with Flagship Products</h3>
+                        <p>
+                            At a conceptual level, both The DAOsaster and Foundry are built with similar intents:
+                            they are meant to be for-profit DAOs. They also each focus a lot on their flagship product.
+                            The DAOsaster focused on the smart lock as its initial profitable venture,
+                            while Foundry places a similar emphasis on DAIHard.
+                        </p><p>
+                            But there is an important distinction here: the smart lock had yet to actually be produced,
+                            and in any case was aiming at a much more experimental (if inspiring) use case.
+                            In contrast, DAIHArd is already built and live, with a profit mechanism in-place and pointed at Foundry.
+                        </p><p>
+                            Another difference is the expectation of who would develop the flagship product.
+                            The smart lock was to be built exclusively by Slock.it. While in theory the DAOsaster could have
+                            funded other products, the short-to-medium-term business plan relied heavily on Slock.it.
+                            In contrast, anyone can work on DAIHard or some other product and request support from Foundry.
+                            This was in fact our primary motivation for building Foundry in the first place:
+                            developing unstoppable exchanges to crypto puts targets on our backs,
+                            so we want to pass the torch to Foundry, which can't be shot or jailed like us fragile meatbags.
+                        </p>
+                    <h3>Solidity Design</h3>
+                        <p>
+                            The Solidity (i.e. smart contract) design of The DAOsaster was, simply put, atrocious.
+                        </p><p>
+                            ENGAGE SCHALK RANT
+                        </p>
+                    <h3>Decentralized Decision Making?</h3>
+                        <p>
+                            Both The DAOsaster and Foundry cast token holders as key decision makers in the respecive DAOs,
+                            but in the case of the DAOsaster this came with a number of significant caveats.
+                            In reality, The DAOsaster's "curators"--a set of pre-decided individuals--exercised
+                            incredible control over which proposals even came to a vote. The SEC's
+                            <a href="http://www.sec.gov/litigation/investreport/34-81207.pdf">Report of Investigation</a>
+                            lays it out rather clearly:
+                        </p><p>
+                            "DAO Token holders’ votes were limited to proposals whitelisted by the Curators, and, although any DAO Token holder could put forth a proposal, each proposal would follow the same protocol, which included vetting and control by the current Curators.  While DAO Token holders could put forth proposals to replace a Curator, such proposals were subject to control by the current Curators, including whitelisting and approval of the new address to which the tokens would be directed for such a proposal."<p>
+                        </p><p>
+                            In other words, the pre-determined list of Curators had ultimate control over any action the DAO would take.
+                            For example, if there was good reason to choose some contractor over Slock.it,
+                            but the Curators had conflicting interests, they would be capable of blocking all proposals
+                            to make such a switch, ensuring Slock.it remains the sole contractor of The DAOsaster.
+                            Or if all curators were jailed or killed, The DAOsaster would simply become completely paralyzed.
+                        </p><p>
+                            In contrast, FRY holders will have complete control over Foundry
+                            once the governance mechanism is implemented.
+                            Team Toast has no interest or intent to act as anything like curators,
+                            or appoint others into this role.
+                            A primary purpose of Foundry is to develop and maintain products that fragile meat bags
+                            are unwilling or afraid to manage directly, and thus must rely directly
+                            on the decentralized, amorphous control of FRY holders themselves.
+                        </p>
             </div>
         </div>
     </div>

@@ -53,7 +53,8 @@
                     </p>
                 <h2>Does that mean FRY holders will profit?</h2>
                     <p>
-                        We hope so, but not necessarily. There are a number of ways a FRY holder expecting profit may be disappointed.
+                        Slow down there cowboy. Maybe not. It's entirely possible the value of FRY completely collapses.
+                        There are a number of ways this might happen, so <b>do not invest more than you can afford to lose.</b>
                     </p><p>
                         As <a href="https://en.wikipedia.org/wiki/The_DAO_(organization)">The DAOsaster</a> has shown us, DAOs can fail on a technical level
                         before they ever have a chance to fail in more interesting ways.
@@ -75,7 +76,7 @@
                         Foundry has no decision-making capability outside the proposals and votes from FRY holders. What's more,
                         FRY holders are not known individuals as in the case of LINKNEEDED Moloch/MetaCartel/etc:
                         they are pseudonymous agents on Ethereum, freely purchasing FRY via the sale or secondary markets.
-                        This isn't necessarily a bad thing, but it makes them somewhat more difficult to predict.
+                        This makes them FRY holders rather difficult to predict with high certainty.
                     </p><p>
                         FRY holders could simply vote for very stupid things. They could vote for short-sighted gain,
                         while ruining long-term profitability of Foundry. And even if Foundry does accumulate significant profit,
@@ -83,11 +84,23 @@
                         made and passed. We can expect that this would happen regularly (why else participate?),
                         but we simply don't know for sure.
                     </p><p>
-                        Having said all of this: don't tell the lawyers, but yes, there is a real chance FRY could be profitable.
+                        Any investment involves risk, but the risk skyrockets with crypto investments,
+                        and rises further if the team and asset don't yet have established histories.
+                        For all you know, a month into the sale we'll take all the DAI and fly to Mauritius or buy a yacht,
+                        and you'd be sitting there like an idiot with yet another useless coin. Oh how your friends will laugh!
+                        And who can blame them? This ain't 2017 anymore!
+                    </p>
+                <h2>But FRY holders <i>might</i> profit, right?</h2>
+                    <p>
+                        Okay <i>fine,</i> yes, there is a chance FRY holders will see profit.
                         And not just via pumpanomic, buy-low-sell-high shenanigans.
                         Foundry may turn out to be capable of intelligently spending funds on profitable ventures,
                         accumulating this profit over a period of months or years,
                         and occasionally disbursing this profit to FRY holders.
+                        This is our hope, and it's what makes this whole thing reasonable to try at all.
+                        But again: FRY is far from a guarantee of any profit.
+                        Throw in some change if you want to be a part of Foundry--but
+                        don't quit your day job, don't mortgate your house, and <b>don't invest more than you can afford to lose.</b>
                     </p>
                 <h2>What Differentiates Foundry from <a href="https://en.wikipedia.org/wiki/The_DAO_(organization)">The DAOsaster</a>?</h2>
                     <p>(outline)</p>

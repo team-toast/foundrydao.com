@@ -99,6 +99,7 @@
                         and occasionally disbursing this profit to FRY holders.
                         This is our hope, and it's what makes this whole thing reasonable to try at all.
                         But again: FRY is far from a guarantee of any profit.
+                    </p><p>
                         Throw in some change if you want to be a part of Foundry--but
                         don't quit your day job, don't mortgate your house, and <b>don't invest more than you can afford to lose.</b>
                     </p>

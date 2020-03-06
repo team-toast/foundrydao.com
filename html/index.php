@@ -22,7 +22,7 @@
                     It's time for crypto to start making moves on the global stage.
                     Foundry will be our gladiator.
                 </p>
-            <h1>FRY and Foundry</h1>
+            <h1 class="anchor" id="foundry">FRY and Foundry</h1>
                 <p>
                     Foundry's future is in the hands of FRY holders.
                 </p><p>
@@ -52,7 +52,7 @@
                 <p>Here's a speculative, non-final schematic of how Foundry might be put together.
                 </p>
                 <img src="/common-assets/img/foundry-schematic.png" style="width:100%">
-            <h1>DAIHard: Foundry's Flagship Product</h1>
+            <h1 class="anchor" id="daihard">DAIHard: Foundry's Flagship Product</h1>
                 <p>The Unkillable, Global Gateway Between DAI and Any Other Currency</p>
                 <p>Visit the DAIHard Marketplace --></p>
                 <h2>Unkillable, Global Gateway</h2>
@@ -75,12 +75,13 @@
                     <p>
                         <a href="daihard.exchange">The app is live on mainnet</a>,
                         so the next step is to cut its teeth with real users while ensuring the exchange has liquidity.
-                        Thus, marketing DAIHard will be one of the main uses of the funding gained via the FRY sale.
+                        Thus, marketing DAIHard will be one of the main uses of the funding gained via the <a href="/sale/">FRY sale</a>.
                     </p>
-            <h1>ZimDai: An Economic Jailbreak</h1>
+            
+            <h1 class="anchor" id="zimdai">ZimDai: An Economic Jailbreak</h1>
                 <p>Zimbabweans are trapped in an abusive economic system. But crypto is growing teeth.</p>
                 <p>More on ZimDai --></p>
-                <p> (quote) Zimbabwe suffers under incredibly irresponsible and abusive economic control.
+                <p>(quote) Zimbabwe suffers under incredibly irresponsible and abusive economic control.
                         The cryptocurrency industry and stack is now mature enough to
                         break the Zimbabwean citizens out of this economic prison.
                 <h2>Zimbabwe's Plight</h2>
@@ -108,7 +109,7 @@
                         This has been a dream within crypto for years.
                         Given significant funding, we expect Foundry to lead and fund this campaign.
                     </p>
-            <h1 id="teamtoast">Team Toast</h1>
+            <h1 class="anchor" id="teamtoast">Team Toast</h1>
                 <div class="text-block container-fluid">
                     <div class="row" style="padding:1em">
                         <div class="col-sm-3">

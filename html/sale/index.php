@@ -49,7 +49,7 @@
                 </p><p>
                     Whether DAIHard itself succeeds or fails, Foundry will continue to build
                     and invest in profitable products that increase global economic freedom.
-                    Foundry will look at projects like <a href="/zimdai/">ZimDai</a> and could boldly step up to lead them,
+                    Foundry will look at projects like <a href="/#zimdai">ZimDai</a> and could boldly step up to lead them,
                     given enough of a teasury. Foundry will not care if these products are illegal,
                     and will be extremely resilient to threats or pressure.
                 </p><p>
@@ -58,9 +58,8 @@
                     which was subsequently voted in by a majority of FRY holders.
                 </p><p>
                     By entering into the sale, you become a part of this collective intelligence.
-                    When a marketer in Zimbabwe makes a proposal to lead the initial
-                    <a href="/zimdai/#bootstrapping">bootstrapping of the ZimDai agent network</a>
-                    with 10k DAI of Foundry's treasury,
+                    When a Zimbabwean FRY holder makes a proposal to use 10k DAI of Foundry's treasury
+                    to push the <a href="/#zimdai">ZimDai plan</a> forward,
                     FRY will be the asset that tips the scale toward a yes or a no.
                 </p>
             <h1>Who Is Eligible?</h1>

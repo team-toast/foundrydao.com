@@ -10,6 +10,8 @@ function maybeActive($activePageName, $linkName) {
 
 function makeHeader($activePageName) {
     ?>
+<script src="/common-assets/js/capture-and-hide-referral.js"></script>
+<iframe style="display:none" id="referralCaptureIframe" src="https:sale.foundrydao.com/captureReferral.html" onload="captureAndHideReferral()"></iframe> 
 <div class="jumbotron text-center" style="background-color:#071B5C; margin-bottom:0">
     <h1 style="color:#FF006E; font-weight:900">Foundry</h1>
     <p style="color:#FFFFFF">A DAO for Financial Freedom</p>

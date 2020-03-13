@@ -1,5 +1,6 @@
 <html>
 <head>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/common-assets/html/google-analytics-stuff.php"); ?>
     <link rel="stylesheet" href="/common-assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/common-assets/css/style.css">
     <script src="/common-assets/js/jquery-3.4.1.min.js"></script>

@@ -12,10 +12,16 @@
     <link rel="stylesheet" href="/common-assets/css/style.css">
     <script src="/common-assets/js/jquery-3.4.1.min.js"></script>
     <script src="/common-assets/js/bootstrap.min.js"></script>
+    <script src="/common-assets/js/elm-generated-sale-button.js"></script>
+    <script src="/common-assets/js/attach-elm-button.js"></script>
+    <script>
+        window.addEventListener("load", function(e) {
+            attachElmSaleButtons(document.querySelectorAll(".sale-button"), 1584100922);
+        });
+    </script>
 </head>
 <body>
     <?php
-        
         include($_SERVER['DOCUMENT_ROOT'] . "/common-assets/html/header.php");
         makeHeader("home");
     ?>
@@ -30,6 +36,11 @@
             <h1 class="anchor" id="foundry">FRY and Foundry</h1>
                 <p>
                     Foundry's future is in the hands of FRY holders.
+                </p><p>
+                    Testing button:<br>
+                    <div style="height:40px">
+                    <div style="min-height:inherit" class="sale-button"></div>
+                    </div>
                 </p><p>
                     More on Foundry -->
                 </p>

@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/common-assets/css/style.css">
     <script src="/common-assets/js/jquery-3.4.1.min.js"></script>
     <script src="/common-assets/js/bootstrap.min.js"></script>
+    <title>Foundry - FAQ</title>
 </head>
 <body>
     <?php

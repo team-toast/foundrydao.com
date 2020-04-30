@@ -28,8 +28,10 @@
                 <div class="blurb">
                     Foundry's future is in the hands of FRY holders.
                 </div>
-                <div style="font-weight:bold">SALE STARTS IN</div>
-                <div id="clock" class="countdown"></div>
+                <div class="countdown-block">
+                    <div style="font-weight:bold">SALE STARTS IN</div>
+                    <div id="clock" class="countdown"></div>
+                </div>
             </div>
             <div class="section-points-container container">
                 <div class="row">

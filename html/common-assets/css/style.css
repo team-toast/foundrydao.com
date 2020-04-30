@@ -80,6 +80,23 @@
 }
 
 
+.elmish-red-button {
+    font-size: 22;
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(219, 19, 105);
+    display:block;
+}
+
+.elmish-red-button a:hover {
+    text-decoration: none!important;
+}
+
+
 .rendered-md {
     max-width:1000px;
     font-size:20;

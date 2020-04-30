@@ -50,7 +50,7 @@
                         <div class="blurb">
                             The sale will launch on May 15, noon UTC.
                         </div>
-                        NEEDS NOTIFY BUTTON AND/OR TIMER
+                        <a class="elmish-red-button" href="https://emailoctopus.com/lists/98c743f3-78f3-11ea-a3d0-06b4694bee2a/forms/subscribe">Get Notified</a>
                     </div>
                 </div>
             </div>

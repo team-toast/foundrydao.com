@@ -64,7 +64,6 @@
                 <div class="blurb">
                     Unkillable, global, uncensorable products, ready today. Foundry does not ask permission.
                 </div>
-                LINKS TO EACH PRODUCT?
             </div>
             <div class="section-points-container container">
                 <div class="row">

@@ -78,6 +78,13 @@
     font-size: 18;
 }
 
+
+.rendered-md {
+    max-width:1000px;
+    font-size:20;
+    text-align:left;
+}
+
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;

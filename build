@@ -1,0 +1,2 @@
+pandoc -f markdown -t html md-src/faq.md > html/common-assets/rendered-md/faq.html
+pandoc -f markdown -t html md-src/terms.md > html/common-assets/rendered-md/terms.html

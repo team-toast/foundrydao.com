@@ -92,10 +92,6 @@
     display:block;
 }
 
-.elmish-red-button a:hover {
-    text-decoration: none!important;
-}
-
 
 .rendered-md {
     max-width:1000px;

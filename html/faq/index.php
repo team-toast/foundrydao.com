@@ -111,18 +111,19 @@
                             At a conceptual level, both The DAOsaster and Foundry are built with similar intents:
                             they are meant to be for-profit DAOs. They also each focus a lot on their flagship product.
                             The DAOsaster focused on the smart lock as its initial profitable venture,
-                            while Foundry places a similar emphasis on DAIHard.
+                            while Foundry places a similar emphasis on DAIHard and SmokeSignal.
                         </p><p>
                             But there is an important distinction here: the smart lock had yet to actually be produced,
                             and in any case was aiming at a much more experimental (if inspiring) use case.
-                            In contrast, DAIHArd is already built and live, with a profit mechanism in-place and pointed at Foundry.
+                            In contrast, DAIHArd and SmokeSignal are already built and live, 
+                            both with a profit mechanism in-place and pointed at Foundry.
                         </p><p>
                             Another difference is the expectation of who would develop the flagship product.
                             The smart lock was to be built exclusively by Slock.it. While in theory the DAOsaster could have
                             funded other products, the short-to-medium-term business plan relied heavily on Slock.it.
                             In contrast, anyone can work on DAIHard or some other product and request support from Foundry.
                             This was in fact our primary motivation for building Foundry in the first place:
-                            developing unstoppable exchanges to crypto puts targets on our backs,
+                            developing unstoppable exchanges to crypto and uncensorable social media puts targets on our backs,
                             so we want to pass the torch to Foundry, which can't be shot or jailed like us fragile meatbags.
                         </p>
                     <h3>Solidity Design</h3>
@@ -146,15 +147,16 @@
                             For example, if there was good reason to choose some contractor over Slock.it,
                             but the Curators had conflicting interests, they would be capable of blocking all proposals
                             to make such a switch, ensuring Slock.it remains the sole contractor of The DAOsaster.
-                            Or if all curators were jailed or killed, The DAOsaster would simply become completely paralyzed.
+                            Additionally, if all curators were jailed or killed, The DAOsaster would simply become completely paralyzed.
                         </p><p>
                             In contrast, FRY holders will have complete control over Foundry
                             once the governance mechanism is implemented.
                             Team Toast has no interest or intent to act as anything like curators,
                             or appoint others into this role.
                             A primary purpose of Foundry is to develop and maintain products that fragile meat bags
-                            are unwilling or afraid to manage directly, and thus must rely directly
-                            on the decentralized, amorphous control of FRY holders themselves.
+                            are unwilling or afraid to manage directly, and thus we have no choice:
+                            the only acceptable configuration is to have Foundry be directly controlled by
+                            the decentralized, amorphous community of FRY holders themselves.
                         </p>
             </div>
         </div>

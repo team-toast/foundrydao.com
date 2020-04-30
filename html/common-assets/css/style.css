@@ -1,16 +1,28 @@
-p {
+/* p {
     font-size: 20px;
-}
-
-.body h1 {
-    margin-bottom: 20px;
 }
 
 .text-block {
     margin-bottom: 50px;
+} */
+
+.body {
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+
+    @media only screen and (max-width:768px) {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.front-page-section {
+    padding-bottom: 100px;
 }
 
 .front-page-block {
+    width: 650px;
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 35px;
@@ -38,6 +50,8 @@ p {
     padding-top: 15px;
     font-weight: bold;
     font-size: 55;
+    line-height: 1;
+    padding-bottom: 20px;
 }
 .front-page-block .blurb {
     color: rgba(255,255,255,0.8);
@@ -46,6 +60,23 @@ p {
 /*
 .front-page-block .action-link
 */
+
+
+.section-points-container {
+    width:100%;
+}
+
+.section-point {
+    padding: 50px;
+}
+
+.section-points-container .section-point .title {
+    font-size: 27;
+    font-weight: bold;
+}
+.section-points-container .section-point .blurb {
+    font-size: 18;
+}
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {

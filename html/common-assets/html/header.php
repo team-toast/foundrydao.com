@@ -15,12 +15,6 @@ function makeHeader($activePageName) {
 <div class="jumbotron text-center" style="background-color:#071B5C; margin-bottom:0">
     <h1 style="color:#FF006E; font-weight:900">Foundry</h1>
     <p style="color:#FFFFFF">A DAO for Financial Freedom</p>
-    <div align="center">
-        <div class="container" style="color:#FFFFFF; background-color:#ff0000;">
-            <h1 style="font-weight:700">Attention!</h1>
-            <h2>This site is under construction!<br>The information below is <b><u>speculative</u></b> and <b><u>not legally binding!</u></b></h2>
-        </div>
-    </div>
 </div>
 <nav id="navbar" class="navbar navbar-default">
     <div class="container-fluid">

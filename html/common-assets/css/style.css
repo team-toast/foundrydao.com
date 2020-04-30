@@ -10,6 +10,43 @@ p {
     margin-bottom: 50px;
 }
 
+.front-page-block {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    border-radius: 6px;
+
+    color: #ffffff;
+
+    @media only screen and (max-width:425px) {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    };
+
+}
+
+.front-page-block .pretitle {
+    color: rgba(255,255,255,0.6);
+    font-weight: bold;
+    font-size: 20;
+}
+.front-page-block .title {
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 55;
+}
+.front-page-block .blurb {
+    color: rgba(255,255,255,0.8);
+    font-size: 26;
+}
+/*
+.front-page-block .action-link
+*/
+
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;

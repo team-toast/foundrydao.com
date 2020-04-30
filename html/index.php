@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/common-assets/css/style.css">
     <script src="/common-assets/js/jquery-3.4.1.min.js"></script>
     <script src="/common-assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script src="/common-assets/js/timer.js"></script>
 </head>
 <body>
     <?php
@@ -26,7 +28,8 @@
                 <div class="blurb">
                     Foundry's future is in the hands of FRY holders.
                 </div>
-                Timer! soon...
+                <div style="font-weight:bold">SALE STARTS IN</div>
+                <div id="clock" class="countdown"></div>
             </div>
             <div class="section-points-container container">
                 <div class="row">

@@ -59,7 +59,7 @@
         </div>
         <div class="front-page-section">
             <div class="float-md-left front-page-block anchor" style="background-color: rgb(219, 19, 105);">
-                <a name="products"> </a>
+                <a class="modified-anchor" name="products"> </a>
                 <div class="pretitle">THE PRODUCTS</div>
                 <div class="title">SmokeSignal and DAIHard</div>
                 <div class="blurb">
@@ -149,7 +149,7 @@
         </div>
         <div class="front-page-section">
             <div class="float-md-left front-page-block anchor" style="background-color: rgb(10, 33, 108);">
-                <a name="team"> </a>
+                <a class="modified-anchor" name="team"> </a>
                 <div class="pretitle">THE TEAM</div>
                 <div class="title">Team Toast</div>
                 <div class="blurb">

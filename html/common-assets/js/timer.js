@@ -1,5 +1,5 @@
 $(function () {
-    $('#clock').countdown('2020/5/15').on('update.countdown', function(event) {
+    $('#clock').countdown('2020/5/15 12:00:00 UTC').on('update.countdown', function(event) {
       var $this = $(this).html(event.strftime(''
                                               + '<span class="h1 font-weight-bold">%D</span> Day%!d'
                                               + '<span class="h1 font-weight-bold">%H</span> Hr'

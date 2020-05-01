@@ -6,6 +6,19 @@
     margin-bottom: 50px;
 } */
 
+.navbar {
+    z-index: 1000;
+}
+
+.anchor {
+    position:relative;
+}
+.anchor a {
+    position: absolute;
+    left: 0px;
+    top: -60px;
+}
+
 .body {
     width: 80%;
     padding: 20px;
@@ -57,6 +70,20 @@
     color: rgba(255,255,255,0.8);
     font-size: 26;
     padding-bottom: 15px;
+}
+
+.team {
+    padding-top:40px;
+}
+.team h2 {
+    margin-top:0px;
+}
+.team .blurb {
+    font-size : 22;
+}
+.team img {
+    width: 220px;
+    height: auto;
 }
 /*
 .front-page-block .action-link

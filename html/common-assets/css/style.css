@@ -13,7 +13,7 @@
 .anchor {
     position:relative;
 }
-.anchor a {
+.modified-anchor {
     position: absolute;
     left: 0px;
     top: -60px;
@@ -81,9 +81,15 @@
 .team .blurb {
     font-size : 22;
 }
+.team .row {
+    display:flex;
+}
 .team img {
-    width: 220px;
-    height: auto;
+    position:relative;
+    overflow:hidden;
+    min-width:100%;
+    height:auto;
+    width:0;
 }
 /*
 .front-page-block .action-link

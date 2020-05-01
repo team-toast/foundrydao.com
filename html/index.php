@@ -99,13 +99,15 @@
         </div>
         <div class="front-page-section">
             <div class="float-md-left front-page-block anchor" style="background-color: rgb(2, 128, 167);">
-                <a name="zimdai"> </a>
+                <a class="modified-anchor" name="zimdai"> </a>
                 <div class="pretitle">THE DREAM</div>
                 <div class="title">ZimDai</div>
                 <div class="blurb">
                     Zimbabweans are trapped in an abusive economic system. But crypto is growing teeth.
                 </div>
-                LINK TO WHITEPAPER
+                <a href="https://github.com/coinop-logan/ZimDai/raw/master/whitepaper.pdf">
+                    <div style="font-weight:bold; color:white;">READ THE WHITEPAPER</div>
+                </a>
             </div>
             <div class="section-points-container container">
                 <div class="row">
@@ -156,10 +158,10 @@
             </div>
                 <div class="team container">
                     <div class="row" style="padding:1em">
-                        <div class="col-sm-3">
+                        <div class="col-xs-4 col-md-3">
                             <img src="/common-assets/img/oglog.jpg" >
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-xs-8 col-md-6">
                             <h2 style="font-weight:700">Logan Brutsche</h2>
                             <p class="blurb">Co-founder and CEO of Team Toast, and doting mother of Foundry.
                                 Lead developer for DAIHard, Foundry, and SmokeSignal.
@@ -169,10 +171,10 @@
                         </div>
                     </div>
                     <div class="row" style="padding:1em">
-                        <div class="col-sm-3">
+                        <div class="col-xs-4 col-md-3">
                             <img src="/common-assets/img/schalk.png">
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-xs-8 col-md-6">
                             <h2 style="font-weight:700">Schalk Dormehl</h2>
                             <p class="blurb">Co-founder of Team Toast and Sugar Daddy for Foundry.
                                 Pays Foundry's bills while it grows up to be a big strong DAO.
@@ -183,10 +185,10 @@
                         </div>
                     </div>
                     <div class="row" style="padding:1em">
-                        <div class="col-sm-3">
+                        <div class="col-xs-4 col-md-3">
                             <img src="<?php echo getRandomVPicPubSrc();?>">
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-xs-8 col-md-6">
                             <h2 style="font-weight:700">V for Visuals</h2>
                             <p class="blurb">Visual Designer for DAIHard and Foundry. Shrouded in secrecy.
                                 Those who speak its true name invite disaster and misfortune.

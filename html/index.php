@@ -58,7 +58,8 @@
             </div>
         </div>
         <div class="front-page-section">
-            <div class="float-md-left front-page-block" style="background-color: rgb(219, 19, 105);">
+            <div class="float-md-left front-page-block anchor" style="background-color: rgb(219, 19, 105);">
+                <a name="products"> </a>
                 <div class="pretitle">THE PRODUCTS</div>
                 <div class="title">SmokeSignal and DAIHard</div>
                 <div class="blurb">
@@ -97,7 +98,8 @@
             </div>
         </div>
         <div class="front-page-section">
-            <div class="float-md-left front-page-block" style="background-color: rgb(2, 128, 167);">
+            <div class="float-md-left front-page-block anchor" style="background-color: rgb(2, 128, 167);">
+                <a name="zimdai"> </a>
                 <div class="pretitle">THE DREAM</div>
                 <div class="title">ZimDai</div>
                 <div class="blurb">
@@ -142,6 +144,57 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="front-page-section">
+            <div class="float-md-left front-page-block anchor" style="background-color: rgb(10, 33, 108);">
+                <a name="team"> </a>
+                <div class="pretitle">THE TEAM</div>
+                <div class="title">Team Toast</div>
+                <div class="blurb">
+                    We're a small team centered around development of Foundry and its products.
+                </div>
+            </div>
+                <div class="team container">
+                    <div class="row" style="padding:1em">
+                        <div class="col-sm-3">
+                            <img src="/common-assets/img/oglog.jpg" >
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 style="font-weight:700">Logan Brutsche</h2>
+                            <p class="blurb">Co-founder and CEO of Team Toast, and doting mother of Foundry.
+                                Lead developer for DAIHard, Foundry, and SmokeSignal.
+                                Developed the Burnable Payment, DAIHard, and SmokeSignal smart contracts.
+                                Uses the Cu Chi Tunnels extensively to evade The Man.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" style="padding:1em">
+                        <div class="col-sm-3">
+                            <img src="/common-assets/img/schalk.png">
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 style="font-weight:700">Schalk Dormehl</h2>
+                            <p class="blurb">Co-founder of Team Toast and Sugar Daddy for Foundry.
+                                Pays Foundry's bills while it grows up to be a big strong DAO.
+                                Developed the Bucket Sale contract and associated tests.
+                                Leads research and development for DAO governance.
+                                Exists in a permanent state of bewildered or concerned confusion.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" style="padding:1em">
+                        <div class="col-sm-3">
+                            <img src="<?php echo getRandomVPicPubSrc();?>">
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 style="font-weight:700">V for Visuals</h2>
+                            <p class="blurb">Visual Designer for DAIHard and Foundry. Shrouded in secrecy.
+                                Those who speak its true name invite disaster and misfortune.
+                                Coaxed into manifestation by offers of cheap liquor and forbidden dark magicks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 </body>

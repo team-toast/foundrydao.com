@@ -32,7 +32,7 @@ function makeHeader($activePageName) {
                 <a class="nav-link" href="/#zimdai">ZimDai</a>
             </li>
             <li class="nav-item <?php echo maybeActive($activePageName, "team") ?>">
-                <a class="nav-link" href="/#teamtoast">Team Toast</a>
+                <a class="nav-link" href="/#team">Team Toast</a>
             </li>
         </ul>
     </div>

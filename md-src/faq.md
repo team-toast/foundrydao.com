@@ -27,7 +27,7 @@ Liquid democracy is a form of member managed governance that negates the need fo
 Our token sale is not open to US investors, qualified or otherwise. We block participation from aggressive jurisdictions. 
 
 ## How do I participate?
-You can head over to sale.foundrydao.com on or after May 15th. To participate you will need some Ether (ETH) for gas and DAI to purchase FRY with. 
+You can head over to sale.foundrydao.com once the sale starts. To participate you will need some Ether (ETH) for gas and DAI to purchase FRY with. 
 
 ## How do I get DAI?
 You can swap Ether for DAI on over at kyberswap.com, very cheaply and quickly, if you have Metamask.
@@ -62,7 +62,7 @@ Thereafter all proposals will go through the FoundryDAO governance contract.
 Then please do not send money to the Token Sale. Or wait until the full governance contract is up if you want the fully decentralized experience. 
 
 ## How much is the sale looking to raise?
-As much as the market deems appropriate. We will write more on our expectations and hopes for this before the sale launches on May 15th.
+As much as the market deems appropriate. We will write more on our expectations and hopes for this before the sale launches.
 
 ## How do I participate?
 To participate in the sale, you need a small amount of Ether for gas, and however much DAI you want to spend on FRY. This should be held in a web3 wallet to interact with the sale. We recommend the browser plugin Metamask.

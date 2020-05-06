@@ -28,10 +28,10 @@
                 <div class="blurb">
                     Foundry's future is in the hands of FRY holders.
                 </div>
-                <div class="countdown-block">
+                <!-- <div class="countdown-block">
                     <div style="font-weight:bold">SALE STARTS IN</div>
                     <div id="clock" class="countdown"></div>
-                </div>
+                </div> -->
             </div>
             <div class="section-points-container container">
                 <div class="row">
@@ -50,7 +50,7 @@
                     <div class="col-md-4 section-point">
                         <div class="title">FRY Sale</div>
                         <div class="blurb">
-                            The sale will launch on May 15, noon UTC.
+                            We will announce a launch date soon. Click below to hear about it!
                         </div>
                         <a class="elmish-red-button" href="https://emailoctopus.com/lists/98c743f3-78f3-11ea-a3d0-06b4694bee2a/forms/subscribe">Get Notified</a>
                     </div>

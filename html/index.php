@@ -18,7 +18,7 @@
 <body>
     <?php
         include($_SERVER['DOCUMENT_ROOT'] . "/common-assets/html/header.php");
-        makeHeader("home");
+        makeHeader("home", true);
     ?>
     <div class="body">
         <div class="front-page-section">

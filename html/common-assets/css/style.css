@@ -26,11 +26,11 @@
 .my-navbar a {
     padding:10px;
     font-size:20;
+    color:white;
 }
 .my-navbar a:hover {
-    background-color:red;
-    font-weight: bold;
-    color:red;
+    background-color:#374B9C;
+    text-decoration: none;
 }
 
 .anchor {

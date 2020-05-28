@@ -38,7 +38,7 @@
                     <div class="col-md-4 section-point">
                         <div class="title">Tools for Economic Freedom</div>
                         <div class="blurb">
-                            Foundry will accumulate FRY holders who believe in unstoppable economic freedom. After DAIHard, FRY holders will likely drive Foundry to build or invest in similar pursuits: profitable tools that increase economic freedom which cannot be shut down.
+                            Foundry will accumulate FRY holders who believe in unstoppable economic freedom. After SmokeSignal and DAIHard, FRY holders will likely drive Foundry to build or invest in similar pursuits: profitable tools that increase economic freedom which cannot be shut down.
                         </div>
                     </div>
                     <div class="col-md-4 section-point">
@@ -82,8 +82,8 @@
                         <div class="blurb">
                             DAIHard extends many of the promises of crypto (borderless, anonymous, limitless, unstoppable)
                             into entering and exiting crypto itself.
-                            Anyone, anywhere can buy and sell DAI in a peer-to-peer marketplace.
-                            <a href="https://daihard.exchange/marketplace">Browse the DAIHard marketplace</a>
+                            Anyone, anywhere can buy and sell DAI for local cash in a peer-to-peer marketplace, without KYC.
+                            <a href="https://daihard.exchange/#/marketplace">Browse the DAIHard marketplace</a>
                         </div>
                     </div>
                     <div class="col-md-4 section-point">

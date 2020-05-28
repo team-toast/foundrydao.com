@@ -1,2 +1,4 @@
 pandoc -f markdown -t html md-src/faq.md > html/common-assets/rendered-md/faq.html
 pandoc -f markdown -t html md-src/terms.md > html/common-assets/rendered-md/terms.html
+pandoc -f markdown -t html md-src/pre-gov-spending.md > html/common-assets/rendered-md/pre-gov-spending.html
+

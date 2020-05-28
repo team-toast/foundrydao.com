@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/common-assets/css/style.css">
     <script src="/common-assets/js/jquery-3.4.1.min.js"></script>
     <script src="/common-assets/js/bootstrap.min.js"></script>
-    <title>Foundry - Sale Terms</title>
+    <title>Foundry - Pre-Governance Spending</title>
 </head>
 <body>
     <?php
@@ -16,7 +16,7 @@
         makeHeader("sale");
     ?>
     <div class="body rendered-md">
-        <?php include($_SERVER['DOCUMENT_ROOT'] . "/common-assets/rendered-md/terms.html"); ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . "/common-assets/rendered-md/pre-gov-spending.html"); ?>
     </div>
 </body>
 </html>

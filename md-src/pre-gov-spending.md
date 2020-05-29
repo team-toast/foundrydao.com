@@ -38,4 +38,4 @@ We market DAIHard, iterate it in response to user feedback, and find a niche mar
 
 If, after 1 year, Foundry Governance is not yet capable of autonomously making intelligent decisions, Team Toast may opt to bill the Treasury for an additional year of runway, with similar costs as described in this document.
 
-Any raised funds funds unused by the above tasks will be held in the Treasury until Governance is ready to control it, which ultimately puts the expenditure of the funds into the hands of FRY holders as described in the [Foundry Governance Whitepaper](https://github.com/burnable-tech/foundry-papers/raw/master/whitepaper.pdf). At this point Team Toast will hold no special role in these decisions other than as FRY holders.
+Any raised funds funds unused by the above tasks will be held in the Treasury until Governance is ready to control it, which ultimately puts the expenditure of the funds into the hands of Foundry (and therefore FRY holders). At this point Team Toast will hold no special role in these decisions other than as FRY holders.

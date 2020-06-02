@@ -1,5 +1,6 @@
 <html>
 <head>
+<script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0094/2740.js" async="async"></script>
 <?php include($_SERVER['DOCUMENT_ROOT'] . "/common-assets/html/google-analytics-stuff.php"); ?>
     <link rel="stylesheet" href="/common-assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/common-assets/css/style.css">

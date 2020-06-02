@@ -1,5 +1,6 @@
 <html>
 <head>
+<script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0094/2740.js" async="async"></script>
 <?php
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);

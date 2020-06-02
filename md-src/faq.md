@@ -1,4 +1,4 @@
-# FoundyDAO FAQ
+# Foundry FAQ
 
 # About Foundry
 ## What is Foundry?

@@ -45,7 +45,7 @@
                     <div class="col-md-4 section-point">
                         <div class="title">Liquid Democracy</div>
                         <div class="blurb">
-                            Team Toast is designing a Liquid Democracy system that allows Foundry to rely on FRY holders for intelligent decision-making, while avoiding common pitfalls of DAO governance.
+                            Team Toast is designing a Liquid Democracy system that allows Foundry to rely on FRY holders for intelligent decision-making, while avoiding common pitfalls of DAO governance. <a href="https://github.com/team-toast/foundry-design/releases/latest/download/foundry-design.pdf">Read the whitepaper</a> for more on this design.
                         </div>
                     </div>
                     <div class="col-md-4 section-point">

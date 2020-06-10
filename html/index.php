@@ -11,6 +11,7 @@
     <title>Foundry</title>
     <link rel="stylesheet" href="/common-assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/common-assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet"> 
     <script src="/common-assets/js/jquery-3.4.1.min.js"></script>
     <script src="/common-assets/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>

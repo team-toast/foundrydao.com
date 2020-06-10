@@ -107,7 +107,7 @@
                     Zimbabweans are trapped in an abusive economic system. But crypto is growing teeth.
                 </div>
                 <a href="https://github.com/coinop-logan/ZimDai/raw/master/whitepaper.pdf">
-                    <div style="font-weight:bold; color:white;">READ THE WHITEPAPER</div>
+                    <div style="font-weight:bold; color:white;">READ THE ZIMDAI PAPER</div>
                 </a>
             </div>
             <div class="section-points-container container">

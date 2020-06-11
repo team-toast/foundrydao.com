@@ -1,12 +1,12 @@
 <?php
-function maybeActive($activePageName, $linkName) {
-    if ($activePageName == $linkName) {
-        return "active";
-    }
-    else {
-        return "";
-    }
-}
+// function maybeActive($activePageName, $linkName) {
+//     if ($activePageName == $linkName) {
+//         return "active";
+//     }
+//     else {
+//         return "";
+//     }
+// }
 
 function makeHeader($activePageName,$showMainpageHeader) {
     ?>
@@ -29,6 +29,9 @@ function makeHeader($activePageName,$showMainpageHeader) {
         </a>
         <a class="my-navlink" href="/faq/">
             <div class="my-navlink-label">FAQ</div>
+        </a>
+        <a class="my-navlink" href="/contact/">
+            <div class="my-navlink-label">Contact Us</div>
         </a>
     </div>
 </div>

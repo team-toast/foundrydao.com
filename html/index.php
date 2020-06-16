@@ -168,7 +168,7 @@
                             <p class="blurb">Co-founder and CEO of Team Toast, and doting mother of Foundry.
                                 Lead developer for DAIHard, Foundry, and SmokeSignal.
                                 Developed the Burnable Payment, DAIHard, and SmokeSignal smart contracts.
-                                Uses the Cu Chi Tunnels extensively to evade The Man.
+                                Uses the Cu Chi Tunnels extensively to evade The Man. <a href="https://www.reddit.com/user/coinop-logan">reddit</a>
                             </p>
                         </div>
                     </div>

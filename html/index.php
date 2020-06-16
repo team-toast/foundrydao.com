@@ -63,7 +63,7 @@
                     <div class="col-md-4 section-point">
                         <div class="title">FRY Sale</div>
                         <div class="blurb">
-                            The sale of FRY will open at noon UTC, May 19th. Click below to get a reminder when it's open!
+                            The sale of FRY will open at noon UTC, June 19th. Click below to get a reminder when it's open!
                         </div>
                         <a class="elmish-red-button" href="https://emailoctopus.com/lists/98c743f3-78f3-11ea-a3d0-06b4694bee2a/forms/subscribe">Get Notified</a>
                     </div>

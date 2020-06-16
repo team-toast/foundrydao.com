@@ -30,10 +30,21 @@
                 <div class="blurb">
                     Foundry's future is in the hands of FRY holders.
                 </div>
-                <div class="countdown-block">
-                    <div style="font-weight:bold">SALE STARTS IN</div>
-                    <div id="clock" class="countdown"></div>
-                </div>
+                <?php
+                    if (time() >= 1592568000) {
+                        ?>
+                            <a class="elmish-red-button" href="https://sale.foundrydao.com/">Buy FRY</a>
+                        <?php
+                    }
+                    else {
+                        ?>
+                            <div class="countdown-block">
+                                <div style="font-weight:bold">SALE STARTS IN</div>
+                                <div id="clock" class="countdown"></div>
+                            </div>
+                        <?php
+                    }
+                ?>
             </div>
             <div class="section-points-container container">
                 <div class="row">

@@ -175,11 +175,12 @@
                             <img src="/common-assets/img/oglog.jpg" >
                         </div>
                         <div class="col-xs-8 col-md-6">
-                            <h2 style="font-weight:700">Logan Brutsche</h2>
+                            <h2 style="font-weight:700">Logan Brutsche (<a href="https://www.reddit.com/user/coinop-logan">reddit</a>, <a href="https://github.com/coinop-logan">Github</a>)</h2>
                             <p class="blurb">Co-founder and CEO of Team Toast, and doting mother of Foundry.
                                 Lead developer for DAIHard, Foundry, and SmokeSignal.
                                 Developed the Burnable Payment, DAIHard, and SmokeSignal smart contracts.
-                                Uses the Cu Chi Tunnels extensively to evade The Man. <a href="https://www.reddit.com/user/coinop-logan">reddit</a>
+                                Uses the Cu Chi Tunnels extensively to evade The Man.
+                                
                             </p>
                         </div>
                     </div>
@@ -188,7 +189,7 @@
                             <img src="/common-assets/img/schalk.png">
                         </div>
                         <div class="col-xs-8 col-md-6">
-                            <h2 style="font-weight:700">Schalk Dormehl</h2>
+                            <h2 style="font-weight:700">Schalk Dormehl (<a href="https://github.com/sjalq">Github</a>)</h2>
                             <p class="blurb">Co-founder of Team Toast and Sugar Daddy for Foundry.
                                 Pays Foundry's bills while it grows up to be a big strong DAO.
                                 Developed the Bucket Sale contract and associated tests.

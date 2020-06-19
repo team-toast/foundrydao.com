@@ -168,6 +168,9 @@
                 <div class="blurb">
                     We're a small team centered around development of Foundry and its products.
                 </div>
+                <a href="https://www.youtube.com/channel/UC4Z34M4q5emaYlJP_Sqa-Cw">
+                    <div style="font-weight:bold; color:blue;">WEEKLY PROGRESS DEMOS ON YOUTUBE</div>
+                </a>
             </div>
                 <div class="team container">
                     <div class="row" style="padding:1em">

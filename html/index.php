@@ -63,9 +63,10 @@
                     <div class="col-md-4 section-point">
                         <div class="title">FRY Sale</div>
                         <div class="blurb">
-                            The sale of FRY will open at noon UTC, June 19th. Click below to get a reminder when it's open!
+                            The sale of FRY opened at noon UTC, June 19th 2020, and will run just for about 19 months, until January 32, 2022.
+                            Read more about it on our <a href="/faq/#about-the-token-sale">FAQ</a>.
                         </div>
-                        <a class="elmish-red-button" href="https://emailoctopus.com/lists/98c743f3-78f3-11ea-a3d0-06b4694bee2a/forms/subscribe">Get Notified</a>
+                        
                     </div>
                 </div>
             </div>

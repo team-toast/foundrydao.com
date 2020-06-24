@@ -88,7 +88,7 @@
                             SmokeSignal is a herald of an age without censorship.
                             Pseudonymous users can post to topics and reply in a nested fashion,
                             and each post is both immediately public and impossible to delete.
-                            <a href="/smokesignal/app">The conversation has already started.</a>
+                            <a href="/smokesignal">The conversation has already started.</a>
                         </div>
                     </div>
                     <div class="col-md-4 section-point">

@@ -63,7 +63,7 @@
                     <div class="col-md-4 section-point">
                         <div class="title">FRY Sale</div>
                         <div class="blurb">
-                            The sale of FRY opened at noon UTC, June 19th 2020, and will run just for about 19 months, until January 32, 2022.
+                            The sale of FRY opened at noon UTC, June 19th 2020, and will run just for about 19 months, until January 23, 2022.
                             Read more about it on our <a href="/faq/#about-the-token-sale">FAQ</a>.
                         </div>
                         

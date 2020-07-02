@@ -5,5 +5,18 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-143211145-2');
+  gtag('config', 'UA-143211145-2', {
+      'linker': {
+          'domains':
+              [
+                  'sale.foundrydao.com',
+                  'foundrydao.com',
+                  'daihard.exchange',
+              ],
+          'linker': {
+              'accept_incoming': true
+          }
+      }
+  }
+  );
 </script>

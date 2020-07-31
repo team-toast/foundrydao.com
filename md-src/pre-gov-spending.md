@@ -2,7 +2,7 @@
 
 Note that the below text is outdated. We have scaled back expenditures, and will release an updated, more flexible "pre-gov-spending" strategy soon.
 
-As of Jul 31 2020, we have raised ~$12k and spent ~$2.7k on one month of costs, and we expect our expenditure rate to remain at a similar magnitude for some time.
+As of Jul 31 2020, we have raised ~$12k and spent ~$2.7k on one month of costs (see invoice [here](https://foundrydao.com/smokesignal/#/context/re?block=10542193&hash=0x9df7000ead0f8c1e904ea7c8e9649e76b664a37db8c134e69b7fba86f8f9b988)), and we expect our expenditure rate to remain at a similar magnitude for some time.
 
 # Pre-Governance Treasury Spending
 

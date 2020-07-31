@@ -1,3 +1,9 @@
+# OUTDATED
+
+Note that the below text is outdated. We have scaled back expenditures, and will release an updated, more flexible "pre-gov-spending" strategy soon.
+
+As of Jul 31 2020, we have raised ~$12k and spent ~$2.7k on one month of costs, and we expect our expenditure rate to remain at a similar magnitude for some time.
+
 # Pre-Governance Treasury Spending
 
 After the Foundry Bucket Sale begins selling FRY, but before Foundry Governance is fully developed and autonomous, Team Toast will directly withdraw funds from Foundry Treasury via the Team Toast Secure Multisig (aka "governance v0").

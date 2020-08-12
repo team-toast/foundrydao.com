@@ -55,7 +55,6 @@ The DAI goes into the Foundry Treasurey contract. As described above in **Who co
 When Foundry Governance is capable of making autonomous, intelligent decisions, it will take over control of these funds. At this point, the only way for anyone to influence usage of the Treasury will be to hold FRY and participate in governance.
 
 ## I don't want my DAI to be controlled by Team Toast! It should be immediately in control of FRY holders!
-
 Ultimately, the Treasury will be control of Foundry Governance (and therefore FRY holders). You're welcome to wait to participate until after Foundry Governance is fully operational and has complete control over the Treasury.
 
 ## How long does the sale last?
@@ -78,7 +77,7 @@ As much as the market deems appropriate. We will write more on our expectations 
 ## How does the sale work?
 The sale has 2000 *buckets*, each of which will mint and sell 30,000 FRY. The first bucket closes 7 hours after the sale starts, the second one 7 hours after that, and so on. To participate, use the bucket sale interface that will be live at [sale.foundrydao.com](https://sale.foundrydao.com/). There you will specify the bucket you want to enter (the current bucket or a future bucket) and send it DAI.
 
-Once a bucket has concluded, you can withdraw your FRY tokens. You will receive a portion of the 30,000 minted FRY tokens, proportional to your contribution of DAI to the bucket. For example, if 1000 DAI total was provided to that bucket, of which you supplied 100 DAI, you will be able to claim 10%: 3,000 FRY tokens.
+Once a bucket has concluded, you can withdraw your FRY tokens. the proportion of your DAI to the total DAI entered, is the proportion of the 30,000 FRY you receive. For example, if 1000 DAI total was provided to that bucket, of which you supplied 100 DAI, you will be able to claim 10% of the total 30,000 FRY in the bucket: 3,000 FRY tokens. Thus, for any given bucket, the effective price per FRY increases every time another user enters DAI into that bucket.
 
 ## Will Foundry's Liquid Democracy be live, and controlling the Treasury, before the initial 20-month sale ends?
 Yes.

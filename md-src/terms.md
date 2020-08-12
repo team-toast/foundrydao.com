@@ -4,6 +4,8 @@ By participating in the FRY sale, you indicate that you understand and agree to 
 
 - This constitutes an agreement between you and the Decentralized Autonomous Organization Advancement Institute ("DAOAI").
 
+- You understand and consent to DAOAI tracking anonymized data about your interactions with the sale interface.
+
 - You agree that you are an adult capable of making your own decisions, evaluating your own risks and engaging with others for mutual benefit.
 
 - You understand that Foundry and/or FRY are extremely experimental and could enter into several failure modes.
@@ -24,4 +26,4 @@ By participating in the FRY sale, you indicate that you understand and agree to 
 
 - You understand that entering DAI into one of the sale buckets is irrevocable, even if the bucket has not yet concluded. 
 
-- You understand that US Citizens are strictly excluded from this sale, and agree that you are not a US Citizen.
+- You understand that US citizens and residents are strictly excluded from this sale, and agree that you are not a US citizen or resident.

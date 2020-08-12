@@ -18,7 +18,7 @@ In short, Foundry is expected to profit by building profitable enterprises that 
 
 ## Who controls Foundry?
 
-Foundry makes decisions via the "governance contract". At launch, this contract will be a basic multisig contract with Team Toast members as signatories, which we are calling "governance v0". As we develop the full Liquid Democracty system (more on this below), we will transfer control of Foundry to the FRY holders.
+Foundry makes decisions via the "governance contract". At launch, this contract will be a basic multisig contract with Team Toast members as signatories, which we are calling "governance v0". As we develop the full Liquid Democracy system (more on this below), we will transfer control of Foundry to the FRY holders.
 
 ## How does Foundry work?
 As governance is implemented, Foundry Token (FRY) holders will be able to submit and vote on various "proposals", which if passed, will execute a specific transaction from the Foundry Treasury. This transaction could be a simple payment (such as paying a contractor for an improvement to SmokeSignal) or a more complex transaction involving smart contracts (such as converting half of the DAI treasury to ETH, investing in other DAOs, or creating a Burnable Payment).

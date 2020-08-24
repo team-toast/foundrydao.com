@@ -103,7 +103,7 @@
                     <div class="col-md-4 section-point">
                         <div class="title">The Road Ahead</div>
                         <div class="blurb">
-                            Foundry will attract FRY holders who value profitable tools that guarantee economc freedom.
+                            Foundry will attract FRY holders who value profitable tools that guarantee economic freedom.
                             This will give Foundry a preference to fund products that fragile meatbags may be reluctant to,
                             for fear of persecution.
                         </div>

@@ -1,0 +1,28 @@
+    <!-- CRAZYEGG -->
+    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0094/2740.js" async="async"></script>
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143211145-4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-143211145-4', {
+                'linker': {
+                    'domains':
+                        [
+                            'sale.foundrydao.com',
+                            'foundrydao.com'
+                        ],
+                    'linker': {
+                        'accept_incoming': true
+                    }
+                }
+            }
+            );
+        </script>
+
+    <!-- REFERRAL CAPTURE -->
+    <script src="/common-assets/js/capture-and-hide-referral.js"></script>
+    <iframe style="display:none" id="referralCaptureIframe" src="https:sale.foundrydao.com/captureReferral.html" onload="captureAndHideReferral()"></iframe> 

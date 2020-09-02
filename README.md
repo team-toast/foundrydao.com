@@ -1,3 +1,3 @@
 # foundrydao.com
 
-Indeed I too can read me
+Code for the page at www.foundrydao.com

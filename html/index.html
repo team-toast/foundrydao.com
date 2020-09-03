@@ -27,504 +27,330 @@
         </script>
 
     <!-- REFERRAL CAPTURE -->
-    <script src="/common-assets/js/capture-and-hide-referral.js"></script>
-    <iframe style="display:none" id="referralCaptureIframe" src="https:sale.foundrydao.com/captureReferral.html" onload="captureAndHideReferral()"></iframe>
-    
+    <script src="js/capture-and-hide-referral.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=11,chrome=1">
     <meta name="theme-color" content="#262f68">
     <meta name="description" content="Foundry: A DAO for Economic Freedom. Tools for Economic Freedom Foundry will accumulate FRY holders who believe in unstoppable economic freedom.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/png" href="favicon.ico"/>
     <link rel="apple-touch-icon" href="favicon.ico">
     <title>Foundry: A DAO for Economic Freedom</title>
-    
+
 </head>
 <body>
+<!-- DesktopView -->
+<div id="loader-wrapper">
+    <iframe style="display:none" id="referralCaptureIframe" src="https:sale.foundrydao.com/captureReferral.html" onload="captureAndHideReferral()"></iframe>
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
 <div class="container-desk d-none d-sm-block ">
     <header>
         <div class="elements">
             <div id="element-holder-desk-top-left">
-                <div id="element-desk-top-pink"></div>
-                <div id="element-desk-top-light-blue"></div>
+                <div class="element-desk-top-pink"></div>
+                <div class="element-desk-top-light-blue"></div>
                 <div id="element-desk-top-left-blue"></div>
             </div>
             <div id="element-holder-desk-top-right">
-                <div id="element-desk-top-pink"></div>
-                <div id="element-desk-top-light-blue"></div>
+                <div class="element-desk-top-pink"></div>
+                <div class="element-desk-top-light-blue"></div>
                 <div id="element-desk-top-right-blue"></div>
             </div> 
             <div class="top-bar">
-                <img class="" src="images/svg/top-bar-desk.svg" alt="foundrydao">
+                <img id="top-bar-desk-img" src="images/svg/top-bar-desk.svg" alt="foundrydao">
                 <a href="#home"><img  class="img-fluid logo" src="images/svg/logo.svg" alt="foundrydao"></a>
             </div>
         </div>
     </header>
     <div class="banner">
-        <div class="inner-container">
+        <section class="inner-container">
             <div class="msg">
                 <h1 class="banner-heading text-white">Foundry: A DAO for Economic Freedom</h1>
                 <h2 class="banner-caption text-white">It's time for crypto to start making moves on the global stage.<br> Foundry will be our gladiator.</h2>
             </div>
-        </div>
+        </section>
     </div>
     <div class="inner-container landing-page">
-        <div class="row icon-group">
+        <nav class="row icon-group">
             <div class="col" id="foundry-fry">
-                <a href="#foundry-fry">
-                    <img class="desk-icons" src="images/svg/icons/foundry-fry.svg" alt="Foundry and Fry">
-                    <h3 class="icon-title">
-                        FOUNDRY & FRY
-                    </h3>
-                    <p class="icon-caption">Foundry's future is in the hands of FRY holders.</p>
-                </a>
-
+                <header>
+                    <a href="#foundry-fry">
+                        <img class="desk-icons" id="foundry-fry-desk-ico" src="images/svg/icons/foundry-fry.svg" alt="Foundry and Fry">
+                        <h3 class="icon-title">
+                            FOUNDRY & FRY
+                        </h3>
+                        <p class="icon-caption">Foundry's future is in the hands of FRY holders.</p>
+                    </a>
+                </header>
             </div>
             <div class="col" id="zimdai">
-                <a href="#zimdai">
-                    <img class="desk-icons" src="images/svg/icons/zimdai.svg" alt="Zimdai">
-                    <h3 class="icon-title">
-                        ZIMDAI
-                    </h3>
-                    <p class="icon-caption">Zimbabweans are trapped in an abusive economic system. But crypto is growing teeth.</p>
-                </a>
+                <header>
+                    <a href="#zimdai">
+                        <img class="desk-icons" id="zimdai-desk-ico" src="images/svg/icons/zimdai.svg" alt="Zimdai">
+                        <h3 class="icon-title">
+                            ZIMDAI
+                        </h3>
+                        <p class="icon-caption">Zimbabweans are trapped in an abusive economic system. But crypto is growing teeth.</p>
+                    </a>
+                </header>
             </div>
             <div class="col" id="products">
-                <a href="#products">
-                    <img class="desk-icons" src="images/svg/icons/products.svg" alt="Products">
-                    <h3 class="icon-title">
-                        PRODUCTS
-                    </h3>
-                    <p class="icon-caption">Unkillable, global, uncensorable products, ready today. Foundry does not ask permission.</p>
-                </a>
+                <header>
+                    <a href="#products">
+                        <img class="desk-icons" id="products-desk-ico" src="images/svg/icons/products.svg" alt="Products">
+                        <h3 class="icon-title">
+                            PRODUCTS
+                        </h3>
+                        <p class="icon-caption">Unkillable, global, uncensorable products, ready today. Foundry does not ask permission.</p>
+                    </a>
+                </header>
             </div>
             <div class="col" id="team-toast">
-                <a href="#team-toast">
-                    <img class="desk-icons" src="images/svg/icons/team-toast.svg" alt="Team Toast">
-                    <h3 class="icon-title">
-                        TEAM TOAST
-                    </h3>
-                    <p class="icon-caption">We're a small team centered around development of Foundry and its products.</p>
-                </a>
+                <header>
+                    <a href="#team-toast">
+                        <img class="desk-icons" id="team-toast-desk-ico" src="images/svg/icons/team-toast.svg" alt="Team Toast">
+                        <h3 class="icon-title">
+                            TEAM TOAST
+                        </h3>
+                        <p class="icon-caption">We're a small team centered around development of Foundry and its products.</p>
+                    </a>
+                </header>
             </div>
             <div class="col" id="faq">
-                <a href="#faq">
-                    <img class="desk-icons" src="images/svg/icons/faq.svg" alt="FAQ">
-                    <h3 class="icon-title">
-                        FAQ
-                    </h3>
-                    <p class="icon-caption">Foundry's future is in the hands of FRY holders.</p>
-                </a>
+                <header>
+                    <a href="#faq">
+                        <img class="desk-icons" id="faq-desk-ico" src="images/svg/icons/faq.svg" alt="FAQ">
+                        <h3 class="icon-title">
+                            FAQ
+                        </h3>
+                        <p class="icon-caption">Foundry's future is in the hands of FRY holders.</p>
+                    </a>
+                </header>
             </div>
-        </div>
+        </nav>
     </div>
     <div class="inner-container">
-        <div class="section-container">
-            <div class="section-head">
-                <img class="img-fluid" src="images/svg/desk-sections/buy-fry-section.svg" alt="">
+        <section class="section-container">
+            <header class="section-head">
+                <img class="img-fluid" id="buy-fry-section-img" src="images/svg/desk-sections/buy-fry-section.svg" alt="">
                 <h2>THE DAO - Foundry & FRY</h2>
                 <a class="foundry-fry" href="https://sale.foundrydao.com/" rel="noreferrer" target="_blank">BUY FRY</a>
-            </div>
-            <div class="section-box">
+            </header>
+            <section class="section-box">
                 <div class="section-box-shadow"></div>
-                <div class="section-title">
+                <header class="section-title">
                     <h3 class="text-center">Foundry’s future is in the hands of FRY holders.</h3>
+                </header>
+                <div class="section-body" id="pop-foundry-fry">
                 </div>
-                <div class="section-body">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12">
-                            <h4>Tools for Economic Freedom</h4>
-                            <p>Tools for Economic Freedom Foundry will accumulate FRY holders who believe in unstoppable economic freedom. After SmokeSignal and DAIHard, FRY holders will likely drive Foundry to build or invest in similar pursuits: profitable tools that increase economic freedom which cannot be shut down.</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <h4>Liquid Democracy</h4>
-                            <p>Team Toast is designing a Liquid Democracy system that allows Foundry to rely on FRY holders for intelligent decision-making, while avoiding common pitfalls of DAO governance. <a href="https://github.com/team-toast/foundry-design/releases/latest/download/foundry-design.pdf">Read the whitepaper</a> for more on this design.</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <h4>FRY Sale</h4>
-                            <p>The sale of FRY opened at noon UTC, June 19th 2020, and will run just for about 19 months, until January 23, 2022. Read more about it on our <a href="/faq/#about-the-token-sale">FAQ</a>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-container">
-            <div class="section-head">
-                <img class="img-fluid" src="images/svg/desk-sections/read-zimdai-section.svg" alt="">
+            </section>
+        </section>
+        <section class="section-container">
+            <header class="section-head">
+                <img class="img-fluid" id="read-zimdai-section-img" src="images/svg/desk-sections/read-zimdai-section.svg" alt="">
                 <h2>THE DREAM - ZIMDAI</h2>
                 <a class="zimdai" href="https://github.com/coinop-logan/ZimDai/raw/master/whitepaper.pdf" rel="noreferrer" target="_blank">Read the Zimdai Paper</a>
-            </div>
-            <div class="section-box">
+            </header>
+            <section class="section-box">
                 <div class="section-box-shadow"></div>
-                <div class="section-title">
+                <header class="section-title">
                     <h3 class="text-center">Zimbabweans are trapped in an abusive economic system. But crypto is growing teeth.</h3>
+                </header>
+                <div class="section-body" id="pop-zimdai">
                 </div>
-                <div class="section-body">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12">
-                            <h4>Zimbabwe's Plight</h4>
-                            <p>
-                                The official currency of Zimbabwe is rapidly inflating,
-                                <a href="https://en.wikipedia.org/wiki/Hyperinflation_in_Zimbabwe" rel="noreferrer" target="_blank">and this is nothing new.</a>
-                                It is practically impossible to save money in such an environment,
-                                and entrepreneurship is being strangled.
-                                Worse, the banking system significantly limits withdrawals, and ATMs simply don't work.
-                                Internal political pressure has proven incapable of changing any of this.
-                            </p>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <h4>Blueprint For an Economic Jailbreak</h4>
-                            <p>
-                                <a href="https://github.com/coinop-logan/ZimDai/raw/master/whitepaper.pdf">
-                                    The ZimDai Paper: A Blueprint for an Economic Jailbreak
-                                </a>
-                                is a thorough investigation into the viability of boostrapping Dai adoption in Zimbabwe,
-                                given the significant challenges any such endeavor faces today.
-                                It assumes a hostile state and does not rely on jurisdictional permission.
-                                It is the result of two months of on-the-ground research by Logan, funded by Team Toast.
-                            </p>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <h4>The Missing Piece</h4>
-                            <p>What's needed is a marketing drive. With both marketing leadership and funding, we may have on our hands a strikingly realistic, immediately applicable plan to liberate the Zimbabwean citizenry from systemic financial abuse. This has been a dream within crypto for years. Given significant funding, we expect Foundry to lead and fund this campaign.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-container">
-            <div class="section-head">
-                <img class="img-fluid" src="images/svg/desk-sections/future-products-section.svg" alt="">
+            </section>
+        </section>
+        <section class="section-container">
+            <header class="section-head">
+                <img class="img-fluid" id="future-products-section-img" src="images/svg/desk-sections/future-products-section.svg" alt="">
                 <h2>THE PRODUCTS</h2>
                 <a class="products" href="https://daihard.exchange/#/marketplace" rel="noreferrer" target="_blank">Future Products</a>
-            </div>
-            <div class="section-box">
+            </header>
+            <section class="section-box">
                 <div class="section-box-shadow"></div>
-                <div class="section-title">
+                <header class="section-title">
                     <h3 class="text-center">Unkillable, global, uncensorable products, ready today. Foundry does not ask permission.</h3>
+                </header>
+                <div class="section-body" id="pop-products">
                 </div>
-                <div class="section-body">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12">
-                            <h4>SmokeSignal</h4>
-                            <p>SmokeSignal is a herald of an age without censorship.
-                                Pseudonymous users can post to topics and reply in a nested fashion, and each post is both immediately public and impossible to delete. <a href="/smokesignal">The conversation has already started.</a></p>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <h4>DAIHard</h4>
-                            <p> DAIHard extends many of the promises of crypto (borderless, anonymous, limitless, unstoppable)
-                            into entering and exiting crypto itself.
-                            Anyone, anywhere can buy and sell DAI for local cash in a peer-to-peer marketplace, without KYC.
-                            <a href="https://daihard.exchange/#/marketplace">Browse the DAIHard marketplace</a></p>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <h4>The Road Ahead</h4>
-                            <p>Foundry will attract FRY holders who value profitable tools that guarantee economic freedom. This will give Foundry a preference to fund products that fragile meatbags may be reluctant to, for fear of persecution.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-container">
-            <div class="section-head">
-                <img class="img-fluid" src="images/svg/desk-sections/weekely-progress-demos-section.svg" alt="">
+            </section>
+        </section>
+        <section class="section-container">
+            <header class="section-head">
+                <img class="img-fluid" id="weekely-progress-demos-section-img" src="images/svg/desk-sections/weekely-progress-demos-section.svg" alt="">
                 <h2>THE TEAM - TEAM TOAST</h2>
                 <a class="team-toast" href="https://www.youtube.com/channel/UC4Z34M4q5emaYlJP_Sqa-Cw" rel="noreferrer" target="_blank">Weekly Progress Demos</a>
-            </div>
-            <div class="section-box">
+            </header>
+            <section class="section-box">
                 <div class="section-box-shadow"></div>
-                <div class="section-title">
+                <header class="section-title">
                     <h3 class="text-center">We're a small team centered around development of Foundry and its products.</h3>
+                </header>
+                <div class="section-body" id="pop-team-toast">
                 </div>
-                <div class="section-body">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12">
-                            <h4 style="color: #0ca3cfff">Logan Brutsche <br>(<a href="https://www.reddit.com/user/coinop-logan" style="color: #0ca3cfff">Reddit</a>, <a href="https://github.com/coinop-logan" style="color: #0ca3cfff">Github</a>)</h4>
-                                <p>Co-founder and CEO of Team Toast, and doting mother of Foundry.
-                                    Lead developer for DAIHard, Foundry, and SmokeSignal.
-                                    Developed the Burnable Payment, DAIHard, and SmokeSignal smart contracts.
-                                    Uses the Cu Chi Tunnels extensively to evade The Man.
-                                    
-                                </p>
-                            <!-- <img class="img-fluid" src="images/oglog.jpg" alt="" ><br><br> -->
-
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            
-                            <h4 style="color: #0ca3cfff">Schalk Dormehl <br>(<a href="https://github.com/sjalq" style="color: #0ca3cfff">Github</a>)</h4>
-                                <p>Co-founder of Team Toast and Sugar Daddy for Foundry.
-                                    Pays Foundry's bills while it grows up to be a big strong DAO.
-                                    Developed the Bucket Sale contract and associated tests.
-                                    Leads research and development for DAO governance.
-                                    Exists in a permanent state of bewildered or concerned confusion.
-                                </p>
-                                <!-- <img class="img-fluid" src="images/schalk.png" alt="" ><br><br> -->
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            
-                            <h4>V for Visuals</h4>
-                                <p>Visual Designer for DAIHard and Foundry. Shrouded in secrecy.
-                                    Those who speak its true name invite disaster and misfortune.
-                                    Coaxed into manifestation by offers of cheap liquor and forbidden dark magicks.
-                                </p>
-                                <!-- <img class="img-fluid" src="images/thoughtful.jpeg" alt="" ><br><br> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-container">
-            <div class="section-head">
-                <img class="img-fluid" src="images/svg/desk-sections/faq-section.svg" alt="">
+            </section>
+        </section>
+        <section class="section-container">
+            <header class="section-head">
+                <img class="img-fluid" id="faq-section-img" src="images/svg/desk-sections/faq-section.svg" alt="">
                 <h2>FAQ</h2>
                 <a class="faq" href="#">Be In The Know</a>
-            </div>
-            <div class="section-box">
+            </header>
+            <section class="section-box">
                 <div class="section-box-shadow"></div>
-                <div class="faq-title">
-                    <h3 class="text-left">Foundry’s future is in the hands of FRY holders.</h3>
+                <header class="faq-title">
+                    <h3 class="text-left">Foundry's future is in the hands of FRY holders.</h3>
+                </header>
+                <div class="section-body  faq-content" id="pop-faq">
                 </div>
-                <div class="section-body  faq-content">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h4 id="foundry-faq">Foundry FAQ</h4>
-                            <h4 id="about-foundry">About Foundry</h4>
-                            <h4 id="what-is-foundry">What is Foundry?</h4>
-                            <p>Foundry is a for-profit DAO that seeks to build and profit from projects and ventures in the blockchain space--specifically, projects that traditional institutions cannot pursue, and which increase financial freedom.</p>
-                            <h4 id="what-is-a-dao">What is a DAO?</h4>
-                            <p>DAOs are Distributed Autonomous Organizations. They are entities that live on the blockchain (usually Ethereum, as is the case with Foundry) and are directed by their smart contract code. There are several forms of DAOs. Maker, the system that provides the DAI stablecoin, is a good example. Augur is another. DAOs typically incentivise people to act in a certain manner to further the interests of the DAO.</p>
-                            <h4 id="what-is-foundry-meant-to-accomplish">What is Foundry meant to accomplish?</h4>
-                            <p>As with a conventional organization, this can be answered in two ways: a mission statement and a profit motive.</p>
-                            <p>Foundry's mission is to build technology and tools that increase worldwide financial freedom, especially when those tools are difficult/risky for traditional institutions to build. Our <a href="/#products">existing two products</a> illustrate this. DAIHard facilitates unstoppable entry and exit into crypto, even in jurisdictions where this is illegal. SmokeSignal facilitates unstoppable and uncensorable chat, and is similarly designed to work even in jurisdictions hostile to free speech.</p>
-                            <p>Foundry's profit motive is based on a simple premise: that there are opportunities to build products like those above, that will result in profit, but which are too difficult or risky for a conventional corporation to build. Because a DAO lacks certain attack surfaces compared to conventional corporations, Foundry should be able to fill and explore these niches with far lower costs and greater flexibility, rapidly realizing profit.</p>
-                            <p>In short, Foundry is expected to profit by building profitable enterprises that are too hot for conventional institutions to build safely.</p>
-                            <h4 id="who-controls-foundry">Who controls Foundry?</h4>
-                            <p>Foundry makes decisions via the "governance contract". At launch, this contract will be a basic multisig contract with Team Toast members as signatories, which we are calling "governance v0". As we develop the full Liquid Democracy system (more on this below), we will transfer control of Foundry to the FRY holders.</p>
-                            <h4 id="how-does-foundry-work">How does Foundry work?</h4>
-                            <p>As governance is implemented, Foundry Token (FRY) holders will be able to submit and vote on various "proposals", which if passed, will execute a specific transaction from the Foundry Treasury. This transaction could be a simple payment (such as paying a contractor for an improvement to SmokeSignal) or a more complex transaction involving smart contracts (such as converting half of the DAI treasury to ETH, investing in other DAOs, or creating a Burnable Payment).</p>
-                            <p>This voting system will implement a <em>liquid democracy</em> system, allowing some users to specialize in governance decisions and combatting voter apathy. More on this below.</p>
-                            <h4 id="where-does-the-foundry-treasury-get-money">Where does the Foundry Treasury get money?</h4>
-                            <p>Initially, the Foundry Treasury will simply hold all the funds raised by the sale. In addition, Foundry-built products will be designed to capture a profit stream, and this will be directed to the treasury. DAIHard and SmokeSignal already capture and redirect profit in this way.</p>
-                            <p>Foundry may, after its initial presale, enter a "perpetual sale" where FRY tokens will continuously be sold for funds. This would dilute existing holders, but preserve the value of their FRY tokens by pulling in more funds for the additional FRY minted.</p>
-                        </div>
-                        <div class="col-sm-12">
-                            <h4 id="what-is-liquid-democracy">What is liquid democracy?</h4>
-                            <p>A liquid democracy system allows some voters to <em>delegate</em> their votes to other voters. This is similar to having a representative democracy, but with several layers of representation. For example, many of your friends might delegate to you, while you delegate to someone you met a conference, and he delegates to a well-known identity who directly votes on proposals.</p>
-                            <p>In our liquid democracy system, individuals can change their delegation at any time, so that if one representative with a lot of support makes an unpopular position, his constituents can easily remove their support from his current and future votes.</p>
-                            <p>We will release more on our liquid democracy design soon.</p>
-                            <h4 id="about-the-token-sale">About the token sale</h4>
-                            <h4 id="doesnt-the-sec-have-a-major-problem-with-icos-and-token-sales">Doesn't the SEC have a major problem with ICOs and Token Sales?</h4>
-                            <p>Yep. That's why our token sale is not open to US investors, qualified or otherwise. We block participation from aggressive jurisdictions.</p>
-                        
-                            <h4 id="how-do-i-participate">How do I participate?</h4>
-                            <p>You can head over to <a href="https://sale.foundrydao.com">sale.foundrydao.com</a> once the sale starts. To participate, you will need a web3 wallet (we recommend Metamask), a small chunk of Ether (ETH) to pay for the <em>gas</em> of the transaction, and however much DAI you want to bid for FRY.</p>
-                            <h4 id="how-do-i-get-ether-how-do-i-get-dai">How do I get Ether? How do I get DAI?</h4>
-                            <p>This depends on your jurisdiction. Most countries have very reputable cryptocurrency exchanges at this point.</p>
-                            <p>The hard part will be getting crypto of any kind. Once you have crypto, sites like KyberSwap and Changelly will allow you to trade any crypto for DAI and ETH.</p>
-                            <h4 id="what-happens-to-the-dai-i-invest">What happens to the DAI I invest?</h4>
-                            <p>The DAI goes into the Foundry Treasurey contract. As described above in <strong>Who controls Foundry</strong>, initially the Treasury will be owned by a simple multisig controlled by Team Toast. We'll use these funds to iterate SmokeSignal and DAIHard, and develop the Foundry Governance system.</p>
-                            <p>When Foundry Governance is capable of making autonomous, intelligent decisions, it will take over control of these funds. At this point, the only way for anyone to influence usage of the Treasury will be to hold FRY and participate in governance.</p>
-                            <h4 id="i-dont-want-my-dai-to-be-controlled-by-team-toast-it-should-be-immediately-in-control-of-fry-holders">I don't want my DAI to be controlled by Team Toast! It should be immediately in control of FRY holders!</h4>
-                            <p>Ultimately, the Treasury will be control of Foundry Governance (and therefore FRY holders). You're welcome to wait to participate until after Foundry Governance is fully operational and has complete control over the Treasury.</p>
-                            <h4 id="how-long-does-the-sale-last">How long does the sale last?</h4>
-                            <p>Just under 20 months.</p>
-                            <h4 id="how-many-fry-tokens-will-be-sold">How many FRY tokens will be sold?</h4>
-                            <p>60,000,000 will be minted and sold in total--30,000 every 7 hours after launch.</p>
-                            <h4 id="how-many-fry-tokens-will-there-be">How many FRY tokens will there be?</h4>
-                            <p>At the end of the sale, there will be 100,000,000 FRY tokens. After the initial sale, a perpetual sale may dilute FRY tokens at a rate of 5% per year in exchange for new, spendable funds in the treasury.</p>
-                            <h4 id="is-there-a-pre-mine">Is there a "pre-mine"?</h4>
-                            <p>30,000,000 FRY tokens will go to Team Toast.</p>
-                            <p>10,000,000 FRY tokens will be put in the Foundry Treasury, so governance can onboard long term talent in exchange for FRY.</p>
-                        </div>
-                        <div class="col-sm-12">
-                            <h4 id="how-much-is-the-sale-looking-to-raise">How much is the sale looking to raise?</h4>
-                            <p>As much as the market deems appropriate. We will write more on our expectations and hopes for this before the sale launches.</p>
-                            <h4 id="how-does-the-sale-work">How does the sale work?</h4>
-                            <p>The sale has 2000 <em>buckets</em>, each of which will mint and sell 30,000 FRY. The first bucket closes 7 hours after the sale starts, the second one 7 hours after that, and so on. To participate, use the bucket sale interface that will be live at <a href="https://sale.foundrydao.com/">sale.foundrydao.com</a>. There you will specify the bucket you want to enter (the current bucket or a future bucket) and send it DAI.</p>
-                            <p>Once a bucket has concluded, you can withdraw your FRY tokens. the proportion of your DAI to the total DAI entered, is the proportion of the 30,000 FRY you receive. For example, if 1000 DAI total was provided to that bucket, of which you supplied 100 DAI, you will be able to claim 10% of the total 30,000 FRY in the bucket: 3,000 FRY tokens. Thus, for any given bucket, the effective price per FRY increases every time another user enters DAI into that bucket.</p>
-                            <h4 id="will-foundrys-liquid-democracy-be-live-and-controlling-the-treasury-before-the-initial-20-month-sale-ends">Will Foundry's Liquid Democracy be live, and controlling the Treasury, before the initial 20-month sale ends?</h4>
-                            <p>Yes.</p>
-                            <h4 id="about-referrals">About Referrals</h4>
-                            <h4 id="what-is-the-goal-of-the-referral-program">What is the goal of the referral program?</h4>
-                            <p>To incentivize marketers for bringing in participants to the sale and to retain marketing expertise within the FRY token holder group.</p>
-                            <h4 id="what-are-the-benefits-of-using-a-referral-code-from-someone-else">What are the benefits of using a referral code from someone else?</h4>
-                            <p>You will get 10% of the value you are entering into a sale bucket, also entered into the next sale bucket. So if you are buying 100 DAI in bucket 20, then you will also be credited for a purchase of 10 DAI in bucket 21. Note that the price of FRY will likely differ between these two buckets, meaning that the amount of <em>claimable FRY</em> in bucket 21 will likely be different than 10% of that in bucket 20.</p>
-                            <h4 id="what-are-the-benefits-of-sharing-a-referral-code">What are the benefits of sharing a referral code?</h4>
-                            <p>When someone buys with your referral code, you are credited as if you bought into the next bucket. Your credit in the following bucket starts at 10% and can go as high as 100% of the purchase of the person buying with your referral code. The bonus % is based on the amount of total sales referred with your code; 1% for every 1,000 DAI referred.</p>
-                            <p>For example, if you generate a referral code and share it with someone and they buy 1,000 DAI in bucket 23, then you will be credited with a sale of 11% (110 DAI) in bucket 24. If someone later buys another 2,000 DAI in bucket 40, then you will be credited with 13% (130 DAI) in bucket 41.</p>
-                            <h4 id="how-do-i-make-a-referral-link">How do I make a referral link?</h4>
-                            <p>Once the sale starts, visit <a href="https://sale.foundrydao.com/">sale.foundrydao.com</a>. If you're not using a referral code, you'll will be prompted in the upper right corner of the sale block with the words "No Referral Bonus". Clicking this will show an explainer modal with a button you can click to generate your referral link. You can then copy it by clicking "Copy Link".</p>
-                            <h4 id="where-do-i-find-my-referral-link-if-ive-already-made-one">Where do I find my referral link if I've already made one?</h4>
-                            <p>At <a href="https://sale.foundrydao.com/">sale.foundrydao.com</a>, in the top right of the sale block, you should see "Referral Bonus Active". Clicking this will open a modal that will allow you to copy it to your clipboard for sharing with others. Note that you may need to switch your web3 account to the one you created the referral with, to access the link.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="desk-footer">
+            </section>
+        </section>
+        <footer class="desk-footer">
             <div class="desk-footer-wrap">
                 <div class="footer-logo mx-auto">
-                    <img class="img-fluid" src="images/svg/logo.svg" alt="" srcset="">
+                    <img class="img-fluid logo" src="images/svg/logo.svg" alt="">
                 </div>
                 <div class="footer-content">
                     <div class="row">
                         <div class="col-4">
                             <h4>Resources</h4>
                             <ul>
-                                <li><a href="http://">xxxx</a></li>
-                                <li><a href="http://">xxxx</a></li>
-                                <li><a href="http://">xxxx</a></li>
-                                <li><a href="http://">xxxx</a></li>
+                                <li><a href="#">xxxx</a></li>
+                                <li><a href="#">xxxx</a></li>
+                                <li><a href="#">xxxx</a></li>
+                                <li><a href="#">xxxx</a></li>
                             </ul>
                         </div>
                         <div class="col-4">
                             <h4>Get Involved</h4>
                             <ul>
-                                <li><a href="http://">xxxx</a></li>
-                                <li><a href="http://">xxxx</a></li>
-                                <li><a href="http://">xxxx</a></li>
-                                <li><a href="http://">xxxx</a></li>
+                                <li><a href="#">xxxx</a></li>
+                                <li><a href="#">xxxx</a></li>
+                                <li><a href="#">xxxx</a></li>
+                                <li><a href="#">xxxx</a></li>
                             </ul>
                         </div>
                         <div class="col-4">
                             <h4>The Etc's</h4>
                             <ul>
-                                <li><a href="http://">xxxx</a></li>
-                                <li><a href="http://">xxxx</a></li>
-                                <li><a href="http://">xxxx</a></li>
-                                <li><a href="http://">xxxx</a></li>
+                                <li><a href="#">xxxx</a></li>
+                                <li><a href="#">xxxx</a></li>
+                                <li><a href="#">xxxx</a></li>
+                                <li><a href="#">xxxx</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
     <footer class="custom-sticky">
         <div class="elements-bottom">
             <div id="element-holder-desk-bottom-left">
                 <div id="element-desk-bottom-left-wt-border"></div>
                 <div id="element-desk-bottom-left"></div>
-                <div id="element-desk-bottom-white"></div>
+                <div class="element-desk-bottom-white"></div>
             </div>
             <div id="element-holder-desk-bottom-right">
                 <div id="element-desk-bottom-right"></div>
-                <div id="element-desk-bottom-white"></div>
+                <div class="element-desk-bottom-white"></div>
             </div> 
             <div class="bottom-bar">
-                <img class="img-fluid" src="images/svg/bottom-bar-desk.svg" alt="foundrydao">
-                <a class="contact-us" href="#contact" data-toggle="modal" data-target="#contact-modal-desk">CONTACT US</a>
+                <img class="img-fluid" id="bottom-bar-desk-img" src="images/svg/bottom-bar-desk.svg" alt="foundrydao">
+                <a class="contact-us" href="#contact" data-toggle="modal" data-target="#contact-modal">CONTACT US</a>
             </div>
         </div>
     </footer>
-<!-- Contact Modal desk-->
-    <div class="modal fade animate" id="contact-modal-desk" tabindex="-1" role="dialog" aria-labelledby="contact-social-media-desk" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content animate-bottom">
-            <div class="modal-header">
-                <h2 id="contact-social-media-desk">Contact / Social Media</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="body rendered-md">
-                    <ul class="desk-p">
-                    <li><a href="https://t.me/FoundryCommunity">Telegram Channel</a></li>
-                    <li><a href="https://twitter.com/FoundryDAO">Twitter</a></li>
-                    <li><a href="https://www.youtube.com/channel/UC4Z34M4q5emaYlJP_Sqa-Cw">YouTube</a></li>
-                    <li><a href="https://medium.com/daihard-buidlers">Medium</a></li>
-                    <li>Email: teamtoastdevs@gmail.com</li>
-                    </ul>
-                    <h2  class="desk-h2" id="for-legal-inquiries-contact">For Legal Inquiries, Contact:</h2>
 
-                    <p><strong>Decentralized Autonomous Organization Advancement Institute</strong>, responsible for the launch and early support of Foundry</p>
-                    <ul class="desk-p">
-                    <li>Address: Georgia, Tbilisi, Nadzaladevi district, Didube settlement, N1</li>
-                    <li>Identification Number: 400288149</li>
-                    <li>Email: mariamturashvili@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </div>
+    <div class=" container">
+        <button  type="button" class="btn btn-default" aria-label="Left Align" id="scroll-to-top" title="Go to top"> <img class="arrow" src="images/svg/arrow.svg" alt=""></button>
     </div>
-<!--End Contact Modal desk-->
-<div class=" container"><button  type="button" class="btn btn-default" aria-label="Left Align" id="scroll-to-top" title="Go to top"> <img src="images/svg/arrow.svg" alt=""></button></div>
 
 </div>
-
+<!-- END DesktopView -->
 <!-- MobileView -->
 <div class="container-mobile d-lg-none d-sm-none d-xs-block">
     <header>
         <div class="top-bar">
-            <img class="img-fluid" src="images/svg/top-bar-mobile.svg" alt="foundrydao">
+            <img class="img-fluid" id="top-bar-mobile-img" src="images/svg/top-bar-mobile.svg" alt="foundrydao">
             <a href="#"><img class="img-fluid logo" src="images/svg/logo.svg" alt="foundrydao"></a>
         </div>
     </header>
     <div class="banner-mobile">
-        <img class="img-fluid" src="images/fire-bg-mobile.jpg" alt="foundrydao-fire-bg">
-        <h2 class="banner-heading text-white">Foundry: A DAO for Economic Freedom</h2>
-        <h3 class="banner-caption text-white">It's time for crypto to start making moves on the global stage. Foundry will be our gladiator.</h3>
+        <img class="img-fluid" id="fire-bg-mobile-img" src="images/fire-bg-mobile.jpg" alt="foundrydao-fire-bg">
+        <section>
+            <hgroup>
+                <h2 class="banner-heading text-white">Foundry: A DAO for Economic Freedom</h2>
+                <h3 class="banner-caption text-white">It's time for crypto to start making moves on the global stage. Foundry will be our gladiator.</h3>
+            </hgroup>
+        </section>
     </div>
 
 <!-- Accordion START -->
     <div id="accordion">
         <div class="container-box">
-            <div class="blue-gradient container-fluid" id="headingOne">
-                <div class="row collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <div class="blue-gradient container-fluid" id="heading-foundry-fry">
+                <div class="row collapsed" data-toggle="collapse" data-target="#collapse-foundry-fry" aria-expanded="false" aria-controls="collapse-foundry-fry" role="heading">
                     <div class="col-3 col-sm-3">
-                        <img class="img-fluid" src="images/svg/icons/foundry-fry.svg" alt="Foundry and Fry">
+                        <img class="img-fluid" id="foundry-fry-mobile-ico" src="images/svg/icons/foundry-fry.svg" alt="Foundry and Fry">
                     </div>
                     <div class="col-9 col-sm-9 menu-content">
                         <div class="tag">
                             <h4>
                                 FOUNDRY & FRY
                             </h4>
-                            <img class="buy-fry-tag" src="images/svg/menu-tags/buy-fry.svg" alt="">
+                            <img class="buy-fry-tag" id="buy-fry-mobile-tag" src="images/svg/menu-tags/buy-fry.svg" alt="">
                         </div>
                         <span class="icon"><img class="arrow" src="images/svg/arrow.svg" alt=""></span>
                         <p class="menu-caption">Foundry's future is in the hands of FRY holders.</p>
                     </div>
                 </div>
             </div>
-            <div id="collapseOne" class="collapse container-fluid" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="box-content row">
-                    <div class="col-3 col-sm-3 pattern"></div>
-                    <div class="col-9 col-sm-9 content">
+            <div id="collapse-foundry-fry" class="collapse container-fluid" aria-labelledby="heading-foundry-fry" data-parent="#accordion">
+                <article class="box-content row pattern">
+                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>Tools for Economic Freedom</h2>
                         <p>Foundry will accumulate FRY holders who believe in unstoppable economic freedom. After SmokeSignal and DAIHard, FRY holders will likely drive Foundry to build or invest in similar pursuits: profitable tools that increase economic freedom which cannot be shut down.</p>
+                    </div>
+                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>Liquid Democracy</h2>
                         <p>Team Toast is designing a Liquid Democracy system that allows Foundry to rely on FRY holders for intelligent decision-making, while avoiding common pitfalls of DAO governance. <a href="https://github.com/team-toast/foundry-design/releases/latest/download/foundry-design.pdf">Read the whitepaper</a> for more on this design.</p>
-                        <h2>FRY Sale</h2>
-                        <p>The sale of FRY opened at noon UTC, June 19th 2020, and will run just for about 19 months, until January 23, 2022. Read more about it on our <a href="/faq/#about-the-token-sale">FAQ</a>.</p>
                     </div>
-                </div>
+                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
+                        <h2>FRY Sale</h2>
+                        <p>The sale of FRY opened at noon UTC, June 19th 2020, and will run just for about 19 months, until January 23, 2022. Read more about it on our <a href="#about-the-token-sale"  class="href-pop-content">FAQ</a>.</p>
+                    </div>
+                </article>
             </div>
         </div>
         <div class="container-box">
-            <div class="blue-gradient container-fluid box-shadow-btm" id="headingTwo">
-                <div class="row collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <div class="blue-gradient container-fluid box-shadow-btm" id="heading-zimdai">
+                <div class="row collapsed" data-toggle="collapse" data-target="#collapse-zimdai" aria-expanded="false" aria-controls="collapse-zimdai" role="heading">
                     <div class="col-3 col-sm-3">
-                        <img class="img-fluid" src="images/svg/icons/zimdai.svg" alt="Foundry and Fry">
+                        <img class="img-fluid" id="zimdai-mobile-ico" src="images/svg/icons/zimdai.svg" alt="Foundry and Fry">
                     </div>
                     <div class="col-9 col-sm-9 menu-content">
                         <div class="tag">
                             <h4>ZIMDAI</h4>
-                            <img class="read-the-zimdai-paper-tag" src="images/svg/menu-tags/read-the-zimdai-paper.svg" alt="">
+                            <img class="read-the-zimdai-paper-tag" id="read-the-zimdai-paper-mobile-tag" src="images/svg/menu-tags/read-the-zimdai-paper.svg" alt="">
                         </div>
                           <span class="icon"><img class="arrow" src="images/svg/arrow.svg" alt=""></span>
                           <p class="menu-caption">Zimbabweans are trapped in an abusive economic system. But crypto is growing teeth.</p>
                         </div>
                 </div>
             </div>
-            <div id="collapseTwo" class="collapse container-fluid" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="box-content row">
-                    <div class="col-3 col-sm-3 pattern"></div>
-                    <div class="col-9 col-sm-9 content">
+            <div id="collapse-zimdai" class="collapse container-fluid" aria-labelledby="heading-zimdai" data-parent="#accordion">
+                <article class="box-content row pattern">
+                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>Zimbabwe's Plight</h2>
                         <p>
                             The official currency of Zimbabwe is rapidly inflating,
@@ -534,6 +360,8 @@
                             Worse, the banking system significantly limits withdrawals, and ATMs simply don't work.
                             Internal political pressure has proven incapable of changing any of this.
                         </p>
+                    </div>
+                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>Blueprint For an Economic Jailbreak</h2>
                         <p>
                             <a href="https://github.com/coinop-logan/ZimDai/raw/master/whitepaper.pdf">
@@ -544,71 +372,76 @@
                             It assumes a hostile state and does not rely on jurisdictional permission.
                             It is the result of two months of on-the-ground research by Logan, funded by Team Toast.
                         </p>
+                    </div>
+                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>The Missing Piece</h2>
                         <p>What's needed is a marketing drive. With both marketing leadership and funding, we may have on our hands a strikingly realistic, immediately applicable plan to liberate the Zimbabwean citizenry from systemic financial abuse. This has been a dream within crypto for years. Given significant funding, we expect Foundry to lead and fund this campaign.</p>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
         <div class="container-box">
-            <div class="blue-gradient container-fluid box-shadow-btm" id="headingThree">
-                <div class="row collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <div class="blue-gradient container-fluid box-shadow-btm" id="heading-products">
+                <div class="row collapsed" data-toggle="collapse" data-target="#collapse-products" aria-expanded="false" aria-controls="collapse-products" role="heading">
                     <div class="col-3 col-sm-3">
-                        <img class="img-fluid" src="images/svg/icons/products.svg" alt="Foundry and Fry">
+                        <img class="img-fluid" id="products-mobile-ico" src="images/svg/icons/products.svg" alt="Foundry and Fry">
                     </div>
                     <div class="col-9 col-sm-9 menu-content">
                         <div class="tag">
                             <h4> PRODUCTS</h4>
-                          <img class="future-products-tag" src="images/svg/menu-tags/future-products.svg" alt="">
+                          <img class="future-products-tag" id="future-products-mobile-tag" src="images/svg/menu-tags/future-products.svg" alt="">
                         </div>
                           <span class="icon"><img class="arrow" src="images/svg/arrow.svg" alt=""></span>
                           <p class="menu-caption">Unkillable, global, uncensorable products, ready today. Foundry does not ask permission.</p>
                     </div>
                 </div>
             </div>
-            <div id="collapseThree" class="collapse container-fluid" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="box-content row">
-                    <div class="col-3 col-sm-3 pattern"></div>
-                    <div class="col-9 col-sm-9 content">
+            <div id="collapse-products" class="collapse container-fluid" aria-labelledby="heading-products" data-parent="#accordion">
+                <article class="box-content row pattern">
+                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>SmokeSignal</h2>
                         <p>SmokeSignal is a herald of an age without censorship.
-                            Pseudonymous users can post to topics and reply in a nested fashion, and each post is both immediately public and impossible to delete. <a href="/smokesignal">The conversation has already started.</a></p>
+                            Pseudonymous users can post to topics and reply in a nested fashion, and each post is both immediately public and impossible to delete. <a href="https://foundrydao.com/smokesignal/">The conversation has already started.</a></p>
+                        </div>
+                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>DAIHard</h2>
                         <p> DAIHard extends many of the promises of crypto (borderless, anonymous, limitless, unstoppable)
                             into entering and exiting crypto itself.
                             Anyone, anywhere can buy and sell DAI for local cash in a peer-to-peer marketplace, without KYC.
                             <a href="https://daihard.exchange/#/marketplace">Browse the DAIHard marketplace</a></p>
-                        <h2>The Road Ahead</h2>
-                        <p>Foundry will attract FRY holders who value profitable tools that guarantee economc freedom. This will give Foundry a preference to fund products that fragile meatbags may be reluctant to, for fear of persecution.</p>
                     </div>
-                </div>
+                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
+                        <h2>The Road Ahead</h2>
+                        <p>Foundry will attract FRY holders who value profitable tools that guarantee economic freedom. This will give Foundry a preference to fund products that fragile meatbags may be reluctant to, for fear of persecution.</p>
+                    </div>
+                </article>
             </div>
         </div>
         <div class="container-box">
-            <div class="blue-gradient container-fluid box-shadow-btm" id="headingFour">
-                <div class="row collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <div class="blue-gradient container-fluid box-shadow-btm" id="heading-team-toast">
+                <div class="row collapsed" data-toggle="collapse" data-target="#collapse-team-toast" aria-expanded="false" aria-controls="collapse-team-toast" role="heading">
                     <div class="col-3 col-sm-3">
-                        <img class="img-fluid" src="images/svg/icons/team-toast.svg" alt="Foundry and Fry">
+                        <img class="img-fluid" id="team-toast-mobile-ico" src="images/svg/icons/team-toast.svg" alt="Foundry and Fry">
                     </div>
                     <div class="col-9 col-sm-9 menu-content">
                         <div class="tag">
                           <h4> TEAM TOAST </h4>
-                          <img class="weekely-progress-tag" src="images/svg/menu-tags/weekely-progress.svg" alt="">
+                          <img class="weekely-progress-tag" id="weekely-progress-mobile-tag" src="images/svg/menu-tags/weekely-progress.svg" alt="">
                     </div>
                           <span class="icon"><img class="arrow" src="images/svg/arrow.svg" alt=""></span>
                           <p class="menu-caption">We're a small team centered around development of Foundry and its products.</p>
                     </div>
                 </div>
             </div>
-            <div id="collapseFour" class="collapse container-fluid" aria-labelledby="headingFour" data-parent="#accordion">
-                <div class="box-content row">
+            <div id="collapse-team-toast" class="collapse container-fluid" aria-labelledby="heading-team-toast" data-parent="#accordion">
+                <article class="box-content row pattern">
                     <div class="col-12 col-sm-12 team-content">
                         <div class="row">
-                            <div class="col-3 col-sm-3 pattern">
-                                <img class="img-fluid profile-pic" src="images/oglog.jpg">
+                            <div class="col-3  d-lg-none d-sm-none d-xs-block">
+                                <img class="img-fluid profile-pic" id="oglog" src="images/oglog.jpg" alt="Logan Brutsche">
                             </div>
-                            <div class="col-9 col-sm-9">
-                                <h2>Logan Brutsche (<a href="https://www.reddit.com/user/coinop-logan">reddit</a>, <a href="https://github.com/coinop-logan">Github</a>)</h2>
+                            <div class="col-9 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
+                                <h2>Logan Brutsche (<a href="https://www.reddit.com/user/coinop-logan">Reddit</a>, <a href="https://github.com/coinop-logan">Github</a>)</h2>
                                 <p>Co-founder and CEO of Team Toast, and doting mother of Foundry.
                                     Lead developer for DAIHard, Foundry, and SmokeSignal.
                                     Developed the Burnable Payment, DAIHard, and SmokeSignal smart contracts.
@@ -616,12 +449,11 @@
                                     
                                 </p>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-3 col-sm-3 pattern">
-                                <img class="img-fluid profile-pic" src="images/schalk.png">
+
+                            <div class="col-3  d-lg-none d-sm-none d-xs-block">
+                                <img class="img-fluid profile-pic" id="schalk" src="images/schalk.png" alt="Schalk Dormehl">
                             </div>
-                            <div class="col-9 col-sm-9">
+                            <div class="col-9 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
                                 <h2>Schalk Dormehl (<a href="https://github.com/sjalq">Github</a>)</h2>
                                 <p>Co-founder of Team Toast and Sugar Daddy for Foundry.
                                     Pays Foundry's bills while it grows up to be a big strong DAO.
@@ -630,12 +462,11 @@
                                     Exists in a permanent state of bewildered or concerned confusion.
                                 </p>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-3 col-sm-3 pattern">
-                                <img class="img-fluid profile-pic" src="images/thoughtful.jpeg">
+
+                            <div class="col-3 d-lg-none d-sm-none d-xs-block">
+                                <img class="img-fluid profile-pic" id="thoughtful" src="images/thoughtful.jpeg" alt="V for Visuals">
                             </div>
-                            <div class="col-9 col-sm-9">
+                            <div class="col-9 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
                                 <h2>V for Visuals</h2>
                                 <p>Visual Designer for DAIHard and Foundry. Shrouded in secrecy.
                                     Those who speak its true name invite disaster and misfortune.
@@ -644,38 +475,39 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
         <div class="container-box">
-            <div class="blue-gradient container-fluid box-shadow-btm" id="headingFive">
-                <div class="row collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <div class="blue-gradient container-fluid box-shadow-btm" id="heading-faq">
+                <div class="row collapsed" data-toggle="collapse" data-target="#collapse-faq" aria-expanded="false" aria-controls="collapse-faq" role="heading">
                     <div class="col-3 col-sm-3">
-                        <img class="img-fluid" src="images/svg/icons/faq.svg" alt="Foundry and Fry">
+                        <img class="img-fluid" id="faq-mobile-ico" src="images/svg/icons/faq.svg" alt="Foundry and Fry">
                     </div>
                     <div class="col-9 col-sm-9 menu-content">
                         <div class="tag">
                             <h4> FAQ </h4>
-                            <img class="get-answers-tag" src="images/svg/menu-tags/get-answers.svg" alt="">
+                            <img class="get-answers-tag" id="get-answers-mobile-tag" src="images/svg/menu-tags/get-answers.svg" alt="">
                         </div>
                           <span class="icon"><img class="arrow" src="images/svg/arrow.svg" alt=""></span>
                           <p class="menu-caption">Be in the know.</p>
                     </div>
                 </div>
             </div>
-            <div id="collapseFive" class="collapse container-fluid" aria-labelledby="headingFive" data-parent="#accordion">
-                <div class="box-content row">
-                    <div class="col-3 col-sm-3 pattern"></div>
-                    <div class="col-9 col-sm-9 content">
-                        <h2 id="foundry-faq">Foundry FAQ</h2>
-                        <h2 id="about-foundry">About Foundry</h2>
-                        <h2 id="what-is-foundry">What is Foundry?</h2>
+            <div id="collapse-faq" class="collapse container-fluid" aria-labelledby="heading-faq" data-parent="#accordion">
+                <article class="box-content row pattern">
+                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-12 offset-md-0 col-lg-12 offset-lg-0 content">
+                        <hgroup>
+                            <h2 id="foundry-faq">Foundry FAQ</h2>
+                            <h2 id="about-foundry">About Foundry</h2>
+                            <h2 id="what-is-foundry">What is Foundry?</h2>
+                        </hgroup>
                         <p>Foundry is a for-profit DAO that seeks to build and profit from projects and ventures in the blockchain space--specifically, projects that traditional institutions cannot pursue, and which increase financial freedom.</p>
                         <h2 id="what-is-a-dao">What is a DAO?</h2>
                         <p>DAOs are Distributed Autonomous Organizations. They are entities that live on the blockchain (usually Ethereum, as is the case with Foundry) and are directed by their smart contract code. There are several forms of DAOs. Maker, the system that provides the DAI stablecoin, is a good example. Augur is another. DAOs typically incentivise people to act in a certain manner to further the interests of the DAO.</p>
                         <h2 id="what-is-foundry-meant-to-accomplish">What is Foundry meant to accomplish?</h2>
                         <p>As with a conventional organization, this can be answered in two ways: a mission statement and a profit motive.</p>
-                        <p>Foundry's mission is to build technology and tools that increase worldwide financial freedom, especially when those tools are difficult/risky for traditional institutions to build. Our <a href="/#products">existing two products</a> illustrate this. DAIHard facilitates unstoppable entry and exit into crypto, even in jurisdictions where this is illegal. SmokeSignal facilitates unstoppable and uncensorable chat, and is similarly designed to work even in jurisdictions hostile to free speech.</p>
+                        <p>Foundry's mission is to build technology and tools that increase worldwide financial freedom, especially when those tools are difficult/risky for traditional institutions to build. Our <a href="#products" class="href-pop-content">existing two products</a> illustrate this. DAIHard facilitates unstoppable entry and exit into crypto, even in jurisdictions where this is illegal. SmokeSignal facilitates unstoppable and uncensorable chat, and is similarly designed to work even in jurisdictions hostile to free speech.</p>
                         <p>Foundry's profit motive is based on a simple premise: that there are opportunities to build products like those above, that will result in profit, but which are too difficult or risky for a conventional corporation to build. Because a DAO lacks certain attack surfaces compared to conventional corporations, Foundry should be able to fill and explore these niches with far lower costs and greater flexibility, rapidly realizing profit.</p>
                         <p>In short, Foundry is expected to profit by building profitable enterprises that are too hot for conventional institutions to build safely.</p>
                         <h2 id="who-controls-foundry">Who controls Foundry?</h2>
@@ -690,6 +522,7 @@
                         <p>A liquid democracy system allows some voters to <em>delegate</em> their votes to other voters. This is similar to having a representative democracy, but with several layers of representation. For example, many of your friends might delegate to you, while you delegate to someone you met a conference, and he delegates to a well-known identity who directly votes on proposals.</p>
                         <p>In our liquid democracy system, individuals can change their delegation at any time, so that if one representative with a lot of support makes an unpopular position, his constituents can easily remove their support from his current and future votes.</p>
                         <p>We will release more on our liquid democracy design soon.</p>
+                        <div class="div-about-the-token-sale"></div>
                         <h2 id="about-the-token-sale">About the token sale</h2>
                         <h2 id="doesnt-the-sec-have-a-major-problem-with-icos-and-token-sales">Doesn't the SEC have a major problem with ICOs and Token Sales?</h2>
                         <p>Yep. That's why our token sale is not open to US investors, qualified or otherwise. We block participation from aggressive jurisdictions.</p>
@@ -732,7 +565,7 @@
                         <h2 id="where-do-i-find-my-referral-link-if-ive-already-made-one">Where do I find my referral link if I've already made one?</h2>
                         <p>At <a href="https://sale.foundrydao.com/">sale.foundrydao.com</a>, in the top right of the sale block, you should see "Referral Bonus Active". Clicking this will open a modal that will allow you to copy it to your clipboard for sharing with others. Note that you may need to switch your web3 account to the one you created the referral with, to access the link.</p>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
       </div>
@@ -740,51 +573,50 @@
     <footer>
         <div class="bottom-bar">
             <a class="contact-us" href="#contact" data-toggle="modal" data-target="#contact-modal">Contact/Social Media</a>
-            <img class="img-fluid" src="images/svg/bottom-bar-mobile.svg" alt="foundrydao">
+            <img class="img-fluid" id="bottom-bar-mobile-img" src="images/svg/bottom-bar-mobile.svg" alt="foundrydao">
             <a href="#"><img class="logo img-fluid" src="images/svg/logo.svg" alt="foundrydao"></a>
         </div>
     </footer>
 
 </div>
 <!-- END MobileView -->
-<!-- Contact Modal mobile-->
-<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-social-media" aria-hidden="true">
+<!-- Contact Modal -->
+<div class="modal fade animate" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-social-media" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h2 id="contact-social-media" class="theme-h2">Contact / Social Media</h2>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-        <div class="modal-body">
-            <div class="body rendered-md">
-                <ul class="theme-p">
-                <li><a href="https://t.me/FoundryCommunity">Telegram Channel</a></li>
-                <li><a href="https://twitter.com/FoundryDAO">Twitter</a></li>
-                <li><a href="https://www.youtube.com/channel/UC4Z34M4q5emaYlJP_Sqa-Cw">YouTube</a></li>
-                <li><a href="https://medium.com/daihard-buidlers">Medium</a></li>
-                <li>Email: teamtoastdevs@gmail.com</li>
-                </ul>
-                <h2  class="theme-h2" id="for-legal-inquiries-contact">For Legal Inquiries, Contact:</h2>
-                <ul class="theme-p">
-                <li>Name: <strong>Decentralized Autonomous Organization Advancement Institute</strong>, responsible for the launch and early support of Foundry.</li>
-                <li>Address: Georgia, Tbilisi, Nadzaladevi district, Didube settlement, N1</li>
-                <li>Identification Number: 400288149</li>
-                <li>Email: mariamturashvili@gmail.com</li>
-                </ul>
+        <div class="modal-content animate-bottom">
+            <div class="modal-header">
+                <h2 id="contact-social-media" class="theme-h2">Contact / Social Media</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="body rendered-md">
+                    <ul class="theme-p">
+                    <li><a href="https://t.me/FoundryCommunity">Telegram Channel</a></li>
+                    <li><a href="https://twitter.com/FoundryDAO">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC4Z34M4q5emaYlJP_Sqa-Cw">YouTube</a></li>
+                    <li><a href="https://medium.com/daihard-buidlers">Medium</a></li>
+                    <li>Email: teamtoastdevs@gmail.com</li>
+                    </ul>
+                    <h2  class="theme-h2" id="for-legal-inquiries-contact">For Legal Inquiries, Contact:</h2>
+                    <ul class="theme-p">
+                    <p><strong>Decentralized Autonomous Organization Advancement Institute</strong>, responsible for the launch and early support of Foundry</p>
+                    <li>Address: Georgia, Tbilisi, Nadzaladevi district, Didube settlement, N1</li>
+                    <li>Identification Number: 400288149</li>
+                    <li>Email: mariamturashvili@gmail.com</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    </div>
 </div>
-<!--End Contact Modal mobile-->
+<!--End Contact Modal -->
 
-<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous"></script>
-<script src="js/custom.js"></script>
+<script src="js/jquery.easeScroll.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/custom.min.js"></script>
 </body>
 </html>

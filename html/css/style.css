@@ -172,7 +172,18 @@
     border: 2px #ceedf5 solid;
     border-radius: 50%;
 }
-
+.profile-pic-desk {
+    border: 2px #ceedf5 solid;
+    border-radius: 50%;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+@media (max-width: 575px) {
+    .profile-pic-desk {
+        display: none;
+    }
+}
 .container-mobile .content h2,
 .team-content h2,
 .theme-h2 {

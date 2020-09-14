@@ -8,7 +8,7 @@
     margin-top: 16%;
 }
 
-.container-mobile #accordion {
+.container-mobile #accordion, #pop-mobile {
     padding-bottom: 16%;
 }
 
@@ -172,6 +172,7 @@
     border: 2px #ceedf5 solid;
     border-radius: 50%;
 }
+
 .profile-pic-desk {
     border: 2px #ceedf5 solid;
     border-radius: 50%;
@@ -184,7 +185,10 @@
         display: none;
     }
 }
+
+.container-mobile .content h1,
 .container-mobile .content h2,
+.container-mobile .content h3,
 .team-content h2,
 .theme-h2 {
     color: #234080;
@@ -193,7 +197,19 @@
     font-weight: 800;
     margin-bottom: 15px;
 }
-
+#back-home {
+    font-size: 14px;
+    line-height: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+@media (min-width: 575px) {
+    #back-home {
+        font-size: 24px;
+        line-height: 80px;
+    }
+}
 .container-mobile .content p,
 .team-content p,
 .theme-p {
@@ -318,24 +334,24 @@ body {
     background-image: linear-gradient(to bottom, #006998, #016697, #046495, #066194, #0a5e92);
     background-repeat: repeat-x;
     width: 100%;
-    height: 169.33px;
+    height: 118.33px;
 }
 
 .element-desk-top-pink {
     background-color: #ec1978;
     width: 100%;
-    height: 40px;
+    height: 28px;
 }
 
 .element-desk-top-light-blue {
     background-color: #12a5d1;
-    height: 17px;
+    height: 12px;
 }
 
 #element-desk-top-right-blue {
     background-color: #253067;
     width: 100%;
-    height: 53px;
+    height: 37px;
 }
 
 #element-holder-desk-top-left {
@@ -379,7 +395,7 @@ body {
 }
 
 #element-desk-bottom-left {
-    background-color: #1f2655;
+    background-color: #262f68;
     width: 100%;
     height: 14px;
 }
@@ -396,10 +412,10 @@ body {
     height: 120px;
 }
 
-.element-desk-bottom-white {
-    background-color: #fff;
+.element-desk-bottom-pink {
+    background-color: #ec1978;
     width: 100%;
-    height: 42px;
+    height: 15px;
 }
 
 div#pop-faq>div>div>h2 {
@@ -456,7 +472,7 @@ div#pop-faq>div>div>h2 {
 }
 
 .container-desk>header {
-    position: fixed;
+    position: relative;
     width: 100%;
     margin: 0 auto;
     top: 0;
@@ -496,7 +512,7 @@ div#pop-faq>div>div>h2 {
 
 .container-desk a.contact-us {
     position: absolute;
-    top: 35%;
+    top: 45%;
     right: 8%;
     font-size: 32.37386322px;
     font-family: 'DM Sans', sans-serif;
@@ -528,6 +544,8 @@ a.contact-us:hover {
 }
 
 .banner {
+    position: relative;
+    margin-top: -200px;
     width: 100%;
     height: 612px;
     background-image: url(../images/fire-bg.jpg);
@@ -652,7 +670,7 @@ h3.icon-title {
     box-shadow: inset -1px 7px 6px -6px #000000ad;
 }
 
-.section-head h2 {
+.section-head h2, .section-head h1  {
     color: #fff;
     font-family: 'DM Sans', sans-serif;
     font-size: 57.13106537px;
@@ -661,6 +679,7 @@ h3.icon-title {
     position: absolute;
     top: 30%;
     left: 2.5%;
+    text-transform: uppercase;
 }
 
 .section-head a:focus,
@@ -734,7 +753,9 @@ h3.icon-title {
     padding-left: 2.5%;
 }
 
+.section-body h1,
 .section-body h2,
+.section-body h3,
 .section-body h4 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 900;
@@ -748,21 +769,31 @@ h3.icon-title {
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 17.59759903px;
-    letter-spacing: .05714285714285714em;
+    letter-spacing: unset;
     color: #234080;
 }
 
-.faq-content {
+.template-content, .faq-content {
     padding-left: 10%;
     padding-right: 10%;
 }
 
-.faq-content h2,
-.faq-content h4,
-.faq-content p {
+.faq-content h1,.template-content h1,
+.faq-content h2,.template-content h2,
+.faq-content h3,.template-content h3,
+.faq-content h4,.template-content h4,
+.faq-content p, .template-content p {
     text-align: left !important;
 }
-
+.faq-content p, .template-content p{
+    font-size: 22px;
+}
+#pop-desktop img, #pop-mobile img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .footer-logo {
     padding-bottom: 2vh;
     margin-bottom: 2vh;
@@ -872,7 +903,7 @@ h3.icon-title {
         margin: 0 auto;
         display: block;
         width: 160px;
-        margin-top: -75px;
+        margin-top: -79px;
     }
 
     #faq img {
@@ -898,6 +929,7 @@ h3.icon-title {
 
     .banner {
         height: 300px;
+        margin-top: -100px;
     }
 
     .container-desk .msg {
@@ -921,6 +953,7 @@ h3.icon-title {
 @media (min-width:866px) and (max-width:1200px) {
     .banner {
         height: 500px;
+        margin-top: -100px;
     }
 
     .container-desk .msg {
@@ -943,7 +976,7 @@ h3.icon-title {
         font-size: 22px;
     }
 
-    .section-head h2 {
+    .section-head h1, .section-head h2  {
         font-size: 35px;
     }
 
@@ -1018,7 +1051,7 @@ h3.icon-title {
         font-size: 12px;
     }
 
-    .section-head h2 {
+    .section-head h1, .section-head h2 {
         font-size: 25px;
     }
 
@@ -1293,3 +1326,17 @@ html {
     .no-js h1 {
         color: #222222;
     }
+    .bottom-pink-bar {
+    background-color: #ec1978;
+    height: 15px;
+        
+    }
+@media (min-width: 1200px) {
+    #top-bar-desk-img {
+        width: 100%;
+        height: 170px;;
+    }
+   .container-desk .top-bar img.logo {
+        max-width: 370px;
+    }
+}

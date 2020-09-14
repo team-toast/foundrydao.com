@@ -111,7 +111,13 @@ var foundry = {
             $("[aria-expanded='true']").parent().addClass('box-shadow-btm');
         });
         //End add remove shdow effects to the expanded elements in accordion   
-    
+        $(window).on('scroll', function() {
+            if (document.documentElement.scrollTop > 100) {
+                foundry.$scrollToTop.css('display','block');
+              } else {
+                foundry.$scrollToTop.css('display','none');
+              }
+        });
         //scroll to click for mobile
         foundry.$dataCollapse.on('click', function(e) {
             e.preventDefault();
@@ -196,7 +202,7 @@ var foundry = {
 $(function() {
     foundry.init();
     foundry.attachEventHandles();
-    
+
     $('body').imagesLoaded()
     .done( function() {
         $('.container-mobile .blue-gradient').imagesLoaded( { background: true }, function() {
@@ -211,7 +217,7 @@ $(function() {
               });
           });
     });
-      
+
     $("html").easeScroll({
         frameRate: 60,
         animationTime: 1000,

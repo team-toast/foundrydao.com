@@ -27,7 +27,14 @@
         </script>
 
     <!-- REFERRAL CAPTURE -->
-    <script src="js/capture-and-hide-referral.js"></script>
+    <script>
+        if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
+            document.write('<script src="js/capture-and-hide-referral-ie.js"><\/script>');
+        } else {
+            document.write('<script src="js/capture-and-hide-referral.js"><\/script>');
+        }
+    </script>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=11,chrome=1">
     <meta name="theme-color" content="#262f68">
@@ -64,9 +71,10 @@
                 <div class="element-desk-top-pink"></div>
                 <div class="element-desk-top-light-blue"></div>
                 <div id="element-desk-top-right-blue"></div>
+                <div class="element-desk-top-right-wt-border"></div>
             </div> 
             <div class="top-bar">
-                <img id="top-bar-desk-img" src="images/svg/top-bar-desk.svg" alt="foundrydao">
+                <img id="top-bar-desk-img" src="images/svg/top-bar-desktop.svg" alt="foundrydao">
                 <a href="#home"><img  class="img-fluid logo" src="images/svg/logo.svg" alt="foundrydao"></a>
             </div>
         </div>
@@ -258,17 +266,19 @@
             <div id="element-holder-desk-bottom-left">
                 <div id="element-desk-bottom-left-wt-border"></div>
                 <div id="element-desk-bottom-left"></div>
+                <div class="element-desk-bottom-light-blue"></div>
                 <div class="element-desk-bottom-pink"></div>
             </div>
             <div id="element-holder-desk-bottom-right">
+                <div id="element-desk-bottom-right-invisible"></div>
                 <div id="element-desk-bottom-right"></div>
+                <div class="element-desk-bottom-light-blue"></div>
                 <div class="element-desk-bottom-pink"></div>
             </div> 
             <div class="bottom-bar">
-                <img class="img-fluid" id="bottom-bar-desk-img" src="images/svg/desktop-bottom-curve-element.svg" alt="foundrydao">
+                <img class="img-fluid" id="bottom-bar-desk-img" src="images/svg/bottom-bar-desktop.svg" alt="foundrydao">
                 <a class="contact-us" href="#contact" data-toggle="modal" data-target="#contact-modal">CONTACT US</a>
             </div>
-            <div class="bottom-pink-bar"></div>
         </div>
     </footer>
 
@@ -314,15 +324,15 @@
             </div>
             <div id="collapse-foundry-fry" class="collapse container-fluid" aria-labelledby="heading-foundry-fry" data-parent="#accordion">
                 <article class="box-content row pattern">
-                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
+                    <div class="col-9 offset-3 col-sm-4 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>Tools for Economic Freedom</h2>
                         <p>Foundry will accumulate FRY holders who believe in unstoppable economic freedom. After SmokeSignal and DAIHard, FRY holders will likely drive Foundry to build or invest in similar pursuits: profitable tools that increase economic freedom which cannot be shut down.</p>
                     </div>
-                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
+                    <div class="col-9 offset-3 col-sm-4 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>Liquid Democracy</h2>
                         <p>Team Toast is designing a Liquid Democracy system that allows Foundry to rely on FRY holders for intelligent decision-making, while avoiding common pitfalls of DAO governance. <a href="https://github.com/team-toast/foundry-design/releases/latest/download/foundry-design.pdf">Read the whitepaper</a> for more on this design.</p>
                     </div>
-                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
+                    <div class="col-9 offset-3 col-sm-4 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>FRY Sale</h2>
                         <p>The sale of FRY opened at noon UTC, June 19th 2020, and will run just for about 19 months, until January 23, 2022. Read more about it on our <a href="#about-the-token-sale"  class="href-pop-content">FAQ</a>.</p>
                     </div>
@@ -347,7 +357,7 @@
             </div>
             <div id="collapse-zimdai" class="collapse container-fluid" aria-labelledby="heading-zimdai" data-parent="#accordion">
                 <article class="box-content row pattern">
-                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
+                    <div class="col-9 offset-3 col-sm-4 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>Zimbabwe's Plight</h2>
                         <p>
                             The official currency of Zimbabwe is rapidly inflating,
@@ -358,7 +368,7 @@
                             Internal political pressure has proven incapable of changing any of this.
                         </p>
                     </div>
-                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
+                    <div class="col-9 offset-3 col-sm-4 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>Blueprint For an Economic Jailbreak</h2>
                         <p>
                             <a href="https://github.com/coinop-logan/ZimDai/raw/master/whitepaper.pdf">
@@ -370,7 +380,7 @@
                             It is the result of two months of on-the-ground research by Logan, funded by Team Toast.
                         </p>
                     </div>
-                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
+                    <div class="col-9 offset-3 col-sm-4 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>The Missing Piece</h2>
                         <p>What's needed is a marketing drive. With both marketing leadership and funding, we may have on our hands a strikingly realistic, immediately applicable plan to liberate the Zimbabwean citizenry from systemic financial abuse. This has been a dream within crypto for years. Given significant funding, we expect Foundry to lead and fund this campaign.</p>
                     </div>
@@ -395,19 +405,19 @@
             </div>
             <div id="collapse-products" class="collapse container-fluid" aria-labelledby="heading-products" data-parent="#accordion">
                 <article class="box-content row pattern">
-                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
+                    <div class="col-9 offset-3 col-sm-4 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>SmokeSignal</h2>
                         <p>SmokeSignal is a herald of an age without censorship.
                             Pseudonymous users can post to topics and reply in a nested fashion, and each post is both immediately public and impossible to delete. <a href="https://foundrydao.com/smokesignal/">The conversation has already started.</a></p>
                         </div>
-                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
+                    <div class="col-9 offset-3 col-sm-4 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>DAIHard</h2>
                         <p> DAIHard extends many of the promises of crypto (borderless, anonymous, limitless, unstoppable)
                             into entering and exiting crypto itself.
                             Anyone, anywhere can buy and sell DAI for local cash in a peer-to-peer marketplace, without KYC.
                             <a href="https://daihard.exchange/#/marketplace">Browse the DAIHard marketplace</a></p>
                     </div>
-                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
+                    <div class="col-9 offset-3 col-sm-4 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>The Road Ahead</h2>
                         <p>Foundry will attract FRY holders who value profitable tools that guarantee economic freedom. This will give Foundry a preference to fund products that fragile meatbags may be reluctant to, for fear of persecution.</p>
                     </div>
@@ -437,7 +447,7 @@
                             <div class="col-3  d-lg-none d-sm-none d-xs-block">
                                 <img class="img-fluid profile-pic" id="oglog" src="images/oglog.jpg" alt="Logan Brutsche">
                             </div>
-                            <div class="col-9 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
+                            <div class="col-9 col-sm-4 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
                                 <img class="profile-pic-desk" id="oglog" src="images/oglog.jpg" alt="Logan Brutsche">
                                 <h2>Logan Brutsche (<a href="https://www.reddit.com/user/coinop-logan">Reddit</a>, <a href="https://github.com/coinop-logan">Github</a>)</h2>
                                 <p>Co-founder and CEO of Team Toast, and doting mother of Foundry.
@@ -451,7 +461,7 @@
                             <div class="col-3  d-lg-none d-sm-none d-xs-block">
                                 <img class="img-fluid profile-pic" id="schalk" src="images/schalk.png" alt="Schalk Dormehl">
                             </div>
-                            <div class="col-9 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
+                            <div class="col-9 col-sm-4 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
                                 <img class="profile-pic-desk" id="schalk" src="images/schalk.png" alt="Schalk Dormehl">
                                 <h2>Schalk Dormehl (<a href="https://github.com/sjalq">Github</a>)</h2>
                                 <p>Co-founder of Team Toast and Sugar Daddy for Foundry.
@@ -465,7 +475,7 @@
                             <div class="col-3 d-lg-none d-sm-none d-xs-block">
                                 <img class="img-fluid profile-pic" id="thoughtful" src="images/thoughtful.jpeg" alt="V for Visuals">
                             </div>
-                            <div class="col-9 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
+                            <div class="col-9 col-sm-4 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
                                 <img class="profile-pic-desk" id="schalk" src="images/thoughtful.jpeg" alt="V for Visuals">
                                 <h2>V for Visuals</h2>
                                 <p>Visual Designer for DAIHard and Foundry. Shrouded in secrecy.

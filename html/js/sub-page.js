@@ -31,7 +31,25 @@ var foundrySub = {
             }, 1000)
         });
     },
-
+    renderHtml: function(url) {
+        foundrySub.mainSection = document.getElementById('mainSection');
+        if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
+            $(foundrySub.mainSection).load(url);
+        }else {
+            fetch(url)
+            .then(function(response) {
+                return response.text()}
+                )
+            .then(function(html) {
+                foundrySub.mainSection.innerHTML = html;
+            })
+            .catch(function(error) {
+            console.log(error);
+            });     
+        }
+    }
+        
+      
 };
 $(function() {
     foundrySub.init();

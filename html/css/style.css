@@ -1142,6 +1142,10 @@ html {
 .no-js h1 {
     color: #222222;
 }
+.rendered-md ul {
+    list-style: circle;
+    color: #234080;
+}
 @media (max-width: 865px) and (min-width: 576px){
     .banner {
         height: 420px;
@@ -1287,7 +1291,7 @@ html {
     }
     .container-desk a.contact-us {
         position: absolute;
-        top: 45%;
+        top: 50%;
         right: 8%;
         font-size: 32.37386322px;
         font-family: 'DM Sans', sans-serif;

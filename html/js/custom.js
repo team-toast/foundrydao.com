@@ -112,7 +112,7 @@ var foundry = {
         });
         //End add remove shdow effects to the expanded elements in accordion   
         $(window).on('scroll', function() {
-            if (document.documentElement.scrollTop > 100) {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 foundry.$scrollToTop.css('display','block');
               } else {
                 foundry.$scrollToTop.css('display','none');

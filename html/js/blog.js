@@ -45,6 +45,7 @@ var foundrySub = {
         foundrySub.mainSection = document.getElementById('mainSection');
         if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
             $(foundrySub.mainSection).load(url , function(){
+                $(foundrySub.mainSection).find("section:first").addClass("d-none");
                 var data = foundrySub.extractData(foundrySub.mainSection);
                 foundrySub.addDataToBlog(data);
             });
@@ -55,6 +56,7 @@ var foundrySub = {
                 )
             .then(function(html) {
                 foundrySub.mainSection.innerHTML = html;
+                $(foundrySub.mainSection).find("section:first").addClass("d-none");
                 var data = foundrySub.extractData(foundrySub.mainSection);
                 foundrySub.addDataToBlog(data);
             })
@@ -72,7 +74,7 @@ var foundrySub = {
         result['text'] = $(element).find("p:first").text();
         result['text'] = result['text'].substr(0,250) + '...';
         result['imgSrc'] = $(element).find("img:first").attr('src');
-
+        
         if(result['title'].length > 24){
             result['title'] = result['title'].substr(0,24) + '...';
         }

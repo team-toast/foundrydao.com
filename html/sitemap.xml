@@ -30,4 +30,19 @@
     <lastmod>2020-08-27</lastmod>
     <priority>0.60</priority>
   </url>
+    <url>
+    <loc>https://foundrydao.com/blog/</loc>
+    <lastmod>2020-09-28</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://foundrydao.com/blog/what-is-foundry-meant-to-accomplish/</loc>
+    <lastmod>2020-09-28</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://foundrydao.com/blog/letting-the-wise-lead/</loc>
+    <lastmod>2020-09-28</lastmod>
+    <priority>0.60</priority>
+  </url>
 </urlset>

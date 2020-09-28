@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- CRAZYEGG -->
+     <!-- CRAZYEGG -->
     <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0094/2740.js" async="async"></script>
-    
+
     <!-- GOOGLE ANALYTICS -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143211145-4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
- 
+
         gtag('config', 'UA-143211145-4', {
-            'linker': {
+                'linker': {
                     'domains':
                         [
                             'sale.foundrydao.com',
@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -53,9 +53,10 @@
     <meta name="application-name" content="foundrydao">
     <meta name="msapplication-TileColor" content="#262f68">
     <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-    <title>Foundry - Letting the Wise Lead the Crowd</title>
+    <title>Foundry - Blog-Title</title>
+
 </head>
-<body>
+<body class="individual-blog">
     <!-- DesktopView -->
     <div id="loader-wrapper">
         <iframe style="display:none" id="referralCaptureIframe" src="https://sale.foundrydao.com/captureReferral.html" onload="captureAndHideReferral()"></iframe>
@@ -96,30 +97,33 @@
                         <div class="col">
                             <a href="/#roadmap">
                                 <div class="row">
-                                <img class="img-fluid blog-n-roadmap" src="/images/svg/icons/roadmap-icon.svg" alt="" srcset="">
-                            </div>
-                            <div class="row">
-                                <span>Roadmap</span>
-                            </div>
+                                    <img class="img-fluid blog-n-roadmap" src="/images/svg/icons/roadmap-icon.svg" alt="" srcset="">
+                                </div>
+                                <div class="row">
+                                    <span>Roadmap</span>
+                                </div>
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
         </header>
         <div class="inner-container">
             <section class="section">
                 <header class="section-head">
-                    <img class="img-fluid" id="buy-fry-section-img" src="/images/svg/desk-sections/weekely-progress-demos-section.svg" alt="">
-                    <h2>LIQUID DEMOCRACY</h2>
-                    <a class="foundry-fry" href="https://sale.foundrydao.com/" rel="noreferrer" target="_blank"></a>
+                    <img class="img-fluid" id="buy-fry-section-img" src="/images/svg/blog-elements/blog-list-view.svg" alt="">
+                    <h2 id="blog-title">TITLE</h2>
+                    <span id="blog-date" class="foundry-fry">DATE</span>
                 </header>
                 <section class="section-box">
                     <div class="section-box-shadow"></div>
+                        <header class="blog-author">
+                            <h3 id="blog-author">Author</h3>
+                        </header>
                     <div class="section-body template-content" id="pop-desktop">
-                        <a href="/" id="back-home"> &lt; Back</a>
+                        <div id='mainSection' class="body rendered-md">
 
-                        <div id='mainSection' class="body rendered-md"></div>
-                    
+                        </div>
                     </div>
                 </section>
             </section>
@@ -162,7 +166,7 @@
                 </div>
             </footer>
         </div>
-        <footer>
+        <footer class="custom-sticky">
             <div class="elements-bottom">
                 <div id="element-holder-desk-bottom-left">
                     <div id="element-desk-bottom-left-wt-border"></div>
@@ -182,16 +186,16 @@
                 </div>
             </div>
         </footer>
-
+    
     </div>
     <!--END DesktopView -->
     <!-- MobileView -->
-    <div class="container-mobile d-lg-none d-sm-none d-xs-block">
+    <div class="container-mobile blog d-lg-none d-sm-none d-xs-block">
         <header>
             <div class="top-bar">
                 <img class="img-fluid" id="top-bar-mobile-img" src="/images/svg/top-bar-mobile.svg" alt="foundrydao">
                 <a href="/"><img class="img-fluid logo" src="/images/svg/logo.svg" alt="foundrydao"></a>
-                <div class="floating-nav home-mob-nav row">
+                <div class="floating-nav row">
                     <div class="col blog-mobile-link">
                         <a href="/blog">
                             <div class="row">
@@ -216,18 +220,33 @@
             </div>
         </header>
         <div class="container-box container-fluid">
-            <article class="box-content row pattern">
-                <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
+            <article class="pattern mobile-blog">
+                <div class="section-mobile-title row">
+                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
+    
+                    </div>
+                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0content">
+        
+                        <div class=" text-left">
+                            <h2 id="blog-mob-title">Title</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 text-left"><h3 id="blog-mob-author">Author</h3></div>
+                            <div class="col-6 text-right"><h3 id="blog-mob-date">Date</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content" id="pop-mobile">
+                
+                    </div>
+                </div>
 
-                </div>
-                <div class="col-9 offset-3 col-sm-12 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content" id="pop-mobile">
-            
-                </div>
             </article>
         </div>
         <footer>
             <div class="bottom-bar">
-                <a class="contact-us" href="#contact" data-toggle="modal" data-target="#contact-modal">Contact/Social Media</a>
+                <a class="contact-us" href="#contact" data-toggle="modal" data-target="#contact-modal">Contact</a>
                 <img class="img-fluid" id="bottom-bar-mobile-img" src="/images/svg/bottom-bar-mobile.svg" alt="foundrydao">
                 <a href="/"><img class="logo img-fluid" src="/images/svg/logo.svg" alt="foundrydao"></a>
             </div>
@@ -270,16 +289,12 @@
         </div>
     </div>
     <!--End Contact Modal -->
-
+    
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="/js/jquery.easeScroll.min.js"></script>
+    <script src="/js/blog.js"></script>
     <script src="/js/imagesloaded.pkgd.min.js"></script>
-    <script src="/js/sub-page.js"></script>
-    <script>
-        window.onload = function(){
-            foundrySub.renderHtml('/common-assets/rendered-md/letting-the-wise-lead.html');
-        }
-    </script>
+    
 </body>
 </html>

@@ -1,28 +1,27 @@
 
 var foundryBlog = {
     init: function(){
-        foundryBlog.loadFileNames('/common-assets/blog')
+        foundryBlog.loadFileNames()
     },
-    loadFileNames: function (dir) {
+    loadFileNames: function () {
             try {
                 $.ajax({
-                    url: dir,
+                    type: "GET",
+                    url: "blog-list.xml",
+                    dataType: "xml",
                     success: function(data){
                     return data;    
-                }
+                    },
+                    error: function() {
+                       console.log("Failed to get xml");
+                    }
                 })
                 .then(function(data) {
                     var fileNames = new Array();
-                    $(data).find("td > a").each(function(){
-                        var file = $(this).attr("href"); 
-                        var extension = file.substr( (file.lastIndexOf('.') +1) );
-                            switch(extension) {
-                                case 'html':
-                                fileNames.push(file);
-                                break;
-                                default:
-                                break;
-                            }
+                    $('blog', data).each(function(index){
+                        console.log("here");
+                        var file =  $(this).find('file').text();
+                        fileNames.push(file);
                     });
                     foundryBlog.process(fileNames);
                 })
@@ -35,8 +34,8 @@ var foundryBlog = {
             for(var i=0; i < fileNames.length; i++){
                 /*remove the 2 line below when working in local and replace with var url=fileNames[i]; */
                 var urlStringPath = "/common-assets/blog/";
-                var url = urlStringPath.concat(fileNames[i]);
-                //var url=fileNames[i];
+                 var url = urlStringPath.concat(fileNames[i]);
+               //var url=fileNames[i];
                     $.get(url)
                         .then(function(my_var) {
                             element.innerHTML = my_var;

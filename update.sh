@@ -9,7 +9,7 @@ echo "Updating foundrydao.com"
 echo "transferring dist.tar"
 scp -i $2 dist.tar $1@foundrydao.com:~/update/
 echo "calling remote update script"
-ssh -i $2 $1@foundrydao.com '~/bin/update'
+ssh -i $2 $1@foundrydao.com '\/bin/updatefdcom'
 
 echo "remote update finished, removing tar"
 rm dist.tar

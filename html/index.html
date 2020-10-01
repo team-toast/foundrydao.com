@@ -44,8 +44,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="icon" type="image/png" href="favicon.ico"/>
-    <link rel="apple-touch-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="foundrydao">
+    <meta name="application-name" content="foundrydao">
+    <meta name="msapplication-TileColor" content="#262f68">
+    <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
     <title>Foundry: A DAO for Economic Freedom</title>
 
 </head>
@@ -75,7 +82,29 @@
             </div> 
             <div class="top-bar">
                 <img id="top-bar-desk-img" src="images/svg/top-bar-desktop.svg" alt="foundrydao">
-                <a href="#home"><img  class="img-fluid logo" src="images/svg/logo.svg" alt="foundrydao"></a>
+                <a href="/"><img  class="img-fluid logo" src="images/svg/logo.svg" alt="foundrydao"></a>
+                <div class="floating-nav row">
+                    <div class="col">
+                        <a href="/blog">
+                            <div class="row">
+                                <img  class="img-fluid blog-n-roadmap" src="images/svg/icons/blog-icon.svg" alt="" srcset=""> 
+                            </div>
+                            <div class="row">
+                                <span class="blog-link">Blog</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#roadmap">
+                            <div class="row">
+                            <img class="img-fluid blog-n-roadmap" src="images/svg/icons/roadmap-icon.svg" alt="" srcset="">
+                        </div>
+                        <div class="row">
+                            <span>Roadmap</span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -222,6 +251,135 @@
                 </div>
             </section>
         </section>
+    </div>
+    <section class="section-container"  id="roadmap">
+        <header>
+            <div class="roadmap-bg-container">
+                <img class="img-fluid" src="/images/svg/roadmap-elements/roadmap-bg.svg" alt="">
+                <div class="roadmap-flowchart-container">
+                    <img  class="img-fluid logo" src="images/svg/logo.svg" alt="foundrydao">
+                    <h2>The road map</h2>
+                    <img id="roadmap-flowcart" src="/images/svg/roadmap-elements/center-dashed-line.svg" alt="">
+                    <div id="top-date-element">
+                        <h3>11th September 2020</h3>
+                        <img id="top-date-element-next-to-star" src="/images/svg/roadmap-elements/top-date-element-next-to-star.svg" alt="">
+                    </div>
+                    <img id="week2-connect" src="/images/svg/roadmap-elements/connectors/left-box-connector.svg" alt="">
+                    <div id="week2-content" class="roadmap-box-content">
+                        <h3>WEEK 2</h3>
+                        <h4>SENTIMENTAL POLLING</h4>
+                        <img id="week2-top-section" src="/images/png/left-content-box/01-roadmap-top-part.png" alt="">
+                        <div>
+                            <p>The first of many "off-chain sentiment tools",
+                                Sentiment Voting will be an app for FRY holders to
+                                vote on different topics, pseudonymously, using
+                                Ethereum signatures. As with all sentiment tools, this
+                                will help individual FRY holders "get to know"
+                                Foundry, allowing the community to coordinate
+                                around plans-of-action with a lot of support.</p>
+                                <p>
+                                We expect to have a live POC in one week, and will
+                                sharpen it up a bit in the following week.</p>
+                        </div>
+                        
+                        <img id="week2-btm-section" src="/images/png/left-content-box/roadmapleft-content-box-bottom-without-bg.png" alt="">
+                    </div>
+                    <img id="month3-connect" src="/images/svg/roadmap-elements/connectors/right-box-connector.svg" alt="">
+                    <div id="month3-content" class="roadmap-box-content">
+                        <h3>MONTH 3</h3>
+                        <h4>SENTIMENT FORUM</h4>
+                        <img id="month3-top-section" src="/images/png/right-content-box/roadmap-right-contentbox-top-part.png" alt="">
+                        <div>
+                            <p>Foundry already has a forum at
+                                forum.foundrydao.com. To make this a sentiment
+                                forum, we will modify the software to incorporate a
+                                user's FRY balance or identity into the posts. This way,
+                                discussions on the forum will also include information
+                                about which writers actually represent large FRY
+                                holders (and thus significant voting power).</p>
+                                <p>
+                                This will be an ideal place to prepare proposals,
+                                before submitting them to the actual governance
+                                contract.</p>
+                        </div>
+                        <img id="month3-btm-section" src="/images/png/right-content-box/roadmap-right-content-box-bottom-without-bg1.png" alt="">
+                    </div>
+                    <img id="fat-tresurey-connect" src="/images/png/connectors/curly-bracket-connector.png" alt="">
+                    <div id="fat-tresurey-content" class="roadmap-box-content">
+                        <h3>¯\_(ツ)_/¯</h3>
+                        <h4>FAT TREASUREY</h4>
+                        <img id="fat-tresurey-top-section" src="/images/png/left-content-box/01-roadmap-top-part.png" alt="">
+                        <div>
+                            <p>Foundry needs a large treasury to pursue any of its
+                                plans, from the practical (marketing and iterating
+                                DAIHard and SmokeSignal) to the bold (ZimDai).</p>
+                                <p>
+                                We are aiming for multi-millions of DAI raised by the
+                                time Liquid Democracy is built, but it's hard to predict
+                                exactly how fast this will happen. To work toward this,
+                                we'll be trying and refining many marketing strategies,
+                                while building out the core product and delivering on
+                                commitments.</p>
+                        </div>
+                        <img id="fat-tresurey-btm-section" src="/images/png/left-content-box/roadmapleft-content-box-bottom-without-bg.png" alt="">
+                    </div>
+                    <img id="year1-connect" src="/images/svg/roadmap-elements/connectors/right-box-connector.svg" alt="">
+                    <div id="year1-content" class="roadmap-box-content">
+                        <h3>YEAR 1</h3>
+                        <h4>GOVERNANCE V1.0 LIVE</h4>
+                        <div id="extent-pink-header-1"> 
+                        </div>
+                        <img id="year1-top-section" src="/images/png/right-content-box/roadmap-right-contentbox-top-part.png" alt="">
+                        <div id="div1">
+                            <p>One of our highest priorities. Full Governance will
+                                implement Liquid Democracy as described in the
+                                Foundry Whitepaper.
+                            </p>
+                        </div>
+                        <div id="extent-pink-header-2"> 
+                        </div>
+                        <div id="div2">
+                            <h4>FOUNDRY WHITEPAPER</h4>
+                            <p>This can be considered complete once Team Toast no
+                                longer has any special control over the Treasury or
+                                other Foundry assets, and FRY holders are solely
+                                responsible for proposing, voting in, and executing
+                                actions in the name of Foundry
+                            </p>
+                        </div>
+                        
+
+                        <img id="year1-btm-section" src="/images/png/right-content-box/roadmap-right-content-box-bottom-without-bg1.png" alt="">
+                    </div>
+
+                    <img id="the-future-connect" src="/images/png/connectors/the-future-box-connect-top.png" alt="">
+                    <div id="the-future-content" class="roadmap-box-content">
+                        <h3>THE FUTURE</h3>
+                        <h4>PROJECT DEVELOPMENT</h4>
+
+                        <img id="the-future-top-section" src="/images/png/the-future-box/the-future-box-top-part.png" alt="">
+                        <div id="the-future-box-content">
+                            <p>Once Governance v1.0 is complete, Foundry is
+                                expected to begin to pursue profitable projects that
+                                increase financial freedom. This could be any
+                                combination of marketing and iterating DAIHard and
+                                SmokeSignal, funding new projects, pursuing a
+                                profitable ZimDai plan, investing in other projects, and
+                                much more.
+                                The decisions Foundry makes at this point is
+                                determined by the values, desires, and principles of
+                                the FRY holders</p>
+                        </div>
+  
+                        <img id="the-future-btm-section" src="/images/png/left-content-box/roadmapleft-content-box-bottom-without-bg.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </header>
+    </section>
+    
+    <div class="inner-container">
         <footer class="desk-footer">
             <div class="desk-footer-wrap">
                 <div class="footer-logo mx-auto">
@@ -291,6 +449,28 @@
             <img class="img-fluid" id="top-bar-mobile-img" src="images/svg/top-bar-mobile.svg" alt="foundrydao">
             <a href="#"><img class="img-fluid logo" src="images/svg/logo.svg" alt="foundrydao"></a>
         </div>
+        <div class="floating-nav home-mob-nav row">
+            <div class="col blog-mobile-link">
+                <a href="/blog">
+                    <div class="row">
+                        <img  class="img-fluid blog-n-roadmap" src="images/svg/icons/blog-icon.svg" alt="" srcset=""> 
+                    </div>
+                    <div class="row">
+                        <span class="home-blog-link">Blog</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col roadmap-mobile-link">
+                <a href="#roadmap" id="roadmap-mobile-link-click">
+                    <div class="row">
+                    <img class="img-fluid blog-n-roadmap" src="images/svg/icons/roadmap-icon.svg" alt="" srcset="">
+                </div>
+                <div class="row">
+                    <span class="home-roadmap-link">Roadmap</span>
+                </div>
+                </a>
+            </div>
+        </div>
     </header>
     <div class="banner-mobile">
         <img class="img-fluid" id="fire-bg-mobile-img" src="images/fire-bg-mobile.jpg" alt="foundrydao-fire-bg">
@@ -302,7 +482,7 @@
         </section>
     </div>
 
-<!-- Accordion START -->
+    <!-- Accordion START -->
     <div id="accordion">
         <div class="container-box">
             <div class="blue-gradient container-fluid" id="heading-foundry-fry">
@@ -566,7 +746,7 @@
                         <h2 id="what-are-the-benefits-of-using-a-referral-code-from-someone-else">What are the benefits of using a referral code from someone else?</h2>
                         <p>You will get 10% of the value you are entering into a sale bucket, also entered into the next sale bucket. So if you are buying 100 DAI in bucket 20, then you will also be credited for a purchase of 10 DAI in bucket 21. Note that the price of FRY will likely differ between these two buckets, meaning that the amount of <em>claimable FRY</em> in bucket 21 will likely be different than 10% of that in bucket 20.</p>
                         <h2 id="what-are-the-benefits-of-sharing-a-referral-code">What are the benefits of sharing a referral code?</h2>
-                        <p>When someone buys with your referral code, you are credited as if you bought into the next bucket. Your credit in the following bucket starts at 10% and can go as high as 20% of the purchase of the person buying with your referral code. The bonus % is based on the amount of total sales referred with your code; 1% for every 1,000 DAI referred.</p>
+                        <p>When someone buys with your referral code, you are credited as if you bought into the next bucket. Your credit in the following bucket starts at 10% and can go as high as 100% of the purchase of the person buying with your referral code. The bonus % is based on the amount of total sales referred with your code; 1% for every 1,000 DAI referred.</p>
                         <p>For example, if you generate a referral code and share it with someone and they buy 1,000 DAI in bucket 23, then you will be credited with a sale of 11% (110 DAI) in bucket 24. If someone later buys another 2,000 DAI in bucket 40, then you will be credited with 13% (130 DAI) in bucket 41.</p>
                         <h2 id="how-do-i-make-a-referral-link">How do I make a referral link?</h2>
                         <p>See <a href="https://www.youtube.com/watch?v=AAGZZKpTcuQ">this tutorial video</a>.</p>
@@ -574,22 +754,152 @@
                 </article>
             </div>
         </div>
-      </div>
-<!-- Accordion END -->
+        <div class="the-roadmap">
+            <div class="blue-gradient container-fluid box-shadow-btm"  id="roadmap-mobile">
+                <div class="row collapsed" data-toggle="collapse" data-target="#collapse-roadmap-mobile" aria-expanded="false" aria-controls="collapse-roadmap-mobile" role="heading">
+
+                </div>
+            </div>
+            <div id="collapse-roadmap-mobile" class="collapse" aria-labelledby="heading-roadmap-mobile" data-parent="#accordion">
+                <div class="wrap-roadmap-mobile container-fluid">
+                    <div class="row">
+                        <div class="col-3">
+                            <img id="star-roadmap-mobile" src="/images/svg/star-element.svg" alt="">
+                            <img id="arrow-roadmap-mobile" src="/images/svg/roadmap-elements/dashed-line-element.svg" alt="">
+
+                        </div>
+                        <div class="col-9">
+                            <div id="top-date-element-mobile">
+                                <h3>11th September 2020</h3>
+                                <img id="top-date-element-next-to-star-mobile" src="/images/svg/roadmap-elements/top-date-element-next-to-star.svg" alt="">
+                            </div>
+                            <img class="connect-mobile" src="/images/svg/roadmap-elements/connectors/right-box-connector.svg" alt="">
+                            <div id="week2-content-mobile" class="roadmap-box-content-mobile">
+                                <h3>WEEK 2</h3>
+                                <h4>SENTIMENT POLLING</h4>
+                                <img id="week2-top-section-mobile" src="/images/png/right-content-box/roadmap-right-contentbox-top-part.png" alt="">
+                                <div>
+                                    <p>The first of many "off-chain sentiment tools",
+                                        Sentiment Voting will be an app for FRY holders to
+                                        vote on different topics, pseudonymously, using
+                                        Ethereum signatures. As with all sentiment tools, this
+                                        will help individual FRY holders "get to know"
+                                        Foundry, allowing the community to coordinate
+                                        around plans-of-action with a lot of support.</p>
+                                        <p>
+                                            We expect to have a live POC in one week, and will
+                                            sharpen it up a bit in the following week.</p>
+                                </div>
+                                <img id="week2-btm-section-mobile" src="/images/png/right-content-box/roadmap-right-content-box-bottom-without-bg1.png" alt="">
+                            </div>
+                            <img class="connect-mobile" id="mon3-connect-mobile" src="/images/svg/roadmap-elements/connectors/right-box-connector.svg" alt="">
+                            <div id="month3-content-mobile" class="roadmap-box-content-mobile">
+                                <h3>MONTH 3</h3>
+                                <h4>SENTIMENT FORUM</h4>
+                                <img id="month3-top-section-mobile" src="/images/png/right-content-box/roadmap-right-contentbox-top-part.png" alt="">
+                                <div>
+                                    <p>Foundry already has a forum at
+                                        forum.foundrydao.com. To make this a sentiment
+                                        forum, we will modify the software to incorporate a
+                                        user's FRY balance or identity into the posts. This way,
+                                        discussions on the forum will also include information
+                                        about which writers actually represent large FRY
+                                        holders (and thus significant voting power).</p>
+                                        <p>
+                                        This will be an ideal place to prepare proposals,
+                                        before submitting them to the actual governance
+                                        contract.</p>
+                                </div>
+                                <img id="month3-btm-section-mobile" src="/images/png/right-content-box/roadmap-right-content-box-bottom-without-bg1.png" alt="">
+                        
+                            </div>
+                            <img class="connect-mobile" id="fat-connect-mobile" src="/images/svg/roadmap-elements/connectors/right-box-connector.svg" alt="">
+                            <div id="fat-tresurey-content-mobile" class="roadmap-box-content-mobile">
+                                <h3>¯\_(ツ)_/¯</h3>
+                                <h4>FAT TREASUREY</h4>
+                                <img id="fat-tresurey-top-section-mobile" src="/images/png/right-content-box/roadmap-right-contentbox-top-part.png" alt="">
+                                <div>
+                                    <p>Foundry needs a large treasury to pursue any of its
+                                        plans, from the practical (marketing and iterating
+                                        DAIHard and SmokeSignal) to the bold (ZimDai).</p>
+                                        <p>
+                                        We are aiming for multi-millions of DAI raised by the
+                                        time Liquid Democracy is built, but it's hard to predict
+                                        exactly how fast this will happen. To work toward this,
+                                        we'll be trying and refining many marketing strategies,
+                                        while building out the core product and delivering on
+                                        commitments.</p>
+                                </div>
+                                <img id="fat-tresurey-btm-section-mobile" src="/images/png/right-content-box/roadmap-right-content-box-bottom-without-bg1.png" alt="">
+                            </div>
+                            <img class="connect-mobile" id="year1-connect-mobile" src="/images/svg/roadmap-elements/connectors/right-box-connector.svg" alt="">
+                            <div id="year1-content-mobile" class="roadmap-box-content-mobile">
+                                <h3>YEAR 1</h3>
+                                <h4>GOVERNANCE V1.0 LIVE</h4>
+                                <img id="year1-top-section-mobile" src="/images/png/right-content-box/roadmap-right-contentbox-top-part.png" alt="">
+                                <div id="div1-mobile">
+                                    <p>One of our highest priorities. Full Governance will
+                                        implement Liquid Democracy as described in the
+                                        Foundry Whitepaper.
+                                    </p>
+                                </div>
+                                <div id="extent-pink-header-2-mobile"> 
+                                </div>
+                                <div id="div2-mobile">
+                                    <h4>FOUNDRY WHITEPAPER</h4>
+                                    <p>This can be considered complete once Team Toast no
+                                        longer has any special control over the Treasury or
+                                        other Foundry assets, and FRY holders are solely
+                                        responsible for proposing, voting in, and executing
+                                        actions in the name of Foundry
+                                    </p>
+                                </div>
+                                
+        
+                                <img id="year1-btm-section-mobile" src="/images/png/right-content-box/roadmap-right-content-box-bottom-without-bg1.png" alt="">
+                            </div>
+                            <img class="connect-mobile" id="future-connect-mobile" src="/images/svg/roadmap-elements/connectors/right-box-connector.svg" alt="">
+                            <div id="the-future-content-mobile" class="roadmap-box-content-mobile">
+                                <h3>THE FUTURE</h3>
+                                <h4>PROJECT DEVELOPMENT</h4>
+        
+                                <img id="the-future-top-section-mobile" src="/images/png/right-content-box/roadmap-right-contentbox-top-part.png" alt="">
+                                <div id="the-future-box-content-mobile">
+                                    <p>Once Governance v1.0 is complete, Foundry is
+                                        expected to begin to pursue profitable projects that
+                                        increase financial freedom. This could be any
+                                        combination of marketing and iterating DAIHard and
+                                        SmokeSignal, funding new projects, pursuing a
+                                        profitable ZimDai plan, investing in other projects, and
+                                        much more.
+                                        The decisions Foundry makes at this point is
+                                        determined by the values, desires, and principles of
+                                        the FRY holders</p>
+                                </div>
+          
+                                <img id="the-future-btm-section-mobile" src="/images/png/right-content-box/roadmap-right-content-box-bottom-without-bg1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Accordion END -->
     <footer>
         <div class="bottom-bar">
-            <a class="contact-us" href="#contact" data-toggle="modal" data-target="#contact-modal">Contact/Social Media</a>
+            <a class="contact-us" href="#contact" data-toggle="modal" data-target="#contact-modal">Contact</a>
             <img class="img-fluid" id="bottom-bar-mobile-img" src="images/svg/bottom-bar-mobile.svg" alt="foundrydao">
             <a href="#"><img class="logo img-fluid" src="images/svg/logo.svg" alt="foundrydao"></a>
         </div>
     </footer>
 
 </div>
-<!-- END MobileView -->
+    <!-- END MobileView -->
     <div class=" container">
         <button  type="button" class="btn btn-default" aria-label="Left Align" id="scroll-to-top" title="Go to top"> <img class="arrow" src="images/svg/arrow.svg" alt=""></button>
     </div>
-<!-- Contact Modal -->
+    <!-- Contact Modal -->
 <div class="modal fade animate" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-social-media" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content animate-bottom">
@@ -606,6 +916,8 @@
                     <li><a href="https://twitter.com/FoundryDAO">Twitter</a></li>
                     <li><a href="https://www.youtube.com/channel/UC4Z34M4q5emaYlJP_Sqa-Cw">YouTube</a></li>
                     <li><a href="https://medium.com/daihard-buidlers">Medium</a></li>
+                    <li><a href="https://forum.foundrydao.com">Forum</a></li>
+                    <li><a href="https://dashboard.foundrydao.com">Dashboard</a></li>
                     <li>Email: teamtoastdevs@gmail.com</li>
                     </ul>
                     <h2  class="theme-h2" id="for-legal-inquiries-contact">For Legal Inquiries, Contact:</h2>
@@ -626,6 +938,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="js/jquery.easeScroll.min.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/custom.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>

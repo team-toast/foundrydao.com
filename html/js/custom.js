@@ -9,6 +9,7 @@ var foundry = {
     $scrollToTop: null,
     $goToHref: null,
     $goTo: null,
+    $roadmap: null,
     tagId: null,
     tagDetails: {
         $link: null,
@@ -18,9 +19,41 @@ var foundry = {
         foundry.$accordion = $('#accordion');
         foundry.$dataCollapse = $('[data-target^="#collapse"]');
         foundry.$deskIcons = $('.landing-page > .icon-group > .col  a');
-        foundry.$deskLogo = $('.container-desk .top-bar a');
+        foundry.$deskLogo = $('.container-desk > header > .elements > .top-bar > a > .logo');
         foundry.$scrollToTop = $('#scroll-to-top');
         foundry.$goToHref = $('a.href-pop-content');
+        foundry.$roadmap = $('.top-bar > div > div:nth-child(2) > a');
+        foundry.$roadmapMobile = $('#roadmap-mobile-link-click');
+        foundry.$deskLogoMob = $('.container-mobile > header > .top-bar > a > .logo');
+        foundry.$deskLogoMobBottom = $('.container-mobile > footer > .bottom-bar > a > .logo');
+        foundry.$beforeContactHash='#'
+        var url = $(location).attr('href');
+        var parts = url.split("/");
+        var last_part = parts[parts.length-1];
+        if(last_part !== ''){
+            if($(window).width() <= 575){
+                foundry.displayMobileContent(last_part);
+            }else {
+                switch (last_part){
+                                case '#foundry-fry':
+                                case '#zimdai':
+                                case '#products':
+                                case '#team-toast':
+                                case '#faq':
+                                    foundry.displayContent(last_part);
+                                    break;
+                                case '#roadmap':
+                                    foundry.showRoadMAp();
+                                    break;
+                                case '#contact-us':
+                                    $('#contact-modal').modal('show');
+                                default:
+
+                                    break;
+                            }
+            }
+            
+        }
     },
 
     loadDynamicHt: function() {
@@ -102,16 +135,18 @@ var foundry = {
             $('.container-mobile ').css('margin-top', topBarHeight);
         });
         //Add remove shadow effects to the expanded elements in accordion 
-        foundry.$accordion.on('shown.bs.collapse', function() {
+        foundry.$accordion.on('shown.bs.collapse', function(e) {
             $(".blue-gradient > .collapsed").addClass('overlay');
             $("[aria-expanded='true']").parent().removeClass('box-shadow-btm');
+            foundry.showMobileLocationHash(e.target.id);
         });
         foundry.$accordion.on('hide.bs.collapse', function() {
             $(".blue-gradient > .collapsed").removeClass('overlay');
             $("[aria-expanded='true']").parent().addClass('box-shadow-btm');
+            window.location.hash = '#' ;
         });
         //End add remove shdow effects to the expanded elements in accordion   
-        $(window).on('scroll', function() {
+        $(window).on('scroll', function(e) {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 foundry.$scrollToTop.css('display','block');
               } else {
@@ -132,7 +167,6 @@ var foundry = {
             }, 300)
         });
         foundry.$scrollToTop.on('click', function(e) {
-            e.preventDefault();
             $('html, body').animate({
                 scrollTop: 0,
             }, 1000)
@@ -142,28 +176,69 @@ var foundry = {
             $('html, body').animate({
                 scrollTop: 0,
             }, 1000);
-            if (foundry.$deskIconToggle !== '#home' && foundry.$deskIconToggle !== '#') {
-                $('.section-container:nth-child(' + foundry.$sectionContainer + ')').toggle('display');
+            $('.section-container').css('display', 'none');
+            if (foundry.$deskIconToggle !== '#') {
                 $('.desk-footer').toggle('display');
                 $('#scroll-to-top').toggle('display');
                 $('.container-desk footer').addClass('custom-sticky');
-                window.location.hash = $(this).attr('href');
+                window.location.hash = "#";
                 foundry.$deskIconToggle = '#';
             }
+        });
+        foundry.$deskLogoMob.on('click', function(e){
+            $('.collapse')
+            .collapse('hide');
+        });
+        foundry.$deskLogoMobBottom.on('click', function(e){
+            $('.collapse')
+            .collapse('hide');
+        });
+        foundry.$roadmap.on('click', function(e){
+            e.preventDefault();
+            foundry.showRoadMAp();
         });
         foundry.$deskIcons.on('click', function(e) {
             e.preventDefault();
             var goTo = $(this).attr('href');
-            var n = 0;
+            foundry.displayContent(goTo);
+        })
+        foundry.$roadmapMobile.on('click', function(e){
+            e.preventDefault();
+            foundry.displayMobileContent('#roadmap');
+        });
+        $('#contact-modal').on('shown.bs.modal', function(){
+            if(window.location.hash == '#contact-us'){
+                foundry.$beforeContactHash = '#';
+            }else {
+                foundry.$beforeContactHash =window.location.hash;
+            }
+            window.location.hash = '#contact-us';
+        });
+        $('#contact-modal').on('hidden.bs.modal', function(){
+            window.location.hash = foundry.$beforeContactHash;
+        });
+    },
+    showRoadMAp: function(){
+        $('.section-container').css('display', 'none');
+        $('#roadmap').css('display', 'block');
+        $('html, body').animate({
+            scrollTop: $('#roadmap').offset().top - $('.container-desk .top-bar img').height(),
+        }, 1000);
+        window.location.hash = '#roadmap';
+        foundry.$deskIconToggle = '#roadmap';
+    },
+    displayContent: function (goTo) {
+        var n = 0;
             if (foundry.$deskIconToggle == goTo) {
                 $('html, body').animate({
                     scrollTop: 0,
                 }, 1000);
                 $('.section-container:nth-child(' + foundry.$sectionContainer + ')').toggle('display');
+                $('.section-container#roadmap').css('display', 'none');
                 $('.desk-footer').toggle('display');
                 $('.container-desk footer').addClass('custom-sticky');
                 $('#scroll-to-top').css('display', 'none');
-                foundry.$deskIconToggle = '#home';
+                foundry.$deskIconToggle = '#';
                 window.location.hash = foundry.$deskIconToggle;
                 return
             }
@@ -190,14 +265,91 @@ var foundry = {
             $('.container-desk footer').removeClass('custom-sticky');
             $('.desk-footer').css('display', 'block');
             $('.section-container:nth-child(' + n + ')').toggle('display');
+            $('.section-container#roadmap').css('display', 'none');
             $('html, body').animate({
                 scrollTop: $('.section-container:nth-child(' + n + ')').offset().top - $('.container-desk .top-bar img').height(),
             }, 1000);
             window.location.hash = goTo;
             foundry.$deskIconToggle = goTo;
             foundry.$sectionContainer = n;
-        })
     },
+    displayMobileContent: function(para){
+        if (para == '#roadmap') {
+            $("[data-target='#collapse-roadmap-mobile']").trigger('click');
+            setTimeout(function() {
+                $('html, body').animate({
+                    scrollTop: $("[data-target='#collapse-roadmap-mobile']").offset().top - $('.container-mobile header').height()
+                }, 1000);
+            }, 1000);
+        }
+        if (para == '#foundry-fry') {
+            $("[data-target='#collapse-foundry-fry']").trigger('click');
+            setTimeout(function() {
+                $('html, body').animate({
+                    scrollTop: $("[data-target='#collapse-foundry-fry']").offset().top - $('.container-mobile header').height()
+                }, 1000);
+            }, 1000);
+        }
+        if (para == '#zimdai') {
+            $("[data-target='#collapse-zimdai']").trigger('click');
+            setTimeout(function() {
+                $('html, body').animate({
+                    scrollTop: $("[data-target='#collapse-zimdai']").offset().top - $('.container-mobile header').height()
+                }, 1000);
+            }, 1000);
+        }
+        if (para == '#products') {
+            $("[data-target='#collapse-products']").trigger('click');
+            setTimeout(function() {
+                $('html, body').animate({
+                    scrollTop: $("[data-target='#collapse-products']").offset().top - $('.container-mobile header').height()
+                }, 1000);
+            }, 1000);
+        }
+        if (para == '#team-toast') {
+            $("[data-target='#collapse-team-toast']").trigger('click');
+            setTimeout(function() {
+                $('html, body').animate({
+                    scrollTop: $("[data-target='#collapse-team-toast']").offset().top - $('.container-mobile header').height()
+                }, 1000);
+            }, 1000);
+        }
+        if (para == '#faq') {
+            $("[data-target='#collapse-faq']").trigger('click');
+            setTimeout(function() {
+                $('html, body').animate({
+                    scrollTop: $("[data-target='#collapse-faq']").offset().top - $('.container-mobile header').height()
+                }, 1000);
+            }, 1000);
+        }
+        if(para == '#contact-us'){
+            $('#contact-modal').modal('show');
+        }
+    },
+    showMobileLocationHash: function(id){
+        switch (id){
+            case 'collapse-foundry-fry':
+                window.location.hash = '#foundry-fry' ;
+                break;
+            case 'collapse-zimdai':
+                window.location.hash = '#zimdai' ;
+                break;
+            case 'collapse-products':
+                window.location.hash = '#products' ;
+                break;
+            case 'collapse-team-toast':
+                window.location.hash = '#team-toast' ;
+                break;
+            case 'collapse-faq':
+                window.location.hash = '#faq' ;
+                break;
+            case 'collapse-roadmap-mobile':
+                window.location.hash = '#roadmap' ;
+                break;
+            default:
+             break;
+        }
+    }
 };
 $(function() {
     foundry.init();

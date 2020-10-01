@@ -36,3 +36,6 @@ RewriteRule ^(.*)$ https://foundrydao.com/$1 [R=301,L]
 
 RewriteCond %{HTTPS}  !=on
 RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+# Prevent file browsing
+Options -Indexes

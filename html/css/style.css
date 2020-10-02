@@ -1669,6 +1669,19 @@ html {
     text-shadow: 0 0 6px black;
     padding-top: 1.5%;
 }
+#roadmap h5 {
+    font-size: 2vw;
+    letter-spacing: 1vw;
+    text-transform: uppercase;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 6px black;
+    padding-top: 1.5%; 
+}
+#roadmap-home-link:hover {
+    text-decoration: none;
+}
 .roadmap-bg-container {
     position: relative;
 }

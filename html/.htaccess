@@ -39,3 +39,19 @@ RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
 
 # Prevent file browsing
 Options -Indexes
+
+#Homepage redirects 
+Redirect /sale https://sale.foundrydao.com/
+Redirect /foundry-fry /#foundry-fry
+Redirect /zimdai /#zimdai
+Redirect /products /#products
+Redirect /team-toast /#team-toast
+Redirect /faq /#faq
+Redirect /roadmap /#roadmap
+Redirect /contact-us /#contact-us
+Redirect /faq/about-the-token-sale /#faq/about-the-token-sale
+Redirect /blog/sale-terms /blog/#sale-terms
+Redirect /blog/affiliate-marketing /blog/#affiliate-marketing
+Redirect /blog/letting-the-wise-lead /blog/#letting-the-wise-lead
+Redirect /blog/what-is-foundry-meant-to-accomplish /blog/#what-is-foundry-meant-to-accomplish
+Redirect /blog/converting-irrational-exuberance-into-rational-investment /blog/#converting-irrational-exuberance-into-rational-investment

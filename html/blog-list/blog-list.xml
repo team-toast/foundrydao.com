@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<blogs>
+    <blog>
+      <author>Team Toast</author>
+      <file>sale-terms.html</file>
+    </blog>
+
+    <blog>
+      <author>Team Toast</author>
+      <file>letting-the-wise-lead.html</file>
+    </blog>
+    
+    <blog>
+      <author>Team Toast</author>
+      <file>what-is-foundry-meant-to-accomplish.html</file>
+    </blog>
+
+    <blog>
+      <author>Team Toast</author>
+      <file>converting-irrational-exuberance-into-rational-investment.html</file>
+    </blog>
+
+    <blog>
+      <author>Team Toast</author>
+      <file>affiliate-marketing.html</file>
+    </blog>
+
+
+    
+</blogs>

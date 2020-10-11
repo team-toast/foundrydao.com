@@ -11,8 +11,35 @@
     <priority>0.50</priority>
   </url>
   <url>
+    <loc>https://foundrydao.com/foundry-fry/</loc>
+    <lastmod>2020-03-13</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+  <url>
+    <loc>https://foundrydao.com/zimdai/</loc>
+    <lastmod>2020-03-13</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://foundrydao.com/products/</loc>
+    <lastmod>2020-03-13</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+  <url>
+    <loc>https://foundrydao.com/team-toast/</loc>
+    <lastmod>2020-03-13</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
     <loc>https://foundrydao.com/sale/</loc>
     <lastmod>2020-03-13</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://foundrydao.com/blog/sale-terms/</loc>
+    <lastmod>2020-10-10</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
@@ -20,29 +47,29 @@
     <lastmod>2020-08-20</lastmod>
     <priority>0.80</priority>
   </url>
-  <url>
-    <loc>https://foundrydao.com/affiliate-program/</loc>
-    <lastmod>2020-08-20</lastmod>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://foundrydao.com/liquid-democracy/letting-the-wise-lead/</loc>
-    <lastmod>2020-08-27</lastmod>
-    <priority>0.60</priority>
-  </url>
     <url>
-    <loc>https://foundrydao.com/blog/</loc>
-    <lastmod>2020-09-28</lastmod>
+    <loc>https://foundrydao.com/blog-list/</loc>
+    <lastmod>2020-10-10</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://foundrydao.com/blog/what-is-foundry-meant-to-accomplish/</loc>
-    <lastmod>2020-09-28</lastmod>
+    <lastmod>2020-10-10</lastmod>
     <priority>0.60</priority>
   </url>
   <url>
     <loc>https://foundrydao.com/blog/letting-the-wise-lead/</loc>
-    <lastmod>2020-09-28</lastmod>
+    <lastmod>2020-10-10</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://foundrydao.com/blog/converting-irrational-exuberance-into-rational-investment/</loc>
+    <lastmod>2020-10-10</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://foundrydao.com/blog/affiliate-marketing/</loc>
+    <lastmod>2020-10-10</lastmod>
     <priority>0.60</priority>
   </url>
 </urlset>

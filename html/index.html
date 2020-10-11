@@ -84,9 +84,9 @@
                 <img id="top-bar-desk-img" src="images/svg/top-bar-desktop.svg" alt="foundrydao">
                 <a href="/"><img  class="img-fluid logo" src="images/svg/logo.svg" alt="foundrydao"></a>
                 <div class="floating-nav row">
-                    <div class="col">
-                        <a href="/blog">
-                            <div class="row">
+                    <div class="floating-nav-col blog-mobile-link">
+                        <a href="/blog-list">
+                            <div>
                                 <img  class="img-fluid blog-n-roadmap" src="images/svg/icons/blog-icon.svg" alt="" srcset=""> 
                             </div>
                             <div class="row">
@@ -94,9 +94,9 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
-                        <a href="#roadmap">
-                            <div class="row">
+                    <div class="floating-nav-col blog-mobile-link">
+                        <a href="/roadmap">
+                            <div>
                             <img class="img-fluid blog-n-roadmap" src="images/svg/icons/roadmap-icon.svg" alt="" srcset="">
                         </div>
                         <div class="row">
@@ -120,7 +120,7 @@
         <nav class="row icon-group">
             <div class="col" id="foundry-fry">
                 <header>
-                    <a href="#foundry-fry">
+                    <a href="/foundry-fry">
                         <img class="desk-icons" id="foundry-fry-desk-ico" src="images/svg/icons/foundry-fry.svg" alt="Foundry and Fry">
                         <h3 class="icon-title">
                             FOUNDRY & FRY
@@ -131,7 +131,7 @@
             </div>
             <div class="col" id="zimdai">
                 <header>
-                    <a href="#zimdai">
+                    <a href="/zimdai">
                         <img class="desk-icons" id="zimdai-desk-ico" src="images/svg/icons/zimdai.svg" alt="Zimdai">
                         <h3 class="icon-title">
                             ZIMDAI
@@ -142,7 +142,7 @@
             </div>
             <div class="col" id="products">
                 <header>
-                    <a href="#products">
+                    <a href="/products">
                         <img class="desk-icons" id="products-desk-ico" src="images/svg/icons/products.svg" alt="Products">
                         <h3 class="icon-title">
                             PRODUCTS
@@ -153,7 +153,7 @@
             </div>
             <div class="col" id="team-toast">
                 <header>
-                    <a href="#team-toast">
+                    <a href="/team-toast">
                         <img class="desk-icons" id="team-toast-desk-ico" src="images/svg/icons/team-toast.svg" alt="Team Toast">
                         <h3 class="icon-title">
                             TEAM TOAST
@@ -164,7 +164,7 @@
             </div>
             <div class="col" id="faq">
                 <header>
-                    <a href="#faq">
+                    <a href="/faq">
                         <img class="desk-icons" id="faq-desk-ico" src="images/svg/icons/faq.svg" alt="FAQ">
                         <h3 class="icon-title">
                             FAQ
@@ -281,7 +281,7 @@
                                 We expect to have a live POC in one week, and will
                                 sharpen it up a bit in the following week.</p>
                         </div>
-                        
+                        <div class="btm-blue"></div>
                         <img id="week2-btm-section" src="/images/png/left-content-box/roadmapleft-content-box-bottom-without-bg.png" alt="">
                     </div>
                     <img id="month3-connect" src="/images/svg/roadmap-elements/connectors/right-box-connector.svg" alt="">
@@ -302,6 +302,7 @@
                                 before submitting them to the actual governance
                                 contract.</p>
                         </div>
+                        <div class="btm-blue"></div>
                         <img id="month3-btm-section" src="/images/png/right-content-box/roadmap-right-content-box-bottom-without-bg1.png" alt="">
                     </div>
                     <img id="fat-tresurey-connect" src="/images/png/connectors/curly-bracket-connector.png" alt="">
@@ -321,15 +322,14 @@
                                 while building out the core product and delivering on
                                 commitments.</p>
                         </div>
+                        <div class="btm-blue"></div>
                         <img id="fat-tresurey-btm-section" src="/images/png/left-content-box/roadmapleft-content-box-bottom-without-bg.png" alt="">
                     </div>
                     <img id="year1-connect" src="/images/svg/roadmap-elements/connectors/right-box-connector.svg" alt="">
                     <div id="year1-content" class="roadmap-box-content">
                         <h3>YEAR 1</h3>
                         <h4>GOVERNANCE V1.0 LIVE</h4>
-                        <div id="extent-pink-header-1"> 
-                        </div>
-                        <img id="year1-top-section" src="/images/png/right-content-box/roadmap-right-contentbox-top-part.png" alt="">
+                        <img id="year1-top-section" src="/images/png/right-content-box/year1-box-top-element.png" alt="">
                         <div id="div1">
                             <p>One of our highest priorities. Full Governance will
                                 implement Liquid Democracy as described in the
@@ -348,7 +348,7 @@
                             </p>
                         </div>
                         
-
+                        <div class="btm-blue"></div>
                         <img id="year1-btm-section" src="/images/png/right-content-box/roadmap-right-content-box-bottom-without-bg1.png" alt="">
                     </div>
 
@@ -370,10 +370,10 @@
                                 determined by the values, desires, and principles of
                                 the FRY holders</p>
                         </div>
-  
+                        <div class="btm-blue"></div>
                         <img id="the-future-btm-section" src="/images/png/left-content-box/roadmapleft-content-box-bottom-without-bg.png" alt="">
                     </div>
-                    
+
                 </div>
                 <a id="roadmap-home-link" href="/"><h5>www.foundrydao.com</h5></a>
             </div>
@@ -436,7 +436,7 @@
             </div> 
             <div class="bottom-bar">
                 <img class="img-fluid" id="bottom-bar-desk-img" src="images/svg/bottom-bar-desktop.svg" alt="foundrydao">
-                <a class="contact-us" href="#contact" data-toggle="modal" data-target="#contact-modal">CONTACT US</a>
+                <a class="contact-us" href="/contact" data-toggle="modal" data-target="#contact-modal">CONTACT US</a>
             </div>
         </div>
     </footer>
@@ -448,11 +448,11 @@
     <header>
         <div class="top-bar">
             <img class="img-fluid" id="top-bar-mobile-img" src="images/svg/top-bar-mobile.svg" alt="foundrydao">
-            <a href="#"><img class="img-fluid logo" src="images/svg/logo.svg" alt="foundrydao"></a>
+            <a href="/"><img class="img-fluid logo" src="images/svg/logo.svg" alt="foundrydao"></a>
         </div>
         <div class="floating-nav home-mob-nav row">
             <div class="col blog-mobile-link">
-                <a href="/blog">
+                <a href="/blog-list">
                     <div class="row">
                         <img  class="img-fluid blog-n-roadmap" src="images/svg/icons/blog-icon.svg" alt="" srcset=""> 
                     </div>
@@ -462,7 +462,7 @@
                 </a>
             </div>
             <div class="col roadmap-mobile-link">
-                <a href="#roadmap" id="roadmap-mobile-link-click">
+                <a href="/roadmap" id="roadmap-mobile-link-click">
                     <div class="row">
                     <img class="img-fluid blog-n-roadmap" src="images/svg/icons/roadmap-icon.svg" alt="" srcset="">
                 </div>
@@ -515,7 +515,7 @@
                     </div>
                     <div class="col-9 offset-3 col-sm-4 offset-sm-0 col-md-4 offset-md-0 col-lg-4 offset-lg-0 content">
                         <h2>FRY Sale</h2>
-                        <p>The sale of FRY opened at noon UTC, June 19th 2020, and will run just for about 19 months, until January 23, 2022. Read more about it on our <a href="#about-the-token-sale"  class="href-pop-content">FAQ</a>.</p>
+                        <p>The sale of FRY opened at noon UTC, June 19th 2020, and will run just for about 19 months, until January 23, 2022. Read more about it on our <a href="/about-the-token-sale" class="href-pop-content">FAQ</a>.</p>
                     </div>
                 </article>
             </div>
@@ -691,66 +691,335 @@
                         <hgroup>
                             <h2 id="foundry-faq">Foundry FAQ</h2>
                             <h2 id="about-foundry">About Foundry</h2>
-                            <h2 id="what-is-foundry">What is Foundry?</h2>
                         </hgroup>
-                        <p>Foundry is a for-profit DAO that seeks to build and profit from projects and ventures in the blockchain space--specifically, projects that traditional institutions cannot pursue, and which increase financial freedom.</p>
-                        <h2 id="what-is-a-dao">What is a DAO?</h2>
-                        <p>DAOs are Distributed Autonomous Organizations. They are entities that live on the blockchain (usually Ethereum, as is the case with Foundry) and are directed by their smart contract code. There are several forms of DAOs. Maker, the system that provides the DAI stablecoin, is a good example. Augur is another. DAOs typically incentivise people to act in a certain manner to further the interests of the DAO.</p>
-                        <h2 id="what-is-foundry-meant-to-accomplish">What is Foundry meant to accomplish?</h2>
-                        <p>As with a conventional organization, this can be answered in two ways: a mission statement and a profit motive.</p>
-                        <p>Foundry's mission is to build technology and tools that increase worldwide financial freedom, especially when those tools are difficult/risky for traditional institutions to build. Our <a href="#products" class="href-pop-content">existing two products</a> illustrate this. DAIHard facilitates unstoppable entry and exit into crypto, even in jurisdictions where this is illegal. SmokeSignal facilitates unstoppable and uncensorable chat, and is similarly designed to work even in jurisdictions hostile to free speech.</p>
-                        <p>Foundry's profit motive is based on a simple premise: that there are opportunities to build products like those above, that will result in profit, but which are too difficult or risky for a conventional corporation to build. Because a DAO lacks certain attack surfaces compared to conventional corporations, Foundry should be able to fill and explore these niches with far lower costs and greater flexibility, rapidly realizing profit.</p>
-                        <p>In short, Foundry is expected to profit by building profitable enterprises that are too hot for conventional institutions to build safely.</p>
-                        <h2 id="who-controls-foundry">Who controls Foundry?</h2>
-                        <p>Foundry makes decisions via the "governance contract". At launch, this contract will be a basic multisig contract with Team Toast members as signatories, which we are calling "governance v0". As we develop the full Liquid Democracy system (more on this below), we will transfer control of Foundry to the FRY holders.</p>
-                        <h2 id="how-does-foundry-work">How does Foundry work?</h2>
-                        <p>As governance is implemented, Foundry Token (FRY) holders will be able to submit and vote on various "proposals", which if passed, will execute a specific transaction from the Foundry Treasury. This transaction could be a simple payment (such as paying a contractor for an improvement to SmokeSignal) or a more complex transaction involving smart contracts (such as converting half of the DAI treasury to ETH, investing in other DAOs, or creating a Burnable Payment).</p>
-                        <p>This voting system will implement a <em>liquid democracy</em> system, allowing some users to specialize in governance decisions and combatting voter apathy. More on this below.</p>
-                        <h2 id="where-does-the-foundry-treasury-get-money">Where does the Foundry Treasury get money?</h2>
-                        <p>Initially, the Foundry Treasury will simply hold all the funds raised by the sale. In addition, Foundry-built products will be designed to capture a profit stream, and this will be directed to the treasury. DAIHard and SmokeSignal already capture and redirect profit in this way.</p>
-                        <p>Foundry may, after its initial presale, enter a "perpetual sale" where FRY tokens will continuously be sold for funds. This would dilute existing holders, but preserve the value of their FRY tokens by pulling in more funds for the additional FRY minted.</p>
-                        <h2 id="what-is-liquid-democracy">What is liquid democracy?</h2>
-                        <p>A liquid democracy system allows some voters to <em>delegate</em> their votes to other voters. This is similar to having a representative democracy, but with several layers of representation. For example, many of your friends might delegate to you, while you delegate to someone you met a conference, and he delegates to a well-known identity who directly votes on proposals.</p>
-                        <p>In our liquid democracy system, individuals can change their delegation at any time, so that if one representative with a lot of support makes an unpopular position, his constituents can easily remove their support from his current and future votes.</p>
-                        <p>We will release more on our liquid democracy design soon.</p>
-                        <div class="div-about-the-token-sale"></div>
-                        <h2 id="about-the-token-sale">About the token sale</h2>
-                        <h2 id="doesnt-the-sec-have-a-major-problem-with-icos-and-token-sales">Doesn't the SEC have a major problem with ICOs and Token Sales?</h2>
-                        <p>Yep. That's why our token sale is not open to US investors, qualified or otherwise. We block participation from aggressive jurisdictions.</p>
-                        <h2 id="how-do-i-participate">How do I participate?</h2>
-                        <p>You can head over to <a href="https://sale.foundrydao.com">sale.foundrydao.com</a>. To participate, you will need a web3 wallet (we recommend Metamask), a small chunk of Ether (ETH) to pay for the <em>gas</em> of the transaction, and however much DAI you want to bid for FRY.</p>
-                        <h2 id="how-do-i-get-ether-how-do-i-get-dai">How do I get Ether? How do I get DAI?</h2>
-                        <p>This depends on your jurisdiction. Most countries have very reputable cryptocurrency exchanges at this point.</p>
-                        <p>The hard part will be getting crypto of any kind. Once you have crypto, sites like <a href="https://1inch.exchange/">1inch.exchange</a> and <a href="https://changelly.com/">Changelly</a> will allow you to trade any crypto for DAI and ETH.</p>
-                        <h2 id="what-happens-to-the-dai-i-invest">What happens to the DAI I invest?</h2>
-                        <p>The DAI goes into the Foundry Treasurey contract. As described above in <strong>Who controls Foundry</strong>, initially the Treasury will be owned by a simple multisig controlled by Team Toast. We'll use these funds to iterate SmokeSignal and DAIHard, and develop the Foundry Governance system.</p>
-                        <p>When Foundry Governance is capable of making autonomous, intelligent decisions, it will take over control of these funds. At this point, the only way for anyone to influence usage of the Treasury will be to hold FRY and participate in governance.</p>
-                        <h2 id="i-dont-want-my-dai-to-be-controlled-by-team-toast-it-should-be-immediately-in-control-of-fry-holders">I don't want my DAI to be controlled by Team Toast! It should be immediately in control of FRY holders!</h2>
-                        <p>Ultimately, the Treasury will be control of Foundry Governance (and therefore FRY holders). You're welcome to wait to participate until after Foundry Governance is fully operational and has complete control over the Treasury.</p>
-                        <h2 id="how-long-does-the-sale-last">How long does the sale last?</h2>
-                        <p>Just under 20 months, ending in Feburary 2020.</p>
-                        <h2 id="how-many-fry-tokens-will-be-sold">How many FRY tokens will be sold?</h2>
-                        <p>60,000,000 will be minted and sold in total--30,000 every 7 hours after launch.</p>
-                        <h2 id="how-many-fry-tokens-will-there-be">How many FRY tokens will there be?</h2>
-                        <p>At the end of the sale, there will be 100,000,000 FRY tokens. After the initial sale, a perpetual sale may dilute FRY tokens at a rate of 5% per year in exchange for new, spendable funds in the treasury.</p>
-                        <h2 id="is-there-a-pre-mine">Is there a "pre-mine"?</h2>
-                        <p>30,000,000 FRY tokens will go to Team Toast.</p>
-                        <p>10,000,000 FRY tokens will be put in the Foundry Treasury, so governance can onboard long term talent in exchange for FRY.</p>
-                        <h2 id="how-does-the-sale-work">How does the sale work?</h2>
-                        <p>The sale has 2000 <em>buckets</em>, each of which will mint and sell 30,000 FRY. The first bucket closed 7 hours after the sale starts, the second one 7 hours after that, and so on. To participate, use the bucket sale interface that will be live at <a href="https://sale.foundrydao.com/">sale.foundrydao.com</a>. There you will specify the bucket you want to enter (the current bucket or a future bucket) and send it DAI.</p>
-                        <p>Once a bucket has concluded, you can withdraw your FRY tokens. the proportion of your DAI to the total DAI entered, is the proportion of the 30,000 FRY you receive. For example, if 1000 DAI total was provided to that bucket, of which you supplied 100 DAI, you will be able to claim 10% of the total 30,000 FRY in the bucket: 3,000 FRY tokens. Thus, for any given bucket, the effective price per FRY increases every time another user enters DAI into that bucket.</p>
-                        <h2 id="will-foundrys-liquid-democracy-be-live-and-controlling-the-treasury-before-the-initial-20-month-sale-ends">Will Foundry's Liquid Democracy be live, and controlling the Treasury, before the initial 20-month sale ends?</h2>
-                        <p>Yes.</p>
-                        <h2 id="about-referrals">About Referrals</h2>
-                        <h2 id="what-is-the-goal-of-the-referral-program">What is the goal of the referral program?</h2>
-                        <p>To incentivize marketers for bringing in participants to the sale and to retain marketing expertise within the FRY token holder group.</p>
-                        <h2 id="what-are-the-benefits-of-using-a-referral-code-from-someone-else">What are the benefits of using a referral code from someone else?</h2>
-                        <p>You will get 10% of the value you are entering into a sale bucket, also entered into the next sale bucket. So if you are buying 100 DAI in bucket 20, then you will also be credited for a purchase of 10 DAI in bucket 21. Note that the price of FRY will likely differ between these two buckets, meaning that the amount of <em>claimable FRY</em> in bucket 21 will likely be different than 10% of that in bucket 20.</p>
-                        <h2 id="what-are-the-benefits-of-sharing-a-referral-code">What are the benefits of sharing a referral code?</h2>
-                        <p>When someone buys with your referral code, you are credited as if you bought into the next bucket. Your credit in the following bucket starts at 10% and can go as high as 100% of the purchase of the person buying with your referral code. The bonus % is based on the amount of total sales referred with your code; 1% for every 1,000 DAI referred.</p>
-                        <p>For example, if you generate a referral code and share it with someone and they buy 1,000 DAI in bucket 23, then you will be credited with a sale of 11% (110 DAI) in bucket 24. If someone later buys another 2,000 DAI in bucket 40, then you will be credited with 13% (130 DAI) in bucket 41.</p>
-                        <h2 id="how-do-i-make-a-referral-link">How do I make a referral link?</h2>
-                        <p>See <a href="https://www.youtube.com/watch?v=AAGZZKpTcuQ">this tutorial video</a>.</p>
+                        <div id="faq-accordion">
+                            <div class="card mb-2">
+                                <div class="card-header" id="what-is-foundry-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#what-is-foundry" aria-expanded="false" aria-controls="what-is-foundry">
+                                         What is Foundry?
+                                    </h2>
+                                </div>
+                            
+                                <div id="what-is-foundry" class="collapse" aria-labelledby="what-is-foundry-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Foundry is a for-profit DAO that seeks to build and profit from projects and ventures in the blockchain space--specifically, projects that traditional institutions cannot pursue, and which increase financial freedom.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-2">
+                                <div class="card-header" id="what-is-dao-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#what-is-dao" aria-expanded="false" aria-controls="what-is-dao">
+                                        What is a DAO?
+                                    </h2>
+                                </div>
+                            
+                                <div id="what-is-dao" class="collapse" aria-labelledby="what-is-dao-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>DAOs are Distributed Autonomous Organizations. They are entities that live on the blockchain (usually Ethereum, as is the case with Foundry) and are directed by their smart contract code. There are several forms of DAOs. Maker, the system that provides the DAI stablecoin, is a good example. Augur is another. DAOs typically incentivise people to act in a certain manner to further the interests of the DAO.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-2">
+                                <div class="card-header" id="what-is-foundry-meant-to-accomplish-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#what-is-foundry-meant-to-accomplish" aria-expanded="false" aria-controls="what-is-foundry-meant-to-accomplish">
+                                        What is Foundry meant to accomplish?
+                                    </h2>
+                                </div>
+                            
+                                <div id="what-is-foundry-meant-to-accomplish" class="collapse" aria-labelledby="what-is-foundry-meant-to-accomplish-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>As with a conventional organization, this can be answered in two ways: a mission statement and a profit motive.</p>
+                                        <p>Foundry's mission is to build technology and tools that increase worldwide financial freedom, especially when those tools are difficult/risky for traditional institutions to build. Our <a href="/products" >existing two products</a> illustrate this. DAIHard facilitates unstoppable entry and exit into crypto, even in jurisdictions where this is illegal. SmokeSignal facilitates unstoppable and uncensorable chat, and is similarly designed to work even in jurisdictions hostile to free speech.</p>
+                                        <p>Foundry's profit motive is based on a simple premise: that there are opportunities to build products like those above, that will result in profit, but which are too difficult or risky for a conventional corporation to build. Because a DAO lacks certain attack surfaces compared to conventional corporations, Foundry should be able to fill and explore these niches with far lower costs and greater flexibility, rapidly realizing profit.</p>
+                                        <p>In short, Foundry is expected to profit by building profitable enterprises that are too hot for conventional institutions to build safely.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card mb-2">
+                                <div class="card-header" id="who-controls-foundry-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#who-controls-foundry" aria-expanded="false" aria-controls="who-controls-foundry">
+                                        Who controls Foundry?
+                                    </h2>
+                                </div>
+                            
+                                <div id="who-controls-foundry" class="collapse" aria-labelledby="who-controls-foundry-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Foundry makes decisions via the "governance contract". At launch, this contract will be a basic multisig contract with Team Toast members as signatories, which we are calling "governance v0". As we develop the full Liquid Democracy system (more on this below), we will transfer control of Foundry to the FRY holders.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card mb-2">
+                                <div class="card-header" id="how-does-foundry-work-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#how-does-foundry-work" aria-expanded="false" aria-controls="how-does-foundry-work">
+                                        How does Foundry work?
+                                    </h2>
+                                </div>
+                            
+                                <div id="how-does-foundry-work" class="collapse" aria-labelledby="how-does-foundry-work-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>As governance is implemented, Foundry Token (FRY) holders will be able to submit and vote on various "proposals", which if passed, will execute a specific transaction from the Foundry Treasury. This transaction could be a simple payment (such as paying a contractor for an improvement to SmokeSignal) or a more complex transaction involving smart contracts (such as converting half of the DAI treasury to ETH, investing in other DAOs, or creating a Burnable Payment).</p>
+                                        <p>This voting system will implement a <em>liquid democracy</em> system, allowing some users to specialize in governance decisions and combatting voter apathy. More on this below.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                            <div class="card mb-2">
+                                <div class="card-header" id="where-does-the-foundry-treasury-get-money-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#where-does-the-foundry-treasury-get-money" aria-expanded="false" aria-controls="where-does-the-foundry-treasury-get-money">
+                                        Where does the Foundry Treasury get money?
+                                    </h2>
+                                </div>
+                            
+                                <div id="where-does-the-foundry-treasury-get-money" class="collapse" aria-labelledby="where-does-the-foundry-treasury-get-money-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Initially, the Foundry Treasury will simply hold all the funds raised by the sale. In addition, Foundry-built products will be designed to capture a profit stream, and this will be directed to the treasury. DAIHard and SmokeSignal already capture and redirect profit in this way.</p>
+                                        <p>Foundry may, after its initial presale, enter a "perpetual sale" where FRY tokens will continuously be sold for funds. This would dilute existing holders, but preserve the value of their FRY tokens by pulling in more funds for the additional FRY minted.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                            <div class="card mb-2">
+                                <div class="card-header" id="what-is-liquid-democracy-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#what-is-liquid-democracy" aria-expanded="false" aria-controls="what-is-liquid-democracy">
+                                        What is liquid democracy?
+                                    </h2>
+                                </div>
+                            
+                                <div id="what-is-liquid-democracy" class="collapse" aria-labelledby="what-is-liquid-democracy-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>A liquid democracy system allows some voters to <em>delegate</em> their votes to other voters. This is similar to having a representative democracy, but with several layers of representation. For example, many of your friends might delegate to you, while you delegate to someone you met a conference, and he delegates to a well-known identity who directly votes on proposals.</p>
+                                        <p>In our liquid democracy system, individuals can change their delegation at any time, so that if one representative with a lot of support makes an unpopular position, his constituents can easily remove their support from his current and future votes.</p>
+                                        <p>We will release more on our liquid democracy design soon.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>   
+                            <div class="div-about-the-token-sale"></div>
+                            <h2 id="about-the-token-sale">About the token sale</h2>
+
+                            <div class="card mb-2">
+                                <div class="card-header" id="doesnt-the-sec-have-a-major-problem-with-icos-and-token-sales-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#doesnt-the-sec-have-a-major-problem-with-icos-and-token-sales" aria-expanded="false" aria-controls="doesnt-the-sec-have-a-major-problem-with-icos-and-token-sales">
+                                        Doesn't the SEC have a major problem with ICOs and Token Sales?
+                                    </h2>
+                                </div>
+                            
+                                <div id="doesnt-the-sec-have-a-major-problem-with-icos-and-token-sales" class="collapse" aria-labelledby="doesnt-the-sec-have-a-major-problem-with-icos-and-token-sales-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Yep. That's why our token sale is not open to US investors, qualified or otherwise. We block participation from aggressive jurisdictions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card mb-2">
+                                <div class="card-header" id="how-do-i-participate-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#how-do-i-participate" aria-expanded="false" aria-controls="how-do-i-participate">
+                                        How do I participate?
+                                    </h2>
+                                </div>
+                            
+                                <div id="how-do-i-participate" class="collapse" aria-labelledby="how-do-i-participate-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>You can head over to <a href="https://sale.foundrydao.com">sale.foundrydao.com</a>. To participate, you will need a web3 wallet (we recommend Metamask), a small chunk of Ether (ETH) to pay for the <em>gas</em> of the transaction, and however much DAI you want to bid for FRY.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                            <div class="card mb-2">
+                                <div class="card-header" id="how-do-i-get-ether-how-do-i-get-dai-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#how-do-i-get-ether-how-do-i-get-dai" aria-expanded="false" aria-controls="how-do-i-get-ether-how-do-i-get-dai">
+                                        How do I get Ether? How do I get DAI?
+                                    </h2>
+                                </div>
+                            
+                                <div id="how-do-i-get-ether-how-do-i-get-dai" class="collapse" aria-labelledby="how-do-i-get-ether-how-do-i-get-dai-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>This depends on your jurisdiction. Most countries have very reputable cryptocurrency exchanges at this point.</p>
+                                        <p>The hard part will be getting crypto of any kind. Once you have crypto, sites like <a href="https://1inch.exchange/">1inch.exchange</a> and <a href="https://changelly.com/">Changelly</a> will allow you to trade any crypto for DAI and ETH.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                            <div class="card mb-2">
+                                <div class="card-header" id="what-happens-to-the-dai-i-invest-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#what-happens-to-the-dai-i-invest" aria-expanded="false" aria-controls="what-happens-to-the-dai-i-invest">
+                                        What happens to the DAI I invest?
+                                    </h2>
+                                </div>
+                            
+                                <div id="what-happens-to-the-dai-i-invest" class="collapse" aria-labelledby="what-happens-to-the-dai-i-invest-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>The DAI goes into the Foundry Treasurey contract. As described above in <strong>Who controls Foundry</strong>, initially the Treasury will be owned by a simple multisig controlled by Team Toast. We'll use these funds to iterate SmokeSignal and DAIHard, and develop the Foundry Governance system.</p>
+                                        <p>When Foundry Governance is capable of making autonomous, intelligent decisions, it will take over control of these funds. At this point, the only way for anyone to influence usage of the Treasury will be to hold FRY and participate in governance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                            <div class="card mb-2">
+                                <div class="card-header" id="i-dont-want-my-dai-to-be-controlled-by-team-toast-it-should-be-immediately-in-control-of-fry-holders-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#i-dont-want-my-dai-to-be-controlled-by-team-toast-it-should-be-immediately-in-control-of-fry-holders" aria-expanded="false" aria-controls="i-dont-want-my-dai-to-be-controlled-by-team-toast-it-should-be-immediately-in-control-of-fry-holders">
+                                        I don't want my DAI to be controlled by Team Toast! It should be immediately in control of FRY holders!
+                                    </h2>
+                                </div>
+                            
+                                <div id="i-dont-want-my-dai-to-be-controlled-by-team-toast-it-should-be-immediately-in-control-of-fry-holders" class="collapse" aria-labelledby="i-dont-want-my-dai-to-be-controlled-by-team-toast-it-should-be-immediately-in-control-of-fry-holders-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Ultimately, the Treasury will be control of Foundry Governance (and therefore FRY holders). You're welcome to wait to participate until after Foundry Governance is fully operational and has complete control over the Treasury.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card mb-2">
+                                <div class="card-header" id="how-long-does-the-sale-last-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#how-long-does-the-sale-last" aria-expanded="false" aria-controls="how-long-does-the-sale-last">
+                                        How long does the sale last?
+                                    </h2>
+                                </div>
+                            
+                                <div id="how-long-does-the-sale-last" class="collapse" aria-labelledby="how-long-does-the-sale-last-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Just under 20 months, ending in Feburary 2020.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card mb-2">
+                                <div class="card-header" id="how-many-fry-tokens-will-be-sold-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#how-many-fry-tokens-will-be-sold" aria-expanded="false" aria-controls="how-many-fry-tokens-will-be-sold">
+                                        How many FRY tokens will be sold?
+                                    </h2>
+                                </div>
+                            
+                                <div id="how-many-fry-tokens-will-be-sold" class="collapse" aria-labelledby="how-many-fry-tokens-will-be-sold-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>60,000,000 will be minted and sold in total--30,000 every 7 hours after launch.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-2">
+                                <div class="card-header" id="how-many-fry-tokens-will-there-be-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#how-many-fry-tokens-will-there-be" aria-expanded="false" aria-controls="how-many-fry-tokens-will-there-be">
+                                        How many FRY tokens will there be?
+                                    </h2>
+                                </div>
+                            
+                                <div id="how-many-fry-tokens-will-there-be" class="collapse" aria-labelledby="how-many-fry-tokens-will-there-be-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>At the end of the sale, there will be 100,000,000 FRY tokens. After the initial sale, a perpetual sale may dilute FRY tokens at a rate of 5% per year in exchange for new, spendable funds in the treasury.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-2">
+                                <div class="card-header" id="is-there-a-pre-mine-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#is-there-a-pre-mine" aria-expanded="false" aria-controls="is-there-a-pre-mine">
+                                        Is there a "pre-mine"?
+                                    </h2>
+                                </div>
+                            
+                                <div id="is-there-a-pre-mine" class="collapse" aria-labelledby="is-there-a-pre-mine-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>30,000,000 FRY tokens will go to Team Toast.</p>
+                                        <p>10,000,000 FRY tokens will be put in the Foundry Treasury, so governance can onboard long term talent in exchange for FRY.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-2">
+                                <div class="card-header" id="how-does-the-sale-work-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#how-does-the-sale-work" aria-expanded="false" aria-controls="how-does-the-sale-work">
+                                        How does the sale work?
+                                    </h2>
+                                </div>
+                            
+                                <div id="how-does-the-sale-work" class="collapse" aria-labelledby="how-does-the-sale-work-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>The sale has 2000 <em>buckets</em>, each of which will mint and sell 30,000 FRY. The first bucket closed 7 hours after the sale starts, the second one 7 hours after that, and so on. To participate, use the bucket sale interface that will be live at <a href="https://sale.foundrydao.com/">sale.foundrydao.com</a>. There you will specify the bucket you want to enter (the current bucket or a future bucket) and send it DAI.</p>
+                                        <p>Once a bucket has concluded, you can withdraw your FRY tokens. the proportion of your DAI to the total DAI entered, is the proportion of the 30,000 FRY you receive. For example, if 1000 DAI total was provided to that bucket, of which you supplied 100 DAI, you will be able to claim 10% of the total 30,000 FRY in the bucket: 3,000 FRY tokens. Thus, for any given bucket, the effective price per FRY increases every time another user enters DAI into that bucket.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-2">
+                                <div class="card-header" id="will-foundrys-liquid-democracy-be-live-and-controlling-the-treasury-before-the-initial-20-month-sale-ends-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#will-foundrys-liquid-democracy-be-live-and-controlling-the-treasury-before-the-initial-20-month-sale-ends" aria-expanded="false" aria-controls="will-foundrys-liquid-democracy-be-live-and-controlling-the-treasury-before-the-initial-20-month-sale-ends">
+                                        Will Foundry's Liquid Democracy be live, and controlling the Treasury, before the initial 20-month sale ends?
+                                    </h2>
+                                </div>
+                            
+                                <div id="will-foundrys-liquid-democracy-be-live-and-controlling-the-treasury-before-the-initial-20-month-sale-ends" class="collapse" aria-labelledby="will-foundrys-liquid-democracy-be-live-and-controlling-the-treasury-before-the-initial-20-month-sale-ends-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Yes.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+                            <h2 id="about-referrals">About Referrals</h2>
+
+                            <div class="card mb-2">
+                                <div class="card-header" id="what-is-the-goal-of-the-referral-program-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#what-is-the-goal-of-the-referral-program" aria-expanded="false" aria-controls="what-is-the-goal-of-the-referral-program">
+                                        What is the goal of the referral program?
+                                    </h2>
+                                </div>
+                            
+                                <div id="what-is-the-goal-of-the-referral-program" class="collapse" aria-labelledby="what-is-the-goal-of-the-referral-program-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>To incentivize marketers for bringing in participants to the sale and to retain marketing expertise within the FRY token holder group.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-2">
+                                <div class="card-header" id="what-are-the-benefits-of-using-a-referral-code-from-someone-else-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#what-are-the-benefits-of-using-a-referral-code-from-someone-else" aria-expanded="false" aria-controls="what-are-the-benefits-of-using-a-referral-code-from-someone-else">
+                                        What are the benefits of using a referral code from someone else?
+                                    </h2>
+                                </div>
+                            
+                                <div id="what-are-the-benefits-of-using-a-referral-code-from-someone-else" class="collapse" aria-labelledby="what-are-the-benefits-of-using-a-referral-code-from-someone-else-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>You will get 10% of the value you are entering into a sale bucket, also entered into the next sale bucket. So if you are buying 100 DAI in bucket 20, then you will also be credited for a purchase of 10 DAI in bucket 21. Note that the price of FRY will likely differ between these two buckets, meaning that the amount of <em>claimable FRY</em> in bucket 21 will likely be different than 10% of that in bucket 20.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-2">
+                                <div class="card-header" id="what-are-the-benefits-of-sharing-a-referral-code-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#what-are-the-benefits-of-sharing-a-referral-code" aria-expanded="false" aria-controls="what-are-the-benefits-of-sharing-a-referral-code">
+                                        What are the benefits of sharing a referral code?
+                                    </h2>
+                                </div>
+                            
+                                <div id="what-are-the-benefits-of-sharing-a-referral-code" class="collapse" aria-labelledby="what-are-the-benefits-of-sharing-a-referral-code-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>When someone buys with your referral code, you are credited as if you bought into the next bucket. Your credit in the following bucket starts at 10% and can go as high as 20% of the purchase of the person buying with your referral code. The bonus % is based on the amount of total sales referred with your code; 1% for every 1,000 DAI referred.</p>
+                                        <p>For example, if you generate a referral code and share it with someone and they buy 1,000 DAI in bucket 23, then you will be credited with a sale of 11% (110 DAI) in bucket 24. If someone later buys another 2,000 DAI in bucket 40, then you will be credited with 13% (130 DAI) in bucket 41.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-2">
+                                <div class="card-header" id="how-do-i-make-a-referral-link-heading">
+                                    <h2 class="btn btn-link" data-toggle="collapse" data-target="#how-do-i-make-a-referral-link" aria-expanded="false" aria-controls="how-do-i-make-a-referral-link">
+                                        How do I make a referral link?
+                                    </h2>
+                                </div>
+                            
+                                <div id="how-do-i-make-a-referral-link" class="collapse" aria-labelledby="how-do-i-make-a-referral-link-heading" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>See <a href="https://www.youtube.com/watch?v=AAGZZKpTcuQ">this tutorial video</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -889,9 +1158,9 @@
     <!-- Accordion END -->
     <footer>
         <div class="bottom-bar">
-            <a class="contact-us" href="#contact" data-toggle="modal" data-target="#contact-modal">Contact</a>
+            <a class="contact-us" href="/contact" data-toggle="modal" data-target="#contact-modal">Contact</a>
             <img class="img-fluid" id="bottom-bar-mobile-img" src="images/svg/bottom-bar-mobile.svg" alt="foundrydao">
-            <a href="#"><img class="logo img-fluid" src="images/svg/logo.svg" alt="foundrydao"></a>
+            <a href="/"><img class="logo img-fluid" src="images/svg/logo.svg" alt="foundrydao"></a>
         </div>
     </footer>
 
@@ -911,7 +1180,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="body rendered-md">
+                <div class="rendered-md">
                     <ul class="theme-p">
                     <li><a href="https://t.me/FoundryCommunity">Telegram Channel</a></li>
                     <li><a href="https://twitter.com/FoundryDAO">Twitter</a></li>
@@ -939,6 +1208,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="js/jquery.easeScroll.min.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="js/custom.min.js"></script>
 </body>
 </html>

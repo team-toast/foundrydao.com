@@ -2,14 +2,20 @@ var foundrySub = {
     init: function() {
         var url = $(location).attr('href');
         var parts = url.split("/");
-        var last_part = parts[parts.length-2];
+        var finalUrlPart = parts[parts.length-1];
+        var last_part = finalUrlPart.substr(1);
         var extension = '.html'
         var urlStringPath = "/common-assets/blog/";
         var targetUrl = urlStringPath.concat(last_part);
         var targetUrl = targetUrl.concat(extension);
+        var changedURl = '/blog/'.concat(last_part);
+
+        if(last_part == ''){
+               location.replace('/blog-list');
+        }else {
+            history.pushState(targetUrl, null, changedURl);   
+        }
         foundrySub.renderHtml(targetUrl);
-
-
         foundrySub.$scrollToTop = $('#scroll-to-top');
         if ($(window).width() <= 575) {
             $('#pop-desktop').children().detach().appendTo('#pop-mobile');
@@ -46,8 +52,9 @@ var foundrySub = {
         if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
             $(foundrySub.mainSection).load(url , function(){
                 $(foundrySub.mainSection).find("section:first").addClass("d-none");
-                var data = foundrySub.extractData(foundrySub.mainSection);
+                var data = foundrySub.extractData(foundrySub.mainSection, url);
                 foundrySub.addDataToBlog(data);
+                $('[data-toggle="tooltip"]').tooltip();
             });
         }else {
             fetch(url)
@@ -57,8 +64,10 @@ var foundrySub = {
             .then(function(html) {
                 foundrySub.mainSection.innerHTML = html;
                 $(foundrySub.mainSection).find("section:first").addClass("d-none");
-                var data = foundrySub.extractData(foundrySub.mainSection);
+                var data = foundrySub.extractData(foundrySub.mainSection, url);
                 foundrySub.addDataToBlog(data);
+                $('[data-toggle="tooltip"]').tooltip();
+
             })
             .catch(function(error) {
             console.log(error);
@@ -66,9 +75,23 @@ var foundrySub = {
         }
     },
         
-    extractData: function(element){
+    extractData: function(element, url){
         result = [];
+        var fileNameParts = url.split("/");
+        var fileName = fileNameParts[fileNameParts.length-1].split('.');
+        fileName[0] = fileName[0].concat('/');
+        var initialUrl = '/images/blog/'.concat(fileName[0]); 
+        var imgs = element.getElementsByTagName("img");
+
+        for(var i = 0; i < imgs .length; i++) {
+            curImg = imgs[i];
+            var parts = curImg.src.split("/");
+            var finalUrlPart = parts[parts.length-1];
+            var finalUrlPart = initialUrl.concat(finalUrlPart);
+            curImg.src       = finalUrlPart;
+          }
         result['title'] = $(element).find("h2:first").text();
+        result['toolTip'] = $(element).find("h2:first").text();
         result['date'] = $(element).find("span:first").text();
         result['author'] = $(element).find("h3:first").text();
         result['text'] = $(element).find("p:first").text();
@@ -82,11 +105,13 @@ var foundrySub = {
     },
     addDataToBlog: function(data){
         document.querySelector('#blog-title').innerHTML = data['title'];
+        $('#blog-title').attr('data-original-title', data['toolTip']);
         document.querySelector('#blog-date').innerHTML = data['date'];
         document.querySelector('#blog-author').innerHTML = data['author'];
-        document.querySelector('#blog-mob-title').innerHTML = data['title'];
+        document.querySelector('#blog-mob-title').innerHTML = data['toolTip'];
         document.querySelector('#blog-mob-date').innerHTML = data['date'];
         document.querySelector('#blog-mob-author').innerHTML = data['author'];
+        document.title = data['toolTip'];
     }
       
 };

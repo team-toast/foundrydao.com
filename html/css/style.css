@@ -44,7 +44,7 @@
 
 .container-mobile .banner-mobile img {
     width: 100%;
-    height:40vw;
+    height:45vw;
 }
 
 .container-mobile .banner-heading {
@@ -54,7 +54,7 @@
     letter-spacing: .333vw;
     margin: 0;
     position: absolute;
-    top: 18vw;
+    top: 25vw;
     left: 5.5vw;
 }
 
@@ -64,7 +64,7 @@
     font-weight: 400;
     letter-spacing: .19vw;
     position: absolute;
-    top: 23vw;
+    top: 30vw;
     left: 5.5vw;
 }
 
@@ -2449,13 +2449,13 @@ img#arrow-roadmap-mobile{
     width: 53vw;
     left: 78vw;
     position: absolute;
-    top: 10vw;
+    top: 13vw;
 }
 .container-mobile .floating-nav .row {
     height: 8vw;
 }
 .container-mobile .floating-nav.home-mob-nav{
-    top: 12vw;
+    top: 16vw;
 }
 
 .container-mobile .floating-nav a span {
@@ -2601,4 +2601,64 @@ img#arrow-roadmap-mobile{
     margin: 0!important;
     padding: 0!important;
     text-align: left;
+}
+
+.container-desk .buy-fry-button-link {
+    display: inline-block;
+    padding: 0.6vw 1vw;
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.6em;
+    letter-spacing: .1em;
+    text-shadow: 2px 2px rgb(77, 76, 76);
+    font-weight: 500;
+    background-image: -webkit-linear-gradient(45deg, #ff0073 0%, #cc0f57 100%);
+    background-image: linear-gradient(45deg, #ff0073 0%, #cc0f57 100%);
+    transition: .2s;
+}
+
+.container-desk .buy-fry-button-link:hover {
+    transform: scale(1.2);
+    background-image: -webkit-linear-gradient(45deg, #cc0f57 0%, #c00534 100%);
+    background-image: linear-gradient(45deg, #cc0f57 0%, #c00534 100%); 
+}
+.buy-fry-button-link:focus {
+    outline:0;
+}
+.container-desk .floating-nav-buy-fry {
+    position: absolute;
+    top: 21%;
+    right: 20.8%;
+    width: 20%;
+}
+.container-mobile .floating-nav-buy-fry{
+    width: 40vw;
+    left: 83.4vw;
+    position: absolute;
+    top: 4vw;
+}
+.container-mobile .buy-fry-button-link {
+    display: inline-block;
+    padding: 1vw 1.8vw;
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: .1em;
+    text-shadow: 2px 1px rgb(77, 76, 76);
+    font-weight: 500;
+    background-image: -webkit-linear-gradient(45deg, #ff0073 0%, #ec1978 100%);
+    background-image: linear-gradient(45deg, #ff0073 0%, #ec1978 100%);
+    transition: .2s;
+}
+.container-mobile .buy-fry-button-link:hover {
+    background-image: -webkit-linear-gradient(45deg, #cc0f57 0%, #c00534 100%);
+    background-image: linear-gradient(45deg, #cc0f57 0%, #c00534 100%); 
 }

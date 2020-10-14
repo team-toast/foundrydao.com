@@ -175,7 +175,7 @@ var foundry = {
         });
         //Add remove shadow effects to the expanded elements in accordion 
         foundry.$accordion.on('shown.bs.collapse', function (e) {
-            var offset = $(e.target).offset().top - ($('.container-mobile header').height() + 80);
+            var offset = $(e.target).offset().top - ($('.container-mobile header').height() + 120);
             $('html, body').animate({
                 scrollTop: offset,
             }, 300)

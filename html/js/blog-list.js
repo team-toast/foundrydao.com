@@ -98,7 +98,7 @@ var foundryBlog = {
         var parts = fileName.split("/");
         var last_part = parts[parts.length-1];
         var name = last_part.split('.');
-        var newUrl = "/blog/#".concat(name[0]);
+        var newUrl = "/blog/".concat(name[0]);
         var url = "/images/blog/".concat(name[0]);
 
         var imageAdded = false;

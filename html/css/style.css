@@ -1566,12 +1566,12 @@ html {
     }
     .section-container.single-blog span.foundry-fry {
         /*font-size: 0.8em;*/
-        font-size: 0.7em;
+        font-size: 0.6em;
         top: 44%;
     }
     
     .individual-blog #blog-date.foundry-fry {
-        font-size: 0.9em;
+        font-size: 0.7em;
     }   
     .section-container.single-blog .single-blog-image img{
         padding: 4% 8% 10% 0%;

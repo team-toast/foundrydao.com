@@ -49,6 +49,7 @@ Redirect /team-toast /?team-toast
 Redirect /faq /?faq
 Redirect /roadmap /?roadmap
 Redirect /contact-us /?contact-us
+Redirect /contact /?contact-us
 Redirect /faq/about-the-token-sale /?faq/about-the-token-sale
 
 #Blogs

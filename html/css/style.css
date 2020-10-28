@@ -941,7 +941,7 @@ h3.icon-title {
     }
 }
 
-@media (min-height:1201px) {
+@media (min-height:1201px) and (orientation:portrait) {
     .container-desk footer.custom-sticky {
         position: absolute;
         bottom: 0;
@@ -1398,6 +1398,12 @@ html {
 
 .container-desk img.blog-n-roadmap {
     width: 45px;
+    transition: transform .2s;
+}
+
+.container-desk img.blog-n-roadmap:hover {
+    transform: scale(1.3); 
+    
 }
 
 @media all and (-ms-high-contrast:none),
@@ -1410,8 +1416,8 @@ html {
 .container-desk .floating-nav {
     position: absolute;
     top: 24%;
-    right: 5%;
-    width: 20%;
+    right: 18%;
+    width: 32%;
 }
 .container-desk .floating-nav a{
     font-size: 0.3em;
@@ -1429,17 +1435,17 @@ html {
 }
 .container-desk .floating-nav a span{
     margin-top: 8%;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
 }
-.container-desk .floating-nav a span.blog-link{
+/* .container-desk .floating-nav a span.blog-link{
     margin-left: 35%;
-}
+} */
 .container-desk .floating-nav .col .row {
     height: 4vw;
     margin: 0 auto;
 }
 .floating-nav-col {
-    width:40%;
+    width:25%;
     
 }
 
@@ -1498,7 +1504,7 @@ html {
 .section-mobile-title h3{
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
-    font-size: 3vw;
+    font-size: 0.6em;
     color: #234080;
 }
 
@@ -1722,8 +1728,10 @@ html {
 .blog-author h3{
     font-family: 'DM Sans', sans-serif;
     font-weight: 900;
-    font-size: 1em;
+    font-size: 0.6em;
     color: #234080;
+    border-bottom: 1px solid #234080;
+    padding-bottom: 2%;
 }
 .container-mobile.blog .container-box .mobile-blog, .mobile-blog-list   {
     padding-top: 30%!important;
@@ -2085,6 +2093,7 @@ html {
     position: absolute;
     top: 6.3vw;
     left: 22%;
+    text-decoration: underline;
 }
 #extent-pink-header-1 {
     background-color: #ec1978;
@@ -2445,12 +2454,12 @@ img#arrow-roadmap-mobile{
 #year1-content-mobile {
     min-height: 68vw;
 }
-.container-mobile .floating-nav {
+/* .container-mobile .floating-nav {
     width: 53vw;
     left: 78vw;
     position: absolute;
     top: 13vw;
-}
+} */
 .container-mobile .floating-nav .row {
     height: 8vw;
 }
@@ -2459,7 +2468,7 @@ img#arrow-roadmap-mobile{
 }
 
 .container-mobile .floating-nav a span {
-    margin-top: 0%;
+    margin:0 auto;
     font-size: 2vw;
 }
 .container-mobile .floating-nav a span.home-roadmap-link , .container-mobile .floating-nav a span.home-blog-link {
@@ -2467,7 +2476,7 @@ img#arrow-roadmap-mobile{
 }
 
 .container-mobile .floating-nav a span.blog-link, .container-mobile .floating-nav a span.home-blog-link {
-    margin-left: 3%;
+    margin:0 auto;
 }
 
 /*
@@ -2477,7 +2486,9 @@ img#arrow-roadmap-mobile{
 */
 .container-mobile img.blog-n-roadmap {
     width: 8vw;
+    margin: 0 auto;
 }
+
 .container-mobile .blog-mobile-link {
     position: absolute;
     left: -2vw;
@@ -2602,6 +2613,46 @@ img#arrow-roadmap-mobile{
     padding: 0!important;
     text-align: left;
 }
+.section-blog-mob-date {
+    font-size: 0.4em!important;
+}
+.section-blog-author, .section-blog-mob-author {
+    font-size: 0.4em!important;
+    font-weight: 900!important;
+}
+.section-blog-author span, .section-blog-mob-author span {
+    font-weight: 100;
+}
+.section-blog-sub-title {
+    border-bottom: unset!important;
+    padding-top: 4.2%;
+}
+h2#blog-sub-title{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    color: #234080;
+    padding-top: 4%;
+}
+#blog-mob-author {
+    font-weight: 900;
+}
+#blog-author span, #blog-mob-author span {
+    font-weight: normal;
+}
+
+/* under-links links for consistency */
+.section-body a{
+ text-decoration: underline;
+}
+
+.box-content a{
+    text-decoration: underline;
+   }
+
+#mainSection a {
+    text-decoration: underline;
+}
 
 .container-desk .buy-fry-button-link {
     display: inline-block;
@@ -2631,9 +2682,9 @@ img#arrow-roadmap-mobile{
 }
 .container-desk .floating-nav-buy-fry {
     position: absolute;
-    top: 21%;
-    right: 20.8%;
-    width: 20%;
+    top: 19%;
+    right: -10%;
+    width: 26%;
 }
 .container-mobile .floating-nav-buy-fry{
     width: 40vw;
@@ -2661,4 +2712,47 @@ img#arrow-roadmap-mobile{
 .container-mobile .buy-fry-button-link:hover {
     background-image: -webkit-linear-gradient(45deg, #cc0f57 0%, #c00534 100%);
     background-image: linear-gradient(45deg, #cc0f57 0%, #c00534 100%); 
+}
+
+.inner-container.you-tube-video p{
+    text-align: center;
+}
+#faq-iframe{
+    width: 100%;
+}
+#faq-iframe{
+    display: none;
+}
+@media (min-width:575px){
+    #faq-iframe{
+        display: block;
+        width: 100%;
+        height: 40vw;
+    }
+}
+#youtube-video-home {
+    width: 80%;
+    height: 40vw;
+    margin: 0 auto;
+    display: block;
+}
+.filtered img {
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+            filter: grayscale(100%); 
+}
+.container-mobile .mobile-icons-left {
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 5px;
+}
+.container-mobile .mobile-icons-right {
+    width: 25%;
+    margin-left: 10%;
+    margin-top: 7px;
+}
+.container-mobile .mobile-icons-left-right {
+    margin-left: 0;
 }

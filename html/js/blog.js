@@ -90,7 +90,8 @@ var foundrySub = {
             var finalUrlPart = initialUrl.concat(finalUrlPart);
             curImg.src       = finalUrlPart;
           }
-        result['title'] = $(element).find("h2:first").text();
+        result['title'] = $(element).find("h1:first").text();
+        result['sub-title'] = $(element).find("h2:first").text();
         result['toolTip'] = $(element).find("h2:first").text();
         result['date'] = $(element).find("span:first").text();
         result['author'] = $(element).find("h3:first").text();
@@ -107,10 +108,12 @@ var foundrySub = {
         document.querySelector('#blog-title').innerHTML = data['title'];
         $('#blog-title').attr('data-original-title', data['toolTip']);
         document.querySelector('#blog-date').innerHTML = data['date'];
-        document.querySelector('#blog-author').innerHTML = data['author'];
-        document.querySelector('#blog-mob-title').innerHTML = data['toolTip'];
+        document.querySelector('#blog-sub-title').innerHTML = data['sub-title'];
+        document.querySelector('#blog-author').innerHTML = '<span>Posted by: </span>' + data['author'];
+        document.querySelector('#blog-mob-title').innerHTML = data['title'];
+        document.querySelector('#blog-mob-sub-title').innerHTML = data['sub-title'];
         document.querySelector('#blog-mob-date').innerHTML = data['date'];
-        document.querySelector('#blog-mob-author').innerHTML = data['author'];
+        document.querySelector('#blog-mob-author').innerHTML = '<span>Posted by: </span>' + data['author'];
         document.title = data['toolTip'];
     }
       

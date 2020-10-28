@@ -47,7 +47,7 @@ var foundry = {
         }
         last_part = last_part.substr(1);
         last_part = "/".concat(last_part);
-        if (last_part !== '') {
+        if (last_part !== '/') {
             if ($(window).width() <= 575) {
                 foundry.displayMobileContent(last_part, true);
                 foundry.$mobileOrientation = foundry.checkOrientation();
@@ -368,6 +368,11 @@ var foundry = {
 
     },
     showRoadMap: function (changeUrl) {
+        if(history.state) {
+            if(history.state.url == '/roadmap'){
+                return false;
+            }
+        }
         $('.section-container').css('display', 'none');
         $('#roadmap').css('display', 'block');
         $('html, body').animate({
@@ -590,6 +595,11 @@ var foundry = {
         }
     },
     setUrl: function (url) {
+        if(url == '/' && history.state.url != '/'){
+                $('.you-tube-video').toggle(900);
+        }else if(url != '/') {
+                $('.you-tube-video').css('display', 'none');           
+        }
         history.pushState({ "url": url }, null, url);
     },
     checkOrientation: function(){

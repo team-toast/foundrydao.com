@@ -54,12 +54,6 @@ var foundrySub = {
 $(function() {
     foundrySub.init();
     foundrySub.attachEventHandles();
-    $('body').imagesLoaded().done( function() {
-        $('.container-mobile .pattern').imagesLoaded( { background: true }).done( function() {
-                console.log('All images loaded');
-                $('body').addClass('loaded');
-        });
-    });
 
     $("html").easeScroll({
         frameRate: 60,

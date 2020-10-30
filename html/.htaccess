@@ -59,6 +59,30 @@ Redirect /blog/letting-the-wise-lead /blog/?letting-the-wise-lead
 Redirect /blog/what-is-foundry-meant-to-accomplish /blog/?what-is-foundry-meant-to-accomplish
 Redirect /blog/converting-irrational-exuberance-into-rational-investment /blog/?converting-irrational-exuberance-into-rational-investment
 
+#faq Question redirects
+Redirect /faq/what-is-foundry /?faq/what-is-foundry
+Redirect /faq/what-is-dao /?faq/what-is-dao 
+Redirect /faq/what-is-foundry-meant-to-accomplish /?faq/what-is-foundry-meant-to-accomplish
+Redirect /faq/who-controls-foundry /?faq/who-controls-foundry
+Redirect /faq/how-will-foundry-work /?faq/how-will-foundry-work
+Redirect /faq/where-does-the-foundry-treasury-get-money /?faq/where-does-the-foundry-treasury-get-money
+Redirect /faq/what-is-liquid-democracy /?faq/what-is-liquid-democracy
+Redirect /faq/doesnt-the-sec-have-a-major-problem-with-icos-and-token-sales /?faq/doesnt-the-sec-have-a-major-problem-with-icos-and-token-sales
+Redirect /faq/how-do-i-participate /?faq/how-do-i-participate
+Redirect /faq/how-do-i-get-ether-how-do-i-get-dai /?faq/how-do-i-get-ether-how-do-i-get-dai
+Redirect /faq/what-happens-to-the-dai-i-invest /?faq/what-happens-to-the-dai-i-invest
+Redirect /faq/i-dont-want-my-dai-to-be-controlled-by-team-toast-it-should-be-immediately-in-control-of-fry-holders /?faq/i-dont-want-my-dai-to-be-controlled-by-team-toast-it-should-be-immediately-in-control-of-fry-holders
+Redirect /faq/how-long-does-the-sale-last /?faq/how-long-does-the-sale-last
+Redirect /faq/how-many-fry-tokens-will-be-sold /?faq/how-many-fry-tokens-will-be-sold
+Redirect /faq/how-many-fry-tokens-will-there-be /?faq/how-many-fry-tokens-will-there-be
+Redirect /faq/is-there-a-pre-mine /?faq/is-there-a-pre-mine
+Redirect /faq/how-does-the-sale-work /?faq/how-does-the-sale-work
+Redirect /faq/will-foundrys-liquid-democracy-be-live-and-controlling-the-treasury-before-the-initial-20-month-sale-ends /?faq/will-foundrys-liquid-democracy-be-live-and-controlling-the-treasury-before-the-initial-20-month-sale-ends
+Redirect /faq/what-is-the-goal-of-the-referral-program /?faq/what-is-the-goal-of-the-referral-program
+Redirect /faq/what-are-the-benefits-of-using-a-referral-code-from-someone-else /?faq/what-are-the-benefits-of-using-a-referral-code-from-someone-else
+Redirect /faq/what-are-the-benefits-of-sharing-a-referral-code /?faq/what-are-the-benefits-of-sharing-a-referral-code
+Redirect /faq/how-do-i-make-a-referral-link /?faq/how-do-i-make-a-referral-link
+
 #Enforce a no-trailing-slash policy
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [L,R=301] 

@@ -83,18 +83,11 @@
             <div class="top-bar">
                 <img id="top-bar-desk-img" src="/images/svg/top-bar-desktop.svg" alt="foundrydao">
                 <a href="/"><img  class="img-fluid logo" src="/images/svg/logo.svg" alt="foundrydao"></a>
-                <div class="floating-nav-buy-fry row">
-                    <div>
-                        <a href="https://sale.foundrydao.com/" target="_blank">
-                            <button class="buy-fry-button-link">BUY FRY</button>
-                        </a>
-                    </div>
-                </div>
                 <div class="floating-nav row">
                     <div class="floating-nav-col blog-mobile-link">
                         <a href="/blog-list">
                             <div>
-                                <img  class="img-fluid blog-n-roadmap" src="/images/svg/icons/blog-icon.svg" alt="" srcset=""> 
+                                <img  class="img-fluid blog-n-roadmap" src="/images/svg/icons/blog-icon.svg" alt=""> 
                             </div>
                             <div class="row">
                                 <span class="blog-link">Blog</span>
@@ -104,14 +97,41 @@
                     <div class="floating-nav-col blog-mobile-link">
                         <a href="/roadmap">
                             <div>
-                            <img class="img-fluid blog-n-roadmap" src="/images/svg/icons/roadmap-icon.svg" alt="" srcset="">
+                            <img class="img-fluid blog-n-roadmap" src="/images/svg/icons/roadmap-icon.svg" alt="">
                         </div>
                         <div class="row">
                             <span>Roadmap</span>
                         </div>
                         </a>
                     </div>
+                    <div class="floating-nav-col blog-mobile-link">
+                        <a href="https://t.me/FoundryCommunity" target="_blank">
+                            <div>
+                                <img  class="img-fluid blog-n-roadmap" src="/images/svg/icons/telegram-icon.svg" alt=""> 
+                            </div>
+                            <div class="row">
+                                <span class="blog-link">Telegram</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="floating-nav-col blog-mobile-link">
+                        <a href="/contact" data-toggle="modal" data-target="#contact-modal">
+                            <div>
+                                <img  class="img-fluid blog-n-roadmap" src="/images/svg/icons/social-icon.svg" alt=""> 
+                            </div>
+                            <div class="row">
+                                <span class="blog-link">Social media</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
+                <div class="floating-nav-buy-fry row">
+                    <div>
+                        <a href="https://sale.foundrydao.com/" target="_blank">
+                            <button class="buy-fry-button-link">BUY FRY</button>
+                        </a>
+                    </div>
+                </div>     
             </div>
         </div>
     </header>
@@ -198,33 +218,59 @@
         <div class="top-bar">
             <img class="img-fluid" id="top-bar-mobile-img" src="/images/svg/top-bar-mobile.svg" alt="foundrydao">
             <a href="/"><img class="img-fluid logo" src="/images/svg/logo.svg" alt="foundrydao"></a>
-            <div class="floating-nav-buy-fry row">
-                <div>
-                    <a href="https://sale.foundrydao.com/" target="_blank">
-                        <button class="buy-fry-button-link">BUY FRY</button>
-                    </a>
-                </div>
-            </div>  
-            <div class="floating-nav row">
-                <div class="col blog-mobile-link">
-                    <a href="/blog-list">
-                        <div class="row">
-                            <img  class="img-fluid blog-n-roadmap" src="/images/svg/icons/blog-icon.svg" alt="" srcset=""> 
+            <div class="row mobile-icons-left-right">
+                <div class="mobile-icons-left">
+                    <div class="floating-nav home-mob-nav row">
+                        <div class="col">
+                            <a href="/blog-list">
+                                <div class="row">
+                                    <img  class="img-fluid blog-n-roadmap" src="/images/svg/icons/blog-icon.svg" alt=""> 
+                                </div>
+                                <div class="row">
+                                    <span class="blog-link">Blog</span>
+                                </div>
+                            </a>
                         </div>
-                        <div class="row">
-                            <span class="blog-link">Blog</span>
+                        <div class="col ">
+                            <a href="/roadmap" id="roadmap-mobile-link-click">
+                                <div class="row">
+                                <img class="img-fluid blog-n-roadmap" src="/images/svg/icons/roadmap-icon.svg" alt="">
+                            </div>
+                            <div class="row">
+                                <span>Roadmap</span>
+                            </div>
+                            </a>
+                        </div>            
+                        <div class="col">
+                            <a href="https://t.me/FoundryCommunity" target="_blank">
+                                <div class="row">
+                                    <img  class="img-fluid blog-n-roadmap" src="/images/svg/icons/telegram-icon.svg" alt=""> 
+                                </div>
+                                <div class="row">
+                                    <span>Telegram</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col roadmap-mobile-link">
-                    <a href="/roadmap">
-                        <div class="row">
-                        <img class="img-fluid blog-n-roadmap" src="/images/svg/icons/roadmap-icon.svg" alt="" srcset="">
+                        <div class="col">
+                            <a href="/contact"  data-toggle="modal" data-target="#contact-modal">
+                                <div class="row">
+                                <img class="img-fluid blog-n-roadmap" src="/images/svg/icons/social-icon.svg" alt="">
+                            </div>
+                            <div class="row">
+                                <span>Social media</span>
+                            </div>
+                            </a>
+                        </div>
                     </div>
+                </div>  
+                <div class="mobile-icons-right">
                     <div class="row">
-                        <span>Roadmap</span>
+                        <div>
+                            <a href="https://sale.foundrydao.com/" target="_blank">
+                                <button class="buy-fry-button-link">BUY FRY</button>
+                            </a>
+                        </div>
                     </div>
-                    </a>
                 </div>
             </div>
         </div>
@@ -308,6 +354,7 @@
                     <header class="section-mobile-title d-block d-sm-none">
                         <div class="text-left">
                             <a class="section-blog-anchor-mobile" href="#"><h2 class="section-blog-mob-title">Title</h2></a>
+                            <h3 class="section-blog-mob-sub-title">Sub title</h3>
                         </div>
                         <div class="row">
                             <div class="col-6 text-left"><h3 class='section-blog-mob-author'></h3></div>
@@ -315,7 +362,8 @@
                         </div>
                     </header>
                     <header class="section-title d-none d-sm-block">
-                        <h3 class="section-blog-author"></h3>
+                        <h3 class="section-blog-sub-title" style="display: none;"></h3>
+                        <h3 class="section-blog-author"><span>Posted by:</span></h3>
                     </header>
                     <div class="section-body">
                         <div>

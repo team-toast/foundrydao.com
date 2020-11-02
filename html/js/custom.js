@@ -37,17 +37,46 @@ var foundry = {
         foundry.$mobChangeUrlFaq = true;
         foundry.$roadmapMobChange = true;
         foundry.$deskChangeUrlFaq = true;
+        foundry.$deskChangeUrlFaqQuestion = false;
+        foundry.isScrollDesk = true;
+        foundry.isFaqChangeMob = true;
+        foundry.$faqUrls = ['/what-is-foundry' ,
+                            '/what-is-dao' , 
+                            '/what-is-foundry-meant-to-accomplish',
+                            '/who-controls-foundry' ,
+                            '/how-will-foundry-work',
+                            '/where-does-the-foundry-treasury-get-money',
+                            '/what-is-liquid-democracy',
+                            '/doesnt-the-sec-have-a-major-problem-with-icos-and-token-sales',
+                            '/how-do-i-participate',
+                            '/how-do-i-get-ether-how-do-i-get-dai',
+                            '/what-happens-to-the-dai-i-invest',
+                            '/i-dont-want-my-dai-to-be-controlled-by-team-toast-it-should-be-immediately-in-control-of-fry-holders',
+                            '/how-long-does-the-sale-last',
+                            '/how-many-fry-tokens-will-be-sold',
+                            '/how-many-fry-tokens-will-there-be',
+                            '/is-there-a-pre-mine',
+                            '/how-does-the-sale-work',
+                            '/will-foundrys-liquid-democracy-be-live-and-controlling-the-treasury-before-the-initial-20-month-sale-ends',
+                            '/what-is-the-goal-of-the-referral-program',
+                            '/what-are-the-benefits-of-using-a-referral-code-from-someone-else',
+                            '/what-are-the-benefits-of-sharing-a-referral-code',
+                            '/how-do-i-make-a-referral-link'] ;
     },
     triggerOnLoad: function () {
         var url = $(location).attr('href');
         var parts = url.split("/");
         var last_part = parts[parts.length - 1];
+        var isLastPartFaq = foundry.CheckForFaqQuestion(last_part);
+        if(isLastPartFaq){
+            last_part = "#".concat(last_part);
+        }
         if (last_part == 'about-the-token-sale') {
             last_part = '#about-the-token-sale';
         }
         last_part = last_part.substr(1);
         last_part = "/".concat(last_part);
-        if (last_part !== '') {
+        if (last_part !== '/') {
             if ($(window).width() <= 575) {
                 foundry.displayMobileContent(last_part, true);
                 foundry.$mobileOrientation = foundry.checkOrientation();
@@ -70,11 +99,18 @@ var foundry = {
                         foundry.$isChangeNeed = true;
                         $('#contact-modal').modal('show');
                     default:
+                        if(foundry.$faqUrls.includes(last_part)){
+                            foundry.showFaqQuestion(last_part, false);
+                        }
                         break;
                 }
             }
 
         }
+    },
+    CheckForFaqQuestion: function(last_part){
+        last_part = "/".concat(last_part);
+        return foundry.$faqUrls.includes(last_part);
     },
     loadDynamicHt: function () {
         var vh = window.innerHeight;
@@ -185,21 +221,34 @@ var foundry = {
         foundry.$accordion.on('hide.bs.collapse', function (e) {
             $(".blue-gradient > .collapsed").removeClass('overlay');
             $("[aria-expanded='true']").parent().addClass('box-shadow-btm');
+
+            if(e.target.id == 'collapse-faq'){
+                foundry.isFaqChangeMob = false;
+                $('#faq-accordion .collapse')
+                    .collapse('hide');
+            }
         });
         //Handle nested accordion
         foundry.$faqAccordion.on('shown.bs.collapse', function (e) {
             e.stopPropagation();
             var offset = $(e.target).offset().top - 180;
-            // $(this).parent()[0].scrollIntoView({
-            //     block: "start",
-            //     behavior: "smooth"
-            // });
+            var newUrl = "/faq/".concat(e.target.id);
+            history.replaceState({},null,newUrl);
 
             $('html, body').animate({
                 scrollTop: offset,
             }, 300);
         });
         foundry.$faqAccordion.on('hide.bs.collapse', function (e) {
+            if ($(window).width() > 575){
+                history.replaceState({url: "/faq"},null,"/faq");
+            } else {
+                if($("#collapse-faq").hasClass('show') && foundry.isFaqChangeMob){
+                    history.replaceState({url: "/faq"},null,"/faq");
+                }else {
+                    foundry.isFaqChangeMob = true;
+                }
+            }
             e.stopPropagation();
         });
         //End add remove shdow effects to the expanded elements in accordion 
@@ -291,6 +340,11 @@ var foundry = {
                 changeURl = false;
                 foundry.$deskChangeUrlFaq = true;
             }
+            if(foundry.$deskChangeUrlFaqQuestion){
+                changeURl = false;
+                goTo = "/faq"
+                foundry.$deskChangeUrlFaqQuestion = false;
+            }
             foundry.displayContent(goTo, changeURl);
         })
         foundry.$roadmapMobile.on('click', function (e) {
@@ -346,9 +400,15 @@ var foundry = {
                             case '/contact-us':
                                 foundry.$isChangeNeed = false;
                                 $('#contact-modal').modal('show');
+                                break;
                             case '/':
                                 $('.section-container').css('display', 'none');
+                                break;
                             default:
+                                if(foundry.$faqUrls.includes(last_part)){
+                                    foundry.isScrollDesk = false;
+                                    foundry.showFaqQuestion(last_part, false);
+                                }
                                 break;
                         }
                         if (last_part != '/contact-us') {
@@ -368,6 +428,11 @@ var foundry = {
 
     },
     showRoadMap: function (changeUrl) {
+        if(history.state) {
+            if(history.state.url == '/roadmap'){
+                return false;
+            }
+        }
         $('.section-container').css('display', 'none');
         $('#roadmap').css('display', 'block');
         $('html, body').animate({
@@ -408,6 +473,8 @@ var foundry = {
             n = 4;
             $('#collapse-team-toast').children().detach().appendTo('#pop-team-toast');
         } else if (goTo == '/faq') {
+            $('#faq-accordion .collapse')
+                    .collapse('hide');
             n = 5;
             if (history.state && history.state['url'] == "/faq/about-the-token-sale") {
                 $('.section-container:nth-child(' + n + ')').css('display', 'none');
@@ -432,6 +499,14 @@ var foundry = {
         foundry.$sectionContainer = n;
     },
     displayMobileContent: function (para, changeUrl) {
+        if(foundry.$faqUrls.includes(para)){
+         if(!changeUrl){
+            para = '/faq';
+            history.replaceState({url: para}, null , para);
+         }else {
+            foundry.showFaqQuestion(para, true);
+         }    
+        }
         if (para == '/roadmap') {
             foundry.$roadmapMobChange = true;
             if (changeUrl) {
@@ -505,6 +580,39 @@ var foundry = {
             if ($('#contact-modal').is(':visible')) {
                 foundry.$isChangeNeed = false;
                 $('#contact-modal').modal('hide');
+            }
+        }
+    
+    },
+    showFaqQuestion: function (last_part , isMob){
+        if(isMob){
+            last_part = last_part.substr(1);
+            last_part = "#".concat(last_part);
+            var dataTargetUrl = "[data-target='".concat(last_part);
+            dataTargetUrl = dataTargetUrl.concat("']");
+            $("[data-target='#collapse-faq']").trigger('click', { data: false });
+            $(dataTargetUrl).trigger('click', { data: false});
+                setTimeout(function () {
+                    $('html, body').animate({
+                        scrollTop: $(dataTargetUrl).offset().top - $('.container-mobile header').height()
+                    }, 1000);
+                }, 1000);
+        } else {
+            foundry.$deskChangeUrlFaqQuestion = true ;
+            last_part = last_part.substr(1);
+            last_part = "#".concat(last_part);
+            var dataTargetUrl = "[data-target='".concat(last_part);
+            dataTargetUrl = dataTargetUrl.concat("']");
+            $('#faq a').trigger('click');
+            if(foundry.isScrollDesk){
+                $(dataTargetUrl).trigger('click', { data: false});
+                setTimeout(function () {
+                    $('html, body').animate({
+                        scrollTop: $(dataTargetUrl).offset().top - $('.container-mobile header').height()
+                    }, 1000);
+                }, 1000);
+            } else {
+                foundry.isScrollDesk = true;
             }
         }
     },
@@ -590,6 +698,11 @@ var foundry = {
         }
     },
     setUrl: function (url) {
+        if(url == '/' && history.state.url != '/'){
+                $('.you-tube-video').toggle(900);
+        }else if(url != '/') {
+                $('.you-tube-video').css('display', 'none');           
+        }
         history.pushState({ "url": url }, null, url);
     },
     checkOrientation: function(){

@@ -84,16 +84,24 @@ var foundryBlog = {
                 div.css('height',height);
             }
             i++;
-        }          
+        }       
+    $('body').imagesLoaded().done( function() {
+        $('.container-mobile .pattern').imagesLoaded( { background: true }).done( function() {
+                console.log('All images loaded');
+                $('body').addClass('loaded');
+        });
+    });   
     },
     addnewBlog: function(data, fileName){
         document.querySelector('.template-blog .section-blog-title').innerHTML = data['title'];
+        document.querySelector('.template-blog .section-blog-sub-title').innerHTML = data['sub-title'];
         $('.template-blog .section-blog-title').attr('data-original-title', data['toolTip']);
         document.querySelector('.template-blog .section-blog-date').innerHTML = data['date'];
-        document.querySelector('.template-blog .section-blog-author').innerHTML = data['author'];
-        document.querySelector('.template-blog .section-blog-mob-title').innerHTML = data['toolTip'];
+        document.querySelector('.template-blog .section-blog-author').innerHTML = '<span>Posted by: </span>' + data['author'];
+        document.querySelector('.template-blog .section-blog-mob-title').innerHTML = data['title'];
+        document.querySelector('.template-blog .section-blog-mob-sub-title').innerHTML = data['sub-title'];
         document.querySelector('.template-blog .section-blog-mob-date').innerHTML = data['date'];
-        document.querySelector('.template-blog .section-blog-mob-author').innerHTML = data['author'];
+        document.querySelector('.template-blog .section-blog-mob-author').innerHTML = '<span>Posted by: </span>' + data['author'];
         document.querySelector('.template-blog .section-blog-text').innerHTML = data['text'];
         var parts = fileName.split("/");
         var last_part = parts[parts.length-1];
@@ -149,7 +157,8 @@ var foundryBlog = {
     extractData: function(element){
         result = [];
         result['toolTip'] = $(element).find("h2:first").text();
-        result['title'] = $(element).find("h2:first").text();
+        result['title'] = $(element).find("h1:first").text();
+        result['sub-title'] = $(element).find("h2:first").text();
         if(result['title'].length > 24){
             result['title'] = result['title'].substr(0,24) + '...';
         }

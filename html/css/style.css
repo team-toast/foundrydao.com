@@ -311,7 +311,7 @@ body {
 
     .container-desk .team-content h2,
     .container-desk .team-content h2 a {
-        color: #0ca3cfff;
+        color:#0ca3cf;
     }
 }
 
@@ -1733,9 +1733,13 @@ html {
     border-bottom: 1px solid #234080;
     padding-bottom: 2%;
 }
-.container-mobile.blog .container-box .mobile-blog, .mobile-blog-list   {
+.mobile-blog-list   {
     padding-top: 30%!important;
     margin-top: -16%;
+}
+.container-mobile.blog .container-box .mobile-blog {
+    padding-top: 30%!important;
+    margin-top: -10%;
 }
 .single-blog .section-body p{
     margin: 0;
@@ -2665,18 +2669,29 @@ h2#blog-sub-title{
     font-family: 'DM Sans', sans-serif;
     font-size: 0.6em;
     letter-spacing: .1em;
-    text-shadow: 2px 2px rgb(77, 76, 76);
     font-weight: 500;
+    transition: .2s;
+    box-shadow: 0 0 0 0 rgba(255, 0, 115, 0.7);
     background-image: -webkit-linear-gradient(45deg, #ff0073 0%, #cc0f57 100%);
     background-image: linear-gradient(45deg, #ff0073 0%, #cc0f57 100%);
-    transition: .2s;
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
 .container-desk .buy-fry-button-link:hover {
     transform: scale(1.2);
+    -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
     background-image: -webkit-linear-gradient(45deg, #cc0f57 0%, #c00534 100%);
     background-image: linear-gradient(45deg, #cc0f57 0%, #c00534 100%); 
 }
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
 .buy-fry-button-link:focus {
     outline:0;
 }
@@ -2703,12 +2718,22 @@ h2#blog-sub-title{
     font-family: 'DM Sans', sans-serif;
     font-size: 0.8em;
     letter-spacing: .1em;
-    text-shadow: 2px 1px rgb(77, 76, 76);
     font-weight: 500;
+    box-shadow: 0 0 0 0 rgba(255, 0, 115, 0.7);
     background-image: -webkit-linear-gradient(45deg, #ff0073 0%, #ec1978 100%);
     background-image: linear-gradient(45deg, #ff0073 0%, #ec1978 100%);
     transition: .2s;
+    -webkit-animation: pulseMob 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulseMob 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulseMob 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulseMob 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
 }
+
+@-webkit-keyframes pulseMob {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulseMob {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulseMob {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+@keyframes pulseMob {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+
 .container-mobile .buy-fry-button-link:hover {
     background-image: -webkit-linear-gradient(45deg, #cc0f57 0%, #c00534 100%);
     background-image: linear-gradient(45deg, #cc0f57 0%, #c00534 100%); 
@@ -2755,4 +2780,48 @@ h2#blog-sub-title{
 }
 .container-mobile .mobile-icons-left-right {
     margin-left: 0;
+}
+
+.container-desk ul.team-toast-social-media-ico {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+ul.team-toast-social-media-ico li {
+    display: inline;
+    transition: .2s;
+}
+
+ul.team-toast-social-media-ico li img{
+    transition: .2s;
+}
+ul.team-toast-social-media-ico li img:hover {
+    transform: scale(1.2);
+}
+
+ul.team-toast-social-media-ico li a img {
+    width: 18%;
+    padding-right: 5%;
+}
+.container-mobile ul.team-toast-social-media-ico {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+#load-blog-template {
+    margin-top: 8%;
+}
+@media all and (-ms-high-contrast:none),
+(-ms-high-contrast:active) {
+    ul.team-toast-social-media-ico li a img {
+        height: 50px;
+    }
+ }
+
+ @media (min-width:2000px) {
+    .container-desk footer.custom-sticky {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }

@@ -77,19 +77,6 @@ var foundrySub = {
         
     extractData: function(element, url){
         result = [];
-        var fileNameParts = url.split("/");
-        var fileName = fileNameParts[fileNameParts.length-1].split('.');
-        fileName[0] = fileName[0].concat('/');
-        var initialUrl = '/images/blog/'.concat(fileName[0]); 
-        var imgs = element.getElementsByTagName("img");
-
-        for(var i = 0; i < imgs .length; i++) {
-            curImg = imgs[i];
-            var parts = curImg.src.split("/");
-            var finalUrlPart = parts[parts.length-1];
-            var finalUrlPart = initialUrl.concat(finalUrlPart);
-            curImg.src       = finalUrlPart;
-          }
         result['title'] = $(element).find("h1:first").text();
         result['sub-title'] = $(element).find("h2:first").text();
         result['toolTip'] = $(element).find("h2:first").text();

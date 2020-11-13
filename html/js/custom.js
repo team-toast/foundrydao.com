@@ -99,7 +99,7 @@ var foundry = {
                         foundry.$isChangeNeed = true;
                         $('#contact-modal').modal('show');
                     default:
-                        if(foundry.$faqUrls.includes(last_part)){
+                        if(foundry.$faqUrls.indexOf(last_part) !== -1){
                             foundry.showFaqQuestion(last_part, false);
                         }
                         break;
@@ -110,7 +110,7 @@ var foundry = {
     },
     CheckForFaqQuestion: function(last_part){
         last_part = "/".concat(last_part);
-        return foundry.$faqUrls.includes(last_part);
+        return (foundry.$faqUrls.indexOf(last_part) !== -1);
     },
     loadDynamicHt: function () {
         var vh = window.innerHeight;
@@ -187,7 +187,11 @@ var foundry = {
         $(window).on('resize', function () {
             foundry.loadDynamicHt();
             var topBarHeight = $('.container-mobile header').height();
-            $('.container-mobile ').css('margin-top', topBarHeight);
+            if ($(window).width() <= 575){
+                $('.container-mobile ').css('margin-top', '16%');
+            }else {
+                $('.container-mobile ').css('margin-top', topBarHeight);
+            }
             if ($(window).width() <= 575 || $(window).height() <= 575) {
                 var orientation = foundry.checkOrientation();
                 if(foundry.$mobileOrientation != orientation){
@@ -241,7 +245,9 @@ var foundry = {
         });
         foundry.$faqAccordion.on('hide.bs.collapse', function (e) {
             if ($(window).width() > 575){
-                history.replaceState({url: "/faq"},null,"/faq");
+                if(!history.state.url){
+                    history.replaceState({url: "/faq"},null,"/faq");
+                }
             } else {
                 if($("#collapse-faq").hasClass('show') && foundry.isFaqChangeMob){
                     history.replaceState({url: "/faq"},null,"/faq");
@@ -357,6 +363,9 @@ var foundry = {
                     .collapse('hide');
             } else {
                 $('.section-container').css('display', 'none');
+                if(!$(".container-desk footer").hasClass('custom-sticky')){
+                    $('.container-desk footer').addClass('custom-sticky');
+                }
             }
 
             foundry.$beforeContactHash = '/';
@@ -402,10 +411,13 @@ var foundry = {
                                 $('#contact-modal').modal('show');
                                 break;
                             case '/':
+                                $('.container-desk footer').addClass('custom-sticky');
                                 $('.section-container').css('display', 'none');
+                                foundry.$deskIconToggle = "/";
+                                history.replaceState({url: "/"},null,"/");
                                 break;
                             default:
-                                if(foundry.$faqUrls.includes(last_part)){
+                                if(foundry.$faqUrls.indexOf(last_part) !== -1){
                                     foundry.isScrollDesk = false;
                                     foundry.showFaqQuestion(last_part, false);
                                 }
@@ -429,7 +441,7 @@ var foundry = {
     },
     showRoadMap: function (changeUrl) {
         if(history.state) {
-            if(history.state.url == '/roadmap'){
+            if(history.state.url == '/roadmap' && changeUrl){
                 return false;
             }
         }
@@ -499,7 +511,7 @@ var foundry = {
         foundry.$sectionContainer = n;
     },
     displayMobileContent: function (para, changeUrl) {
-        if(foundry.$faqUrls.includes(para)){
+        if(foundry.$faqUrls.indexOf(para) !== -1){
          if(!changeUrl){
             para = '/faq';
             history.replaceState({url: para}, null , para);
@@ -698,7 +710,7 @@ var foundry = {
         }
     },
     setUrl: function (url) {
-        if(url == '/' && history.state.url != '/'){
+        if(url == '/' && history.state && history.state.url != '/'){
                 $('.you-tube-video').toggle(900);
         }else if(url != '/') {
                 $('.you-tube-video').css('display', 'none');           

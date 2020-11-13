@@ -40,20 +40,6 @@ var foundryBlog = {
             $.get(url)
             .then(function(my_var) {
                 element.innerHTML = my_var;
-                var fileNameParts = this.url.split("/");
-                var fileName = fileNameParts[fileNameParts.length-1].split('.');
-                fileName[0] = fileName[0].concat('/');
-                var initialUrl = '/images/blog/'.concat(fileName[0]); 
-                var imgs = element.getElementsByTagName("img");
-
-                for(var i = 0; i < imgs.length; i++) {
-                    curImg = imgs[i];
-                    var parts = curImg.src.split("/");
-                    var finalUrlPart = parts[parts.length-1];
-                    var finalUrlPart = initialUrl.concat(finalUrlPart);
-                    curImg.src       = finalUrlPart;
-                }
-
                 data = foundryBlog.extractData(element); 
                 return foundryBlog.addnewBlog(data, this.url);
                 })

@@ -312,6 +312,7 @@ body {
     .container-desk .team-content h2,
     .container-desk .team-content h2 a {
         color:#0ca3cf;
+        margin: 0;
     }
 }
 
@@ -2786,6 +2787,8 @@ h2#blog-sub-title{
     list-style: none;
     padding: 0;
     text-align: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
 }
 ul.team-toast-social-media-ico li {
     display: inline;
@@ -2800,7 +2803,7 @@ ul.team-toast-social-media-ico li img:hover {
 }
 
 ul.team-toast-social-media-ico li a img {
-    width: 18%;
+    width: 14%;
     padding-right: 5%;
 }
 .container-mobile ul.team-toast-social-media-ico {

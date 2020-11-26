@@ -15,4 +15,9 @@
       <author>Team Toast</author>
       <file>affiliate-marketing.html</file>
     </blog>    
+    
+    <blog>
+      <author>Schalk Dormehl</author>
+      <file>yield-farming-opportunity.html</file>
+    </blog>
 </blogs>

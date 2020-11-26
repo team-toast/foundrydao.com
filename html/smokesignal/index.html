@@ -1,1 +1,4 @@
-<script> window.location.replace("https://smokesignal.eth.link"); </script>
+<script>
+    appHashStr = window.location.hash;
+    window.location.replace("https://smokesignal.eth.link/" + appHashStr);
+</script>

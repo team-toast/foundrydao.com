@@ -2,17 +2,22 @@
 
 <blogs>
     <blog>
-      <author>Team Toast</author>
+      <author>Schalk Dormehl</author>
       <file>letting-the-wise-lead.html</file>
     </blog>
 
     <blog>
-      <author>Team Toast</author>
+      <author>Schalk Dormehl</author>
       <file>converting-irrational-exuberance-into-rational-investment.html</file>
     </blog>
 
     <blog>
-      <author>Team Toast</author>
+      <author>Schalk Dormehl</author>
       <file>affiliate-marketing.html</file>
     </blog>    
+    
+    <blog>
+      <author>Schalk Dormehl</author>
+      <file>yield-farming-opportunity.html</file>
+    </blog>
 </blogs>

@@ -2919,4 +2919,33 @@ ul.team-toast-social-media-ico li a img {
 
 .open-in-app:hover, .create-an-offer-icon:hover, .join-conversation:hover {
     transform: scale(1.2);
+}
+
+#daihard-link {
+    display: block;
+    width: 25%;
+    height: 6%;
+    position: absolute;
+    left: 28%;
+    top: 20%;
+    z-index: 10000;
+}
+
+#smokesignal-link {
+    display: block;
+    width: 25%;
+    height: 6%;
+    position: absolute;
+    left: 38%;
+    top: 20%;
+    z-index: 10000;
+}
+#sale-foundry-link {
+    display: block;
+    width: 21%;
+    height: 6%;
+    position: absolute;
+    left: 29%;
+    top: 20%;
+    z-index: 10000;
 }   

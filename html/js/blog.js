@@ -25,13 +25,29 @@ var foundrySub = {
         }
     },
     attachEventHandles: function() {
+        var prevScrollpos = window.pageYOffset;
+        var fadeInterval = 300;
+        var verticalThreshold = 10;
         $(window).on('scroll', function() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 foundrySub.$scrollToTop.css('display','block');
-              } else {
+            } else {
                 foundrySub.$scrollToTop.css('display','none');
-              }
+            }
+            
+            var currentScrollPos = window.pageYOffset;
+            // Hide Social Media icons on scroll down (mobile only)
+            if (prevScrollpos < currentScrollPos) {
+            $('.mobile-icons-left-right').fadeOut(fadeInterval);
+            } else {
+                // Show Social Media icons once user scrolls back up to the very top
+                if(window.pageYOffset <= verticalThreshold) {
+                $('.mobile-icons-left-right').fadeIn(fadeInterval);
+                }
+            }
+            prevScrollpos = currentScrollPos;
         });
+
         $(window).on('resize', function() {
             if ($(window).width() <= 575) {
                 $('#pop-desktop').children().detach().appendTo('#pop-mobile');
@@ -40,6 +56,7 @@ var foundrySub = {
                 $('#pop-mobile').children().detach().appendTo('#pop-desktop');
             }
         });
+        
         foundrySub.$scrollToTop.on('click', function(e) {
             e.preventDefault();
             $('html, body').animate({

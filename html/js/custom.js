@@ -213,6 +213,24 @@ var foundry = {
                 }
             }
         });
+
+        var prevScrollpos = window.pageYOffset;
+        var fadeInterval = 300;
+        var verticalThreshold = 10;
+        window.onscroll = function() {
+          var currentScrollPos = window.pageYOffset;
+          // Hide Social Media icons on scroll down (mobile only)
+          if (prevScrollpos < currentScrollPos) {
+            $('.mobile-icons-left-right').fadeOut(fadeInterval);
+          } else {
+              // Show Social Media icons once user scrolls back up to the very top
+              if(window.pageYOffset <= verticalThreshold) {
+                $('.mobile-icons-left-right').fadeIn(fadeInterval);
+              }
+          }
+          prevScrollpos = currentScrollPos;
+        }
+
         //Add remove shadow effects to the expanded elements in accordion 
         foundry.$accordion.on('shown.bs.collapse', function (e) {
             var offset = $(e.target).offset().top - ($('.container-mobile header').height() + 120);
@@ -257,8 +275,7 @@ var foundry = {
             }
             e.stopPropagation();
         });
-        //End add remove shdow effects to the expanded elements in accordion 
-
+        //End add remove shadow effects to the expanded elements in accordion 
 
         $(window).on('scroll', function (e) {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -292,6 +309,7 @@ var foundry = {
             }
             if (changeUrl) {
                 if (changeUrl['data']) {
+                console.log("🚀 ~ file: custom.js ~ line 296 ~ foundry", foundry)
                     foundry.setMobUrl(headingChange);
                 }
             } else {

@@ -2847,7 +2847,7 @@ ul.team-toast-social-media-ico li a img {
     padding-top: 5%;
     padding-bottom: 0;
 }
-@media (max-width:900px) {
+@media (max-width:1024px) {
     #about-foundry-carousal {
         padding-top: 5%;
         padding-bottom: 12vw;

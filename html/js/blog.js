@@ -1,5 +1,27 @@
 var foundrySub = {
+    $preloadImgs: [],
+    $preloadDesktopImgs: [],
+    $preloadMobileImgs: [],
     init: function() {
+        foundrySub.$preloadImgs = [
+            '/images/svg/icons/fry-icon_200x200.png',
+            '/images/svg/logo.svg',
+            '/images/svg/icons/telegram-icon.svg',
+            '/images/svg/icons/social-icon.svg',
+            '/images/svg/icons/roadmap-icon.svg',
+            '/images/svg/icons/blog-icon.svg',
+            '/images/svg/blog-elements/blog-list-view.svg',
+            '/images/svg/arrow.svg'
+        ];
+        foundrySub.$preloadDesktopImgs = [
+            '/images/svg/top-bar-desktop.svg',
+            '/images/svg/bottom-bar-desktop.svg'
+            ];
+        foundrySub.$preloadMobileImgs = [
+            '/images/svg/top-bar-mobile.svg',
+            '/images/svg/bottom-bar-mobile.svg',
+            '/images/svg/left-side-pattern-element.svg'
+            ];
         var url = $(location).attr('href');
         var parts = url.split("/");
         var finalUrlPart = parts[parts.length-1];
@@ -24,7 +46,45 @@ var foundrySub = {
             $('#pop-mobile').children().detach().appendTo('#pop-desktop');
         }
     },
+    preloadImages: function(urls, allImagesLoadedCallback){
+
+        var loadedCounter = 0;
+        var toBeLoadedNumber = urls.length;
+
+        urls.forEach(function(url){
+            foundrySub.preloadImage(url, function(){
+                loadedCounter++;
+                    if(loadedCounter == toBeLoadedNumber){
+                        allImagesLoadedCallback();
+                    }
+            });
+        });
+    },
+
+    preloadImage: function(url, anImageLoadedCallback){
+
+        var img = new Image();
+
+        img.src = url;
+        img.onload = anImageLoadedCallback;
+    },
     attachEventHandles: function() {
+        //Preload Images
+        foundrySub.preloadImages(foundrySub.$preloadImgs, function(){
+        });
+    
+        if ($(window).width() <= 575){
+            foundrySub.preloadImages(foundrySub.$preloadMobileImgs, function(){
+                console.log('All images loaded for mobile');
+                $('body').addClass('loaded');
+            });
+        }
+        else {
+            foundrySub.preloadImages(foundrySub.$preloadDesktopImgs, function(){
+                console.log('All images loaded for Desktop');
+                $('body').addClass('loaded');
+            });
+        }
         var prevScrollpos = window.pageYOffset;
         var fadeInterval = 300;
         var verticalThreshold = 10;
@@ -56,7 +116,7 @@ var foundrySub = {
                 $('#pop-mobile').children().detach().appendTo('#pop-desktop');
             }
         });
-        
+
         foundrySub.$scrollToTop.on('click', function(e) {
             e.preventDefault();
             $('html, body').animate({
@@ -125,12 +185,6 @@ var foundrySub = {
 $(function() {
     foundrySub.init();
     foundrySub.attachEventHandles();
-    $('body').imagesLoaded().done( function() {
-        $('.container-mobile .pattern').imagesLoaded( { background: true }).done( function() {
-                console.log('All images loaded');
-                $('body').addClass('loaded');
-        });
-    });
 
     $("html").easeScroll({
         frameRate: 60,

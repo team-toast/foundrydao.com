@@ -14,6 +14,9 @@ var foundry = {
     $goTo: null,
     $roadmap: null,
     $mobileOrientation: null,
+    $preloadImgs: [],
+    $preloadDesktopImgs: [],
+    $preloadMobileImgs: [],
     tagId: null,
     tagDetails: {
         $link: null,
@@ -62,6 +65,71 @@ var foundry = {
                             '/what-are-the-benefits-of-using-a-referral-code-from-someone-else',
                             '/what-are-the-benefits-of-sharing-a-referral-code',
                             '/how-do-i-make-a-referral-link'] ;
+        foundry.$preloadImgs = [
+                '/images/svg/icons/fry-icon_200x200.png',
+                '/images/svg/logo.svg',	
+                '/images/svg/icons/blog-icon.svg',
+                '/images/svg/icons/roadmap-icon.svg',	
+                '/images/svg/icons/telegram-icon.svg',	
+                '/images/svg/icons/social-icon.svg',	
+                '/images/svg/icons/foundry-fry.svg',	
+                '/images/svg/icons/zimdai.svg',	
+                '/images/svg/icons/products.svg',	
+                '/images/svg/icons/team-toast.svg',	
+                '/images/svg/icons/faq.svg',
+                '/images/svg/roadmap-elements/center-dashed-line.svg',	
+                '/images/svg/roadmap-elements/top-date-element-next-to-star.svg',	
+                '/images/svg/roadmap-elements/connectors/left-box-connector.svg',	
+                '/images/png/left-content-box/01-roadmap-top-part.png',	
+                '/images/png/left-content-box/roadmapleft-content-box-bottom-without-bg.png',	
+                '/images/svg/roadmap-elements/connectors/right-box-connector.svg',	
+                '/images/png/right-content-box/roadmap-right-contentbox-top-part.png',	
+                '/images/png/right-content-box/roadmap-right-content-box-bottom-without-bg1.png',	
+                '/images/png/connectors/curly-bracket-connector.png',	
+                '/images/png/right-content-box/year1-box-top-element.png',	
+                '/images/png/connectors/the-future-box-connect-top.png',	
+                '/images/png/the-future-box/the-future-box-top-part.png',	
+                '/images/svg/arrow.svg',
+                '/images/svg/icons/open-in-app.svg',
+                '/images/svg/icons/create-an-offer-icon.svg',
+                '/images/svg/icons/join-conversationicon.svg',
+                '/images/oglog.jpg',
+                '/images/svg/social-media-logos/reddit.svg',	
+                '/images/svg/social-media-logos/github.svg',	
+                '/images/svg/social-media-logos/linkedin.svg',	
+                '/images/svg/social-media-logos/medium.svg',	
+                '/images/schalk.png',	
+                '/images/svg/social-media-logos/twitter.svg',	
+                '/images/thoughtful.jpeg',	
+                '/images/svg/social-media-logos/pentagram.svg',	
+                '/images/svg/star-element.svg',	
+                '/images/svg/roadmap-elements/dashed-line-element.svg',
+            ];
+        foundry.$preloadDesktopImgs = [
+                '/images/svg/top-bar-desktop.svg',	
+                '/images/svg/bottom-bar-desktop.svg',	
+                '/images/svg/desk-sections/buy-fry-section.svg',	
+                '/images/svg/desk-sections/read-zimdai-section.svg',	
+                '/images/svg/desk-sections/future-products-section.svg',	
+                '/images/svg/desk-sections/weekely-progress-demos-section.svg',	
+                '/images/svg/desk-sections/faq-section.svg',
+                '/images/foundry-slides/foundry-trade-slides-v2-01.jpg',
+                '/images/fire-bg.jpg',
+                '/images/svg/roadmap-elements/roadmap-bg.svg',
+            ];
+        foundry.$preloadMobileImgs = [
+                '/images/fire-bg-mobile.jpg',
+                '/images/svg/top-bar-mobile.svg',	
+                '/images/svg/bottom-bar-mobile.svg',
+                '/images/svg/menu-tags/buy-fry.svg',
+                '/images/svg/menu-tags/read-the-zimdai-paper.svg',
+                '/images/svg/menu-tags/future-products.svg',
+                '/images/svg/menu-tags/get-answers.svg',
+                '/images/svg/menu-tags/weekely-progress.svg',
+                '/images/svg/left-side-pattern-element.svg',
+                '/images/svg/blue-gradient.svg'
+            ];
+       
     },
     triggerOnLoad: function () {
         var url = $(location).attr('href');
@@ -169,7 +237,47 @@ var foundry = {
             }
         }
     },
+    preloadImages: function(urls, allImagesLoadedCallback){
+
+        var loadedCounter = 0;
+        var toBeLoadedNumber = urls.length;
+
+        urls.forEach(function(url){
+            foundry.preloadImage(url, function(){
+                loadedCounter++;
+                    if(loadedCounter == toBeLoadedNumber){
+                        allImagesLoadedCallback();
+                    }
+            });
+        });
+    },
+    preloadImage: function(url, anImageLoadedCallback){
+
+        var img = new Image();
+
+        img.src = url;
+        img.onload = anImageLoadedCallback;
+    },
     attachEventHandles: function () {
+        //Preload Images
+        foundry.preloadImages(foundry.$preloadImgs, function(){
+        });
+    
+        if ($(window).width() <= 575){
+            foundry.preloadImages(foundry.$preloadMobileImgs, function(){
+                console.log('All images loaded for mobile');
+                $('body').addClass('loaded');
+            });
+        }
+        else {
+            foundry.preloadImages(foundry.$preloadDesktopImgs, function(){
+                $('.lazy').lazy({
+                    delay: 3000
+                });//lazy load foundry slides after page load
+                console.log('All images loaded for Desktop');
+                $('body').addClass('loaded');
+            });
+        }
         // mobile tag click event
         foundry.$tagImg.unbind("click").click(function (e) {
             e.stopPropagation();
@@ -309,7 +417,6 @@ var foundry = {
             }
             if (changeUrl) {
                 if (changeUrl['data']) {
-                console.log("🚀 ~ file: custom.js ~ line 296 ~ foundry", foundry)
                     foundry.setMobUrl(headingChange);
                 }
             } else {
@@ -749,21 +856,6 @@ var foundry = {
 $(function () {
     foundry.init();
     foundry.attachEventHandles();
-
-    $('body').imagesLoaded()
-        .done(function () {
-            $('.container-mobile .blue-gradient').imagesLoaded({ background: true }, function () {
-            }).done(function () {
-                $('.container-desk .banner').imagesLoaded({ background: true }, function () {
-                }).done(function () {
-                    $('.container-mobile .pattern').imagesLoaded({ background: true }, function () {
-                    }).done(function () {
-                        console.log('All images loaded');
-                        $('body').addClass('loaded');
-                    });
-                });
-            });
-        });
 
     $(document).ready(function () {
         foundry.triggerOnLoad();

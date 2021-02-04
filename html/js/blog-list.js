@@ -1,9 +1,71 @@
 
 var foundryBlog = {
     fileNames: [],
+    $preloadImgs: [],
+    $preloadDesktopImgs: [],
+    $preloadMobileImgs: [],
     init: function(){
+        foundryBlog.$preloadImgs = [
+            '/images/svg/icons/fry-icon_200x200.png',
+            '/images/svg/logo.svg',
+            '/images/svg/icons/telegram-icon.svg',
+            '/images/svg/icons/social-icon.svg',
+            '/images/svg/icons/roadmap-icon.svg',
+            '/images/svg/icons/blog-icon.svg',
+            '/images/svg/blog-elements/blog-list-view.svg',
+            '/images/svg/arrow.svg'
+        ];
+        foundryBlog.$preloadDesktopImgs = [
+            '/images/svg/top-bar-desktop.svg',
+            '/images/svg/bottom-bar-desktop.svg'
+            ];
+        foundryBlog.$preloadMobileImgs = [
+            '/images/svg/top-bar-mobile.svg',
+            '/images/svg/bottom-bar-mobile.svg',
+            '/images/svg/left-side-pattern-element.svg'
+            ];
         foundryBlog.loadFileNames()
     },
+    preloadImages: function(urls, allImagesLoadedCallback){
+
+        var loadedCounter = 0;
+        var toBeLoadedNumber = urls.length;
+
+        urls.forEach(function(url){
+            foundryBlog.preloadImage(url, function(){
+                loadedCounter++;
+                    if(loadedCounter == toBeLoadedNumber){
+                        allImagesLoadedCallback();
+                    }
+            });
+        });
+    },
+
+    preloadImage: function(url, anImageLoadedCallback){
+
+        var img = new Image();
+
+        img.src = url;
+        img.onload = anImageLoadedCallback;
+    },
+    attachEventHandles: function() {
+           foundryBlog.preloadImages(foundryBlog.$preloadImgs, function(){
+            });
+        
+            if ($(window).width() <= 575){
+                foundryBlog.preloadImages(foundryBlog.$preloadMobileImgs, function(){
+                    console.log('All images loaded for mobile');
+                    $('body').addClass('loaded');
+                });
+            }
+            else {
+                foundryBlog.preloadImages(foundryBlog.$preloadDesktopImgs, function(){
+                    console.log('All images loaded for Desktop');
+                    $('body').addClass('loaded');
+                });
+            }
+    },
+
     loadFileNames: function () {
             try {
                 $.ajax({
@@ -70,13 +132,7 @@ var foundryBlog = {
                 div.css('height',height);
             }
             i++;
-        }       
-    $('body').imagesLoaded().done( function() {
-        $('.container-mobile .pattern').imagesLoaded( { background: true }).done( function() {
-                console.log('All images loaded');
-                $('body').addClass('loaded');
-        });
-    });   
+        }         
     },
     addnewBlog: function(data, fileName){
         document.querySelector('.template-blog .section-blog-title').innerHTML = data['title'];
@@ -154,10 +210,10 @@ var foundryBlog = {
         result['imgSrc'] = $(element).find("img:first").attr('src');
         return result;
     
-    }    
+    }
 };
 $(function() {
     foundryBlog.init();
-    
+    foundryBlog.attachEventHandles();
 });
 

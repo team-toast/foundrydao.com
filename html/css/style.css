@@ -674,6 +674,184 @@ h3.icon-title {
     display: none;
 }
 
+.section-container .roadmap-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: relative;
+}
+
+.section-container .roadmap-section {
+    position: relative;
+}
+
+.roadmap-section .link-scaling-plan {
+    position: absolute;
+    background-color: lightgrey;
+    top: 37.6%;
+    left: 71%;
+    width: 5.5%;
+    height: 0.4%;
+    z-index: 999;
+    opacity: 0;
+}
+
+.section-container .link-foundry-treasury {
+    position: absolute;
+    background-color: lightgrey;
+    top: 14.5%;
+    left: 56.4%;
+    z-index: 999;
+    width: 8%;
+    height: 0.5%;
+    opacity: 0;
+}
+
+.section-container .link-sentiment-polling {
+    position: absolute;
+    background-color: lightgrey;
+    top: 16.6%;
+    left: 15.4%;
+    z-index: 999;
+    width: 8%;
+    height: 0.5%;
+    opacity: 0;
+}
+
+.section-container .link-frozen {
+    position: absolute;
+    background-color: lightgrey;
+    top: 22.3%;
+    left: 58.7%;
+    z-index: 999;
+    width: 3%;
+    height: 0.5%;
+    opacity: 0;
+}
+
+.section-container .link-pullable-liquidity {
+    position: absolute;
+    background-color: lightgrey;
+    top: 22.3%;
+    left: 73%;
+    z-index: 999;
+    width: 12%;
+    height: 0.5%;
+    opacity: 0;
+}
+
+.section-container .link-original-announcement {
+    position: absolute;
+    background-color: lightgrey;
+    top: 24.4%;
+    left: 30.5%;
+    z-index: 999;
+    width: 11%;
+    height: 0.5%;
+    opacity: 0;
+}
+
+.section-container .link-smoke-signal-eth-link {
+    position: absolute;
+    background-color: lightgrey;
+    top: 34.9%;
+    left: 13.2%;
+    z-index: 999;
+    width: 9.5%;
+    height: 0.5%;
+    opacity: 0;
+}
+
+.roadmap-section-mobile {
+    position: relative;
+}
+
+.roadmap-section-mobile .roadmap-img-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+}
+
+.roadmap-section-mobile .link-scaling-plan {
+    position: absolute;
+    background-color: lightgrey;
+    top: 58.9%;
+    left: 46%;
+    z-index: 999;
+    width: 16.5%;
+    height: 0.5%;
+    opacity: 0;
+}
+
+.roadmap-section-mobile .link-frozen {
+    position: absolute;
+    background-color: lightgrey;
+    top: 27.5%;
+    left: 17%;
+    z-index: 999;
+    width: 8.5%;
+    height: 0.5%;
+    opacity: 0;
+}
+
+.roadmap-section-mobile .link-pullable-liquidity {
+    position: absolute;
+    background-color: lightgrey;
+    top: 27.5%;
+    left: 58%;
+    z-index: 999;
+    width: 34.5%;
+    height: 0.5%;
+    opacity: 0;
+}
+
+.roadmap-section-mobile .link-sentiment-polling {
+    position: absolute;
+    background-color: lightgrey;
+    top: 19.9%;
+    left: 6%;
+    z-index: 999;
+    width: 23.5%;
+    height: 0.5%;
+    opacity: 0;
+}
+
+.roadmap-section-mobile .link-foundry-treasury {
+    position: absolute;
+    background-color: lightgrey;
+    top: 13.6%;
+    left: 11%;
+    z-index: 999;
+    width: 22.5%;
+    height: 0.5%;
+    opacity: 0;
+}
+
+.roadmap-section-mobile .link-original-announcement {
+    position: absolute;
+    background-color: lightgrey;
+    top: 35.5%;
+    left: 49%;
+    z-index: 999;
+    width: 31.5%;
+    height: 0.5%;
+    opacity: 0;
+}
+
+.roadmap-section-mobile .link-smoke-signal-eth-link {
+    position: absolute;
+    background-color: lightgrey;
+    top: 49.5%;
+    left: 9%;
+    z-index: 999;
+    width: 26%;
+    height: 0.5%;
+    opacity: 0;
+}
+
 .desk-footer {
     display: none;
 }
@@ -2928,7 +3106,7 @@ ul.team-toast-social-media-ico li a img {
     position: absolute;
     left: 28%;
     top: 20%;
-    z-index: 10000;
+    z-index: 999;
 }
 
 #smokesignal-link {
@@ -2938,7 +3116,7 @@ ul.team-toast-social-media-ico li a img {
     position: absolute;
     left: 38%;
     top: 20%;
-    z-index: 10000;
+    z-index: 999;
 }
 #sale-foundry-link {
     display: block;
@@ -2947,5 +3125,18 @@ ul.team-toast-social-media-ico li a img {
     position: absolute;
     left: 29%;
     top: 20%;
-    z-index: 10000;
+    z-index: 999;
 }   
+.mobile-logo-center {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+.roadmap-p {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1vw;
+    font-size: 7vw;
+    font-family: 'DM Sans', sans-serif;
+}

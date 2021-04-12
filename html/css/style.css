@@ -2885,13 +2885,18 @@ h2#blog-sub-title{
     right: -10%;
     width: 26%;
 }
+.container-desk .floating-nav-farm-fry.row {
+    position: absolute;
+    top: -28px;
+    right: 6%;
+}
 .container-mobile .floating-nav-buy-fry{
     width: 40vw;
     left: 83.4vw;
     position: absolute;
     top: 4vw;
 }
-.container-mobile .buy-fry-button-link, .container-mobile .about-foundry-button-link {
+.container-mobile .buy-fry-button-link, .container-mobile .farm-fry-button-link, .container-mobile .about-foundry-button-link {
     display: inline-block;
     padding: 1vw 1.8vw;
     border-radius: 50px;

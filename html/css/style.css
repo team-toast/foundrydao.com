@@ -2885,10 +2885,10 @@ h2#blog-sub-title{
     right: -10%;
     width: 26%;
 }
-.container-desk .floating-nav-farm-fry.row {
+.container-desk .floating-nav-farm-fry.row{   
     position: absolute;
-    top: -28px;
-    right: 6%;
+    right: 3%;
+    top: 30%;
 }
 .container-mobile .floating-nav-buy-fry{
     width: 40vw;
@@ -3144,4 +3144,127 @@ ul.team-toast-social-media-ico li a img {
     letter-spacing: 1vw;
     font-size: 7vw;
     font-family: 'DM Sans', sans-serif;
+}
+
+.container-desk .floating-nav-farm-fry.row div a img {
+
+    transition: 0.5s;
+}
+.container-desk .floating-nav-farm-fry.row div a img:hover {
+    transform: scale(1.1);
+        z-index: 1;
+}
+
+#farm-fry-btn {
+    position: absolute;
+    width: 80px;
+    right: 80px;
+    transition: .2s;
+    box-shadow: 0 0 0 0 rgb(60 181 217);
+    background: #0fa4d0; 
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(.66,0,0,1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(.66,0,0,1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(.66,0,0,1);
+    animation: pulse 1.25s infinite cubic-bezier(.66,0,0,1);
+    border-radius: 50px 0 0 50px;
+}
+#buy-fry-btn {
+    position: absolute;
+    width: 80px;
+    right: 0px;
+    transition: .2s;
+    box-shadow: 0 0 0 0 rgb(255 0 115 / 70%);
+    background-image: -webkit-linear-gradient(45deg,#ff0073 0,#cc0f57 100%);
+    background-image: linear-gradient(45deg,#ff0073 0,#cc0f57 100%);
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(.66,0,0,1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(.66,0,0,1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(.66,0,0,1);
+    animation: pulse 1.25s infinite cubic-bezier(.66,0,0,1);
+    border-radius: 0 50px 50px 0;
+}
+
+@media (max-width:399px){
+    .container-mobile .floating-nav-farm-fry.row {
+        position: absolute;
+        right: 8%;
+        top: 70%;
+    }
+    #farm-fry-btn{
+        width: 40px;
+        right: 40px;
+    }
+    #buy-fry-btn{
+        width:40px;
+    }
+    
+}
+@media (min-width:400px) and (max-width: 576px){
+    .container-mobile .floating-nav-farm-fry.row {
+        position: absolute;
+        right: 8%;
+        top: 70%;
+    }
+    #farm-fry-btn{
+        width: 50px;
+        right: 50px;
+    }
+    #buy-fry-btn{
+        width:50px;
+    }
+}
+@media (min-width: 576px) and (max-width: 678px){
+    .container-desk .floating-nav-farm-fry.row{   
+        top: 82px;
+    }
+    .elements{
+        overflow:visible;
+    }
+}
+@media (min-width: 678px) and (max-width: 968px){
+    .container-desk .floating-nav-farm-fry.row{   
+        top: 100px;
+        right: 7%;
+    }
+    .elements{
+        overflow:visible;
+    }
+    .inner-container {
+        padding-top: 8%;
+    }
+}
+@media (min-width: 968px) and (max-width: 1024px){
+    .container-desk .floating-nav-farm-fry.row{   
+        position: absolute;
+        right: 3%;
+        top: 34px;
+    }
+    .elements{
+        overflow:visible;
+    }
+}
+@media (min-width: 1400px) and (max-width:1600px){
+    .container-desk .floating-nav-farm-fry.row{   
+        top: 50px;
+        right: 4%;
+    }
+    #farm-fry-btn {
+        width: 100px;
+        right: 100px;
+    }
+    #buy-fry-btn {
+        width: 100px;
+    }
+}
+@media (min-width:1601px) {
+    .container-desk .floating-nav-farm-fry.row{   
+        top: 27%;
+        right: 2%;
+    }
+    #farm-fry-btn {
+        width: 130px;
+        right: 130px;
+    }
+    #buy-fry-btn {
+        width: 130px;
+    }
 }

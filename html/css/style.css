@@ -213,7 +213,8 @@
 }
 .container-mobile .content p,
 .team-content p,
-.theme-p {
+.theme-p,
+.container-mobile .content li {
     color: #234080;
     font-size: 2.88vw;
     font-family: 'DM Sans', sans-serif;
@@ -988,10 +989,10 @@ h3.icon-title {
 .faq-content h2,.template-content h2,
 .faq-content h3,.template-content h3,
 .faq-content h4,.template-content h4,
-.faq-content p, .template-content p {
+.faq-content p, .template-content p, .template-content li {
     text-align: left !important;
 }
-.faq-content p, .template-content p{
+.faq-content p, .template-content p, .template-content li{
     font-size: 0.55em;
 }
 #pop-desktop img, #pop-mobile img {
@@ -1570,7 +1571,7 @@ html {
         letter-spacing: unset;
         color: #234080;
     }
-    .faq-content p, .template-content p{
+    .faq-content p, .template-content p, .template-content li{
         font-size: 22px;
     }
 }
@@ -3267,4 +3268,11 @@ ul.team-toast-social-media-ico li a img {
     #buy-fry-btn {
         width: 130px;
     }
+}
+
+.template-content li {
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 500;
+    letter-spacing: unset;
+    color: #234080;
 }

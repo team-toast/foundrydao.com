@@ -213,8 +213,7 @@
 }
 .container-mobile .content p,
 .team-content p,
-.theme-p, 
-.container-mobile .content li{
+.theme-p {
     color: #234080;
     font-size: 2.88vw;
     font-family: 'DM Sans', sans-serif;
@@ -3268,12 +3267,4 @@ ul.team-toast-social-media-ico li a img {
     #buy-fry-btn {
         width: 130px;
     }
-}
-
-.template-content li {
-    font-family: 'DM Sans',sans-serif;
-    font-weight: 500;
-    font-size: .55em;
-    letter-spacing: unset;
-    color: #234080;
 }
